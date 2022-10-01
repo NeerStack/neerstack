@@ -23,7 +23,6 @@ useHead({
         display: inline-flex;
         justify-content: center;
         width: 1000px;
-        position: relative;
         margin-top: 30%;
         margin-bottom: 50px;
     }
