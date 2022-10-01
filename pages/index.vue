@@ -2,7 +2,7 @@
     <main>
     <div class="home">
         <div class="container">
-           <table>
+           <table class="table1">
             <tbody>
                 <tr class="row1">
                     <th class="story1">
@@ -213,9 +213,10 @@ const word = ()=>{
         display: inline-table;
         justify-content: center;
         padding: 10px;
-        table{
+        table.table1{
             width: 100%;
             margin-top: 30px;
+            margin-bottom: 30px;
             .row1{
                 
                 display: flex;
