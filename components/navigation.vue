@@ -54,7 +54,7 @@ import logoLight from "@/assets/logo_light.png"
 <style scoped>
   .navigation {
     width: 99%;
-    border-bottom: 1px solid #c55555;
+    border-bottom: 1px solid #ee2528;
     position: relative;
     margin-bottom: 70px;
     background: var(--light);
@@ -137,7 +137,7 @@ import logoLight from "@/assets/logo_light.png"
     }
   }
   .dark nav{
-    background: var(--dark);
+    background: var(--black);
     
   }
   .dark .navigation .links a{
@@ -148,14 +148,14 @@ import logoLight from "@/assets/logo_light.png"
     text-decoration: 3px underline solid #fff;
   }
   .dark .navigation .links a:hover {
-    color: #c55555;
+    color: #ee2528;
   }
   .dark .navigation .links a.router-link-exact-active:hover {
-    color: #c55555;
-    text-decoration: 3px underline solid #c55555;
+    color: #ee2528;
+    text-decoration: 3px underline solid #ee2528;
   }
   nav {
-    border-bottom: 1px solid #c55555;
+    border-bottom: 1px solid #ee2528;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -183,13 +183,13 @@ import logoLight from "@/assets/logo_light.png"
     color: #fff;
   }
   nav .links button:hover {
-    color: #c55555;
-    border: 0.5px solid #c55555;
+    color: #ee2528;
+    border: 0.5px solid #ee2528;
     border-radius: 10px;
   }
   .dark nav .links button:hover {
-    color: #c55555;
-    border: 0.5px solid #c55555;
+    color: #ee2528;
+    border: 0.5px solid #ee2528;
   }
   nav .links a {
     display: inline-flex;
@@ -207,10 +207,11 @@ import logoLight from "@/assets/logo_light.png"
     text-decoration: 3px underline solid black;
   }
   nav .links a:hover {
-    color: #c55555;
+    color: #ee2528;
   }
   nav .links a.router-link-exact-active:hover {
-    color: #c55555;
-    text-decoration: 3px underline solid #c55555;
+    color: #ee2528;
+    text-decoration: 3px underline solid #ee2528;
   }
+  
 </style>

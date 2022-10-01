@@ -205,7 +205,7 @@ const word = ()=>{
                                 font-weight: lighter;
                                 
                                 text-align: left;
-                                color: #c55555;
+                                color: #ee2528;
                                 word-wrap: break-word;
                                 
                             }
@@ -223,7 +223,7 @@ const word = ()=>{
                                 border: 2px solid var(--light);
                                 box-sizing: border-box;
                                 border-radius: 20px;
-                                background: #c55555;
+                                background: #ee2528;
                                 color: #fff;
                                 
                                 font-weight: lighter;
@@ -242,7 +242,7 @@ const word = ()=>{
                                 box-sizing: border-box;
                                 border-radius: 20px;
                                 background: var(--light);
-                                color: #c55555;
+                                color: #ee2528;
                                 font-weight: lighter;
                                 box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0,0,0,0.25);
 
@@ -280,8 +280,8 @@ const word = ()=>{
                     justify-content: center;
                     margin-bottom: 20px;
                     .card{
-                        width: 300px;
-                        border: 1px solid #c55555;
+                        
+                        border: 1px solid #ee2528;
                         border-radius: 20px;
                         padding: 10px 10px;
                         
@@ -294,7 +294,7 @@ const word = ()=>{
                             padding: 3px;
                             h5{
                                 margin-left: 10px;
-                                font-size: medium;
+                                
                                 font-weight: bold;
                                 color: #000;
                                 margin-top: 11px;
@@ -306,9 +306,9 @@ const word = ()=>{
                         }
                         p{
                             text-align: left;
-                            font-size: small;
+                            
                             font-weight: lighter;
-                            color: #c55555;
+                            color: #ee2528;
                             padding: 3px;
                         }
                         &:hover{
@@ -325,7 +325,7 @@ const word = ()=>{
         width: 80%;
         padding: 5px 8px;
         background: var(--light);
-        border: 1px solid #c55555;
+        border: 1px solid #ee2528;
         border-radius: 40px;
         box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0,0,0,0.25);
         table{
@@ -343,14 +343,16 @@ const word = ()=>{
                             text-align: center;
                             justify-content: center;
                             align-items: center;
+                            font-size: large;
+                            color: #000;
                         }
                         p{
                             padding: 10px;
-                            font-size: smaller;
+                            font-size: medium;
                             text-align: center;
                             font-weight: lighter;
                             font-family:Arial, Helvetica, sans-serif;
-                            color: #c55555
+                            color: #ee2528
                         }
                     }
                 }
@@ -388,7 +390,7 @@ const word = ()=>{
                         h3{
                             color: #fff;
                             h4{
-                                color: #c55555
+                                color: #ee2528
                             }
                         }
                         
@@ -398,12 +400,12 @@ const word = ()=>{
                             }
                             button.learn{
                                 box-shadow: -5px -5px 10px rgba(30, 41, 59,0.8), 5px 5px 10px rgba(0,0,0,0.25);
-                                border: 2px solid #c55555;
-                                background: var(--dark);
+                                border: 2px solid #ee2528;
+                                background: var(--black);
                                 color: #fff;
 
                                 &:hover{
-                                    background: var(--dark-alt);
+                                    background: var(--black-alt);
                                 }
                             }
                         }
@@ -413,7 +415,7 @@ const word = ()=>{
             .row2{
                 th{
                     .card{
-                        border: 1px solid #c55555;
+                        border: 1px solid #ee2528;
                         box-shadow: -5px -5px 10px rgba(30, 41, 59,0.8), 5px 5px 10px rgba(0,0,0,0.25);
                         span{
                             h5{
@@ -426,11 +428,11 @@ const word = ()=>{
                             }
                         }
                         p{
-                            color: #c55555;
+                            color: #ee2528;
                             
                         }
                         &:hover{
-                            background: var(--dark-alt);
+                            background: var(--black-alt);
                         }
                     }
                 }
@@ -440,22 +442,34 @@ const word = ()=>{
     }
     .feature{
         box-shadow: -5px -5px 10px rgba(30, 41, 59,0.8), 5px 5px 10px rgba(0,0,0,0.25);
-        background: var(--dark);
-        border: 1px solid #c55555;
+        background: var(--black);
+        border: 1px solid #ee2528;
         table{
+            .row3{
+                th{
+                    div{
+                       
+                        h2{
+                            
+                            color: #fff;
+                        }
+                        
+                    }
+                }
+            }
             
             .row3{
                 th{
                     div{
                         p{
-                            color: #c55555
+                            color: #ee2528
                         }
                     }
                 }
             }
         }
     &:hover{
-       background: var(--dark-alt);
+       background: var(--black-alt);
         
     }
     }
@@ -483,9 +497,9 @@ const word = ()=>{
                 word-wrap: break-word;
             }
             h3{
-                font-size: medium;
+                font-size: large;
                 h4{
-                    font-size: medium;
+                    font-size: large;
                 }
             }
         }
@@ -500,6 +514,42 @@ const word = ()=>{
             
             width: 400px;
             height: auto;
+        }
+    }
+    .table2{
+        
+        .row2{
+           
+            th{
+                
+                .card{
+                    width: 500px;
+                    
+                    span{
+                        h5{
+                            margin-left: 10px;
+                            font-size: medium;
+                            font-weight: bold;
+                            color: #000;
+                            margin-top: 11px;
+                            text-align: left;
+                        }
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: medium;
+                        font-weight: lighter;
+                        color: #ee2528;
+                        padding: 3px;
+                    }
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
         }
     }
 
@@ -533,6 +583,42 @@ const word = ()=>{
             }
         }
         
+    }
+    .table2{
+        
+        .row2{
+           
+            th{
+                
+                .card{
+                    width: 500px;
+                    
+                    span{
+                        h5{
+                            margin-left: 10px;
+                            font-size: medium;
+                            font-weight: bold;
+                            color: #000;
+                            margin-top: 11px;
+                            text-align: left;
+                        }
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: medium;
+                        font-weight: lighter;
+                        color: #ee2528;
+                        padding: 3px;
+                    }
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
+        }
     }
 }
     .story2{
@@ -589,7 +675,42 @@ const word = ()=>{
         
     }
 }
-
+.table2{
+        
+    .row2{
+       
+        th{
+            
+            .card{
+                width: 500px;
+                
+                span{
+                    h5{
+                        margin-left: 10px;
+                        font-size: medium;
+                        font-weight: bold;
+                        color: #000;
+                        margin-top: 11px;
+                        text-align: left;
+                    }
+                    img{
+                        width: 50px;
+                    }
+                }
+                p{
+                    text-align: left;
+                    font-size: medium;
+                    font-weight: lighter;
+                    color: #ee2528;
+                    padding: 3px;
+                }
+                &:hover{
+                    background: #ddd;
+                }
+            }
+        }
+    }
+}
     
 }
 
@@ -630,6 +751,43 @@ const word = ()=>{
         }
     }
     }
+    .table2{
+        
+        .row2{
+           
+            th{
+                
+                .card{
+                    width: 300px;
+                    
+                    span{
+                        h5{
+                            margin-left: 10px;
+                            font-size: medium;
+                            font-weight: bold;
+                            color: #000;
+                            margin-top: 11px;
+                            text-align: left;
+                        }
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: medium;
+                        font-weight: lighter;
+                        color: #ee2528;
+                        padding: 3px;
+                    }
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
+        }
+    }
+    
     
 }
 
@@ -670,6 +828,44 @@ const word = ()=>{
         }
     }
     }
+
+    .table2{
+        
+        .row2{
+           
+            th{
+                
+                .card{
+                    width: 300px;
+                    
+                    span{
+                        h5{
+                            margin-left: 10px;
+                            font-size: medium;
+                            font-weight: bold;
+                            color: #000;
+                            margin-top: 11px;
+                            text-align: left;
+                        }
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: medium;
+                        font-weight: lighter;
+                        color: #ee2528;
+                        padding: 3px;
+                    }
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
+        }
+    }
+    
     
 }
 
@@ -709,6 +905,42 @@ const word = ()=>{
             width: 950px
         }
     }
+    }
+    .table2{
+        
+        .row2{
+           
+            th{
+                
+                .card{
+                    width: 200px;
+                    
+                    span{
+                        h5{
+                            margin-left: 10px;
+                            font-size: small;
+                            font-weight: bold;
+                            color: #000;
+                            margin-top: 11px;
+                            text-align: left;
+                        }
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        font-size: smaller;
+                        font-weight: lighter;
+                        color: #ee2528;
+                        padding: 3px;
+                    }
+                    &:hover{
+                        background: #ddd;
+                    }
+                }
+            }
+        }
     }
     
 }

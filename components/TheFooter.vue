@@ -20,7 +20,11 @@
     </div> 
 </template>
 <style scoped>
+    .dark .footer{
+        border-top: 1px solid #ee2528;
+    }
     .footer{
+       
         margin-top: 200px;
         margin-left: 0;
         margin-right: 0;

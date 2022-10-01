@@ -1,5 +1,5 @@
 <template>
-  <div class="app dark:bg-slate-800 min-h-screen dark:text-white">
+  <div class="app dark:bg-black min-h-screen dark:text-white">
     <NuxtLayout name="default">
       <NuxtPage :key="$route.fullPath" />
     </NuxtLayout>
@@ -18,6 +18,7 @@
     --light: #f1f5f9;
     --sidebar-width: 300px;
     --black: #000;
+    --black-alt: #232b2b
   }
 
   #__nuxt {
@@ -37,8 +38,8 @@
     box-sizing: border-box;
     font-family: "Fira sans", sans-serif, Arial, Helvetica, sans-serif;
   }
-  html.dark{
-    background: var(--dark);
+  .dark{
+    background: var(--black);
   }
 
   body {
