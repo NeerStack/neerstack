@@ -31,8 +31,20 @@
                 </tr>
             </tbody>
             </table>
+            
             <table class="table2">
+                
                 <tbody>
+                    <tr>
+                        <th>
+                            <div class="services">
+                                <h1>
+                                    Our Services
+                                </h1>
+                                
+                            </div>
+                        </th>
+                    </tr>
                     <tr class="row2" >
                         <th>
                             <div class="card">
@@ -163,6 +175,37 @@ const word = ()=>{
 </script>
 <style lang="scss" scoped>
 
+.services{
+    text-align: left;
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid #ee2528;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0,0,0,0.25);
+    h1{
+        font-size: xx-large;
+        padding: 20px 10px;
+        margin: 5px;
+        text-transform: uppercase;
+        color: #000
+    }
+    &:hover{
+        background: #ddd;
+    }
+}
+
+.dark .home .services{
+    
+    box-shadow: -5px -5px 10px rgba(30, 41, 59,0.8), 5px 5px 10px rgba(0,0,0,0.25);
+    h1{
+        color: #fff
+    }
+    &:hover{
+        background: var(--black-alt);
+    }
+}
 .home {
     width: 100%;
     
@@ -377,7 +420,6 @@ const word = ()=>{
     }
 
 }
-
 .dark .home {
     .container{
         table{
