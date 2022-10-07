@@ -40,7 +40,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter">20</span>+
+                                <span class="counter">{{client_count}}</span>+
                             </div>
                             <!-- End of .number -->
                             Happy <br>Clients
@@ -59,7 +59,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter">5</span>+
+                                <span class="counter" >{{project_run}}</span>+
                             </div>
                             <!-- End of .number -->
                             Running <br>Projects
@@ -77,7 +77,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter">50</span>+
+                                <span class="counter">{{project_com}}</span>+
                             </div>
                             <!-- End of .number -->
                             Project <br>Completed
@@ -686,6 +686,31 @@ const word = ()=>{
         wordstr.value = 0
     }
 }
+const client_count = ref(20);
+const project_run = ref(5);
+const project_com = ref(50);
+
+// let counter = setInterval(() =>{
+//     client()
+// }, 500)
+// const client = () =>{
+//     client_count.value++
+//     project_com.value++
+//     project_run.value++
+//     if(client_count.value == 20){
+//         client_count.value = 20
+//     }
+//     if(project_com.value == 5){
+//         project_com.value = 5
+//     }
+    
+//     if(project_run.value == 50){
+//         clearInterval(() =>{
+//             client()
+//         })
+//     }
+// }
+
 
 
 

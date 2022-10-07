@@ -154,8 +154,8 @@
 import Fa6SolidSun from '~icons/fa6-solid/sun'
 import Fa6SolidMoon from '~icons/fa6-solid/moon'
 import { setColor } from "@/store/color";
-import logoDark from "@/assets/dark.svg";
-import logoLight from "@/assets/light.svg"
+import logoDark from "@/assets/dark_copy.svg";
+import logoLight from "@/assets/light_copy.svg"
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
 import Fa6SolidXmark from '~icons/fa6-solid/xmark'
