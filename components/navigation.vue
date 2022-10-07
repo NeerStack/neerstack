@@ -69,6 +69,85 @@
         </nav>
     </div>
   </header>
+  <main>
+     <!-- Quote modal starts -->
+     <div class="modal fade full-width-modal quote-modal" id="quote-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content white-bg">
+              <div class="modal-header">
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <!-- <i class="fas fa-times"></i> -->
+                  <fa6-solid-xmark/>
+              </button>
+                  <!-- End of .close -->
+              </div>
+              <!-- End of .modal-header -->
+
+              <div class="modal-body d-flex align-items-center justify-content-center text-center">
+                  <div class="quote-form-wrapper text-center">
+                      <h3>Get a Free Quote</h3>
+                      <form method="POST" class="quote-form text-center row" action="#">
+                          <div class="col-lg-6">
+                              <input type="text" name="fname" placeholder="Name">
+                          </div>
+                          <div class="col-lg-6">
+                              <input type="text" name="email" placeholder="Email">
+                          </div>
+
+                          <div class="col-lg-6">
+                              <input type="text" name="phone" placeholder="Phone">
+                          </div>
+                          <div class="col-lg-6">
+                              <input type="text" name="website" placeholder="Website">
+                          </div>
+                          <div class="col-lg-12">
+                              <textarea placeholder="Message" name="message"></textarea>
+                              <button type="submit" class="custom-btn secondary-btn w-100">GET A QUOTE</button>
+                              <div class="social-icons-wrapper d-flex justify-content-center">
+                                  <p>Follow us:</p>
+                                  <ul class="social-icons">
+                                      <li>
+                                          <a href="http://www.facebook.com/" target="_blank" rel="noopener">
+                                              <!-- <i class="fab fa-facebook-f"></i> -->
+                                              <fa6-brands-facebook-f/>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="http://twitter.com/" target="_blank" rel="noopener">
+                                              <!-- <i class="fab fa-twitter"></i> -->
+                                              <fa6-brands-twitter/>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="http://youtube.com/" target="_blank" rel="noopener">
+                                              <!-- <i class="fab fa-youtube"></i> -->
+                                              <fa6-brands-youtube/>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="http://instagram.com" target="_blank" rel="noopener">
+                                              <!-- <i class="fab fa-google-plus-g"></i> -->
+                                              <fa6-brands-instagram/>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  <!-- End of .social-icons -->
+                              </div>
+                              <!-- End of .social-icons-wrapper -->
+                          </div>
+                      </form>
+                      <!-- End of .quote-form -->
+                  </div>
+                  <!-- End of .quote-form-wrapper -->
+              </div>
+              <!-- End of .modal-body -->
+          </div>
+          <!-- End of .modal-content -->
+      </div>
+      <!-- End of .modal-dialog -->
+  </div>
+  <!-- End of .quote-modal -->
+  </main>
 
 </template>
 <script setup>
@@ -77,6 +156,13 @@ import Fa6SolidMoon from '~icons/fa6-solid/moon'
 import { setColor } from "@/store/color";
 import logoDark from "@/assets/dark.svg";
 import logoLight from "@/assets/light.svg"
+import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
+import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
+import Fa6SolidXmark from '~icons/fa6-solid/xmark'
+import Fa6BrandsBehance from '~icons/fa6-brands/behance'
+import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble'
+import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
+import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
   const Setting = setColor();
 
   onMounted(()=>{
