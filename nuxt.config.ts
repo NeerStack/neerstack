@@ -126,11 +126,11 @@ export default defineNuxtConfig({
                defer: true,
               body: true
             },
-            {
-              src: "js/vendor/jquery.counterup.min.js",
-               defer: true,
-              body: true
-            },
+            // {
+            //   src: "js/vendor/jquery.counterup.min.js",
+            //    defer: true,
+            //   body: true
+            // },
             {
               src: "js/vendor/imagesloaded.pkgd.min.js",
                defer: true,

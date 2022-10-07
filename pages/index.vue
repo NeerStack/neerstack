@@ -40,7 +40,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter">{{client_count}}</span>+
+                                <span>{{client_count}}</span>+
                             </div>
                             <!-- End of .number -->
                             Happy <br>Clients
@@ -59,7 +59,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter" >{{project_run}}</span>+
+                                <span  >{{project_run}}</span>+
                             </div>
                             <!-- End of .number -->
                             Running <br>Projects
@@ -77,7 +77,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter">{{project_com}}</span>+
+                                <span >{{project_com}}</span>+
                             </div>
                             <!-- End of .number -->
                             Project <br>Completed
@@ -686,9 +686,49 @@ const word = ()=>{
         wordstr.value = 0
     }
 }
-const client_count = ref(20);
-const project_run = ref(5);
-const project_com = ref(50);
+const client_count = ref(0);
+const project_run = ref(0);
+const project_com = ref(0);
+
+
+    var client = setInterval(()=>{
+        client_work()
+    }, 50)
+    var project1 =  setInterval(()=>{
+    project1_work()
+    }, 50)
+    var project2 = setInterval(()=>{
+        project2_work()
+    }, 50)
+
+    
+
+const client_work = () =>{
+    client_count.value++
+    if(client_count.value === 20){
+        clearInterval(client)
+        client_count.value = 20
+    }
+}
+
+const project1_work = () =>{
+    project_run.value++
+    if(project_run.value === 5){
+        clearInterval(project1)
+        project_run.value = 5
+    }
+}
+const project2_work = () =>{
+    project_com.value++
+    if(project_com.value === 50){
+        clearInterval(project2)
+        project_com.value = 50
+    }
+}
+
+   
+
+
 
 // let counter = setInterval(() =>{
 //     client()
