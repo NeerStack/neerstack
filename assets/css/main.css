@@ -801,6 +801,7 @@ textarea+.err-msg {
 
 .navbar-brand {
     padding: 0;
+    width: 15rem;
     line-height: 8.6rem;
 }
 
