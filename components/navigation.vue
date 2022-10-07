@@ -50,7 +50,7 @@
                         <NuxtLink class="nav-link" to="/contact-us">Contact</NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <NuxtLink class="custom-btn btn-small" data-bs-toggle="modal" data-bs-target="#quote-modal" to="/quote">Get Quote Now</NuxtLink>
+                        <NuxtLink class="custom-btn btn-small" data-bs-toggle="modal" data-bs-target="#quote-modal" to="#">Get Quote Now</NuxtLink>
                     </li>
                     <!-- <li>
                       <button @click="toggle()">
