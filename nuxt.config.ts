@@ -97,51 +97,51 @@ export default defineNuxtConfig({
           ],
           script:[
             {
-              src: "assets/js/vendor/jquery.min.js",
+              src: "js/vendor/jquery.min.js",
               defer: true
             }, 
             {
-              src: "assets/js/vendor/jquery-migrate.min.js",
+              src: "js/vendor/jquery-migrate.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/easing-1.3.js",
+              src: "js/vendor/easing-1.3.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/bootstrap.bundle.min.js",
+              src: "js/vendor/bootstrap.bundle.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/isotope.pkgd.min.js",
+              src: "js/vendor/isotope.pkgd.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/jquery.waypoints.min.js",
+              src: "js/vendor/jquery.waypoints.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/jquery.counterup.min.js",
+              src: "js/vendor/jquery.counterup.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/imagesloaded.pkgd.min.js",
+              src: "js/vendor/imagesloaded.pkgd.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/owl.carousel.min.js",
+              src: "js/vendor/owl.carousel.min.js",
               defer: true
             },
             {
-              src: "assets/js/vendor/jquery.magnific-popup.min.js",
+              src: "js/vendor/jquery.magnific-popup.min.js",
               defer: true
             },
             {
-              src: "assets/js/plugins.js",
+              src: "js/plugins.js",
               defer: true
             },
             {
-              src: "assets/js/main.min.js",
+              src: "js/main.min.js",
               defer: true
             }
           ]
