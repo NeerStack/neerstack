@@ -1,45 +1,104 @@
 <template>
-  <div class="navigation">
-    <nav>
-        <div class="logo">
-            <NuxtLink to="/">
-                <span v-if="Setting.color === 'light'">
-                <img :src="logoLight" alt="logo">
-                </span>
-                <span v-if="Setting.color === 'dark'">
-                    <img :src="logoDark" alt="logo">
-                </span>
-            </NuxtLink>
+  <header class="page-header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg align-items-center">
+          <NuxtLink class="navbar-brand" to="/">
+            <span v-if="Setting.color === 'light'">
+            <img :src="logoLight" alt="logo">
+            </span>
+            <span v-if="Setting.color === 'dark'">
+                <img :src="logoDark" alt="logo">
+            </span>
+          </NuxtLink>
+            <!-- End of .navbar-brand -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom-navbar" aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="custom-toggler-icon"></span>
+            <span class="custom-toggler-icon"></span>
+            <span class="custom-toggler-icon"></span>
+         </button>
+            <!-- End of .navbar-toggler -->
+
+            <div class="flex collapse navbar-collapse" id="custom-navbar">
+                <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">Services</a>
+                        <ul class="submenu text-left">
+                            <li>
+                              <NuxtLink to="/website-design">Website Design</NuxtLink></li>
+                            <li>
+                              <NuxtLink to="/logo-and-branding">Logo &amp; Branding </NuxtLink></li>
+                            <li>
+                              <NuxtLink to="/mobile-app-development">Mobile App Development</NuxtLink></li>
+                            <li>
+                              <NuxtLink to="/search-engine-optimization">Search Engine Optimization</NuxtLink></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <NuxtLink  class="nav-link" to="/about">About</NuxtLink>
+                    </li>
+
+                    <li class="nav-item">
+                        <NuxtLink class="nav-link" to="/team">Team</NuxtLink>
+                    </li>
+                    <li class="nav-item">
+                        <NuxtLink class="nav-link" to="/pricing">Pricing</NuxtLink>
+                    </li>
+
+                    <li class="nav-item">
+                        <NuxtLink class="nav-link" to="/contact-us">Contact</NuxtLink>
+                    </li>
+                    <li class="nav-item">
+                        <NuxtLink class="custom-btn btn-small" data-bs-toggle="modal" data-bs-target="#quote-modal" to="/quote">Get Quote Now</NuxtLink>
+                    </li>
+                    <!-- <li>
+                      <button @click="toggle()">
+                        <span v-if="Setting.color === 'light'">
+                         <fa6-solid-moon/>
+                        </span>
+                        <span v-if="Setting.color === 'dark'">
+                          <fa6-solid-sun/>
+                      
+                      </span>
+                      </button>
+                    </li> -->
+                </ul>
+            </div>
             
-        </div>
-      <div class="links">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink to="/contact-us">Contact</NuxtLink>
-        <button @click="toggle()">
-          <span v-if="Setting.color === 'light'">
-           <fa6-solid-moon/>
-          </span>
-          <span v-if="Setting.color === 'dark'">
-            <fa6-solid-sun/>
-        
-        </span>
-        </button>
-      </div>
-    </nav>
-  </div>
+        </nav>
+    </div>
+  </header>
+
 </template>
 <script setup>
 import Fa6SolidSun from '~icons/fa6-solid/sun'
 import Fa6SolidMoon from '~icons/fa6-solid/moon'
 import { setColor } from "@/store/color";
-import logoDark from "@/assets/logo_dark.png";
-import logoLight from "@/assets/logo_light.png"
+import logoDark from "@/assets/dark.svg";
+import logoLight from "@/assets/light.svg"
   const Setting = setColor();
 
   onMounted(()=>{
     set(Setting.color);
+  })
+
+  function handleScroll() {
+    // console.log(window.scrollY)
+    if(process.client && window.scrollY > 20 ){
+      document.getElementById('header').classList.add('scrolled')
+    }else{
+      document.getElementById('header').classList.remove('scrolled')
+    }
+    
+  }
+  
+  onBeforeMount(()=>{
+    window.addEventListener('scroll', handleScroll)
+  })
+
+  onBeforeUnmount(()=>{
+    window.removeEventListener('scroll', handleScroll);
   })
 
   const set = (newTheme) => {
@@ -51,7 +110,7 @@ import logoLight from "@/assets/logo_light.png"
   };
 </script>
 
-<style scoped>
+<!-- <style scoped>
   .navigation {
     width: 99%;
     border-bottom: 1px solid #ee2528;
@@ -214,4 +273,4 @@ import logoLight from "@/assets/logo_light.png"
     text-decoration: 3px underline solid #ee2528;
   }
   
-</style>
+</style> -->

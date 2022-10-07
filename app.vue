@@ -1,5 +1,5 @@
 <template>
-  <div class="app dark:bg-black min-h-screen dark:text-white">
+  <div class="app dark:bg-black dark:text-white">
     <NuxtLayout name="default">
       <NuxtPage :key="$route.fullPath" />
     </NuxtLayout>
@@ -42,21 +42,5 @@
     background: var(--black);
   }
 
-  body {
-    background: var(--light);
-  }
-  body.dark {
-    background: var(--dark);
-  }
-  div.navigation {
-    background: var(--light);
-  }
-  div.navigation.dark {
-    background: var(--black);
-  }
-  @media (min-width: 390px){
-    body{
-      font-size: 1.0em;
-    }
-  }
+  
 </style>

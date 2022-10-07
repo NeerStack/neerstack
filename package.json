@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/fa6-brands": "^1.1.6",
     "@iconify-json/fa6-solid": "^1.1.7",
     "@iconify-json/ic": "^1.1.9",
     "@iconify-json/ion": "^1.1.4",
