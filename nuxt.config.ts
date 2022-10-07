@@ -1,5 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 import Icons from 'unplugin-icons/vite'
+import webpack from 'webpack'
+
 export default defineNuxtConfig({
     modules:[
         '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
     ],
     app:{
       head:{
+        __dangerouslyDisableSanitizers: ['script'],
           link:[
               {rel:"preconnect", href:"https://fonts.googleapis.com"},
               {rel:"preconnect", href:"https://fonts.gstatic.com", crossorigin: true},
@@ -94,40 +97,52 @@ export default defineNuxtConfig({
           ],
           script:[
             {
-              src: "assets/js/vendor/jquery.min.js"
+              src: "assets/js/vendor/jquery.min.js",
+              defer: true
             }, 
             {
-              src: "assets/js/vendor/jquery-migrate.min.js"
+              src: "assets/js/vendor/jquery-migrate.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/easing-1.3.js"
+              src: "assets/js/vendor/easing-1.3.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/bootstrap.bundle.min.js"
+              src: "assets/js/vendor/bootstrap.bundle.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/isotope.pkgd.min.js"
+              src: "assets/js/vendor/isotope.pkgd.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/jquery.waypoints.min.js"
+              src: "assets/js/vendor/jquery.waypoints.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/jquery.counterup.min.js"
+              src: "assets/js/vendor/jquery.counterup.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/imagesloaded.pkgd.min.js"
+              src: "assets/js/vendor/imagesloaded.pkgd.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/owl.carousel.min.js"
+              src: "assets/js/vendor/owl.carousel.min.js",
+              defer: true
             },
             {
-              src: "assets/js/vendor/jquery.magnific-popup.min.js"
+              src: "assets/js/vendor/jquery.magnific-popup.min.js",
+              defer: true
             },
             {
-              src: "assets/js/plugins.js"
+              src: "assets/js/plugins.js",
+              defer: true
             },
             {
-              src: "assets/js/main.min.js"
+              src: "assets/js/main.min.js",
+              defer: true
             }
           ]
       },
