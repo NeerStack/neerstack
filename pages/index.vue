@@ -40,7 +40,7 @@
 
                         <div class="counter-wrapper">
                             <div class="number">
-                                <span class="counter">10</span>+
+                                <span class="counter">20</span>+
                             </div>
                             <!-- End of .number -->
                             Happy <br>Clients
