@@ -4,7 +4,7 @@ import webpack from 'webpack'
 
 export default defineNuxtConfig({
     modules:[
-        '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'
+        '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'bootstrap-vue/nuxt'
     ],
     css: [
         '@fortawesome/fontawesome-svg-core/styles.css', '~/assets/tailwind.css',
@@ -12,6 +12,13 @@ export default defineNuxtConfig({
         "~/assets/css/vendor/magnific-popup.css", "~/assets/css/main.css",
         '~/assets/css/fontawesome-all.min.css'
     ],
+    bootstrapVue: {
+      bootstrapCSS: true, // Or `css: false`
+      bootstrapVueCSS: true, // Or `bvCSS: false`
+      components: ['BContainer', 'BRow', 'BCol', 'BFormInput', 'BButton', 'BTable', 'BModal'],
+    directives: ['VBModal', 'VBPopover', 'VBTooltip', 'VBScrollspy'],
+    Icons: true
+    },
     app:{
       head:{
         __dangerouslyDisableSanitizers: ['script'],
@@ -23,6 +30,10 @@ export default defineNuxtConfig({
               {
                 href:"https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900", rel:"stylesheet"
               },
+              {
+                href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
+                rel: 'stylesheet'
+              }
               
           ],
           meta:[
@@ -96,66 +107,87 @@ export default defineNuxtConfig({
                 }
           ],
           script:[
+            {
+              src: "js/vendor/jquery.min.js",
+              defer: true,
+             
+            }, 
             // {
-            //   src: "js/vendor/jquery.min.js",
-            //   defer: true,
-            //   body: true
-            // }, 
-            // {
-            //   src: "js/vendor/jquery-migrate.min.js",
-            //    defer: true,
-            //   body: true
+            //   src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js',
+            //   defer: true
             // },
+            {
+              src:"https://code.jquery.com/ui/1.13.2/jquery-ui.min.js",integrity:"sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=",crossorigin:"anonymous",
+              defer: true
+            },
             // {
-            //   src: "js/vendor/easing-1.3.js",
-            //    defer: true,
-            //   body: true
+            //   src: "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
+            //   defer: true
+            // },
+            {
+              src: "js/vendor/jquery-migrate.min.js",
+               defer: true,
+             
+            },
+            // {
+            //   src:"https://code.jquery.com/jquery-migrate-3.4.0.min.js",
+            //   integrity: "sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=",
+            //   crossorigin: "anonymous"
+            // },
+            {
+              src: "js/vendor/easing-1.3.js",
+               defer: true,
+             
+            },
+            // {
+            //   src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
+            //   defer: true
             // },
             {
               src: "js/vendor/bootstrap.bundle.min.js",
                defer: true,
-              body: true
+             
             },
-            // {
-            //   src: "js/vendor/isotope.pkgd.min.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/vendor/jquery.waypoints.min.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/vendor/jquery.counterup.min.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/vendor/imagesloaded.pkgd.min.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/vendor/owl.carousel.min.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/vendor/jquery.magnific-popup.min.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/plugins.js",
-            //    defer: true,
-            //   body: true
-            // },
-            // {
-            //   src: "js/main.min.js",
-            //   defer: true,
-            //   body: true
-            // }
+            {
+              src: "js/vendor/isotope.pkgd.min.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/vendor/jquery.waypoints.min.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/vendor/jquery.counterup.min.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/vendor/imagesloaded.pkgd.min.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/vendor/owl.carousel.min.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/vendor/jquery.magnific-popup.min.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/plugins.js",
+               defer: true,
+             
+            },
+            {
+              src: "js/main.min.js",
+              defer: true,
+             
+            }
           ]
       },
       

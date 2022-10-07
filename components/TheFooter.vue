@@ -50,9 +50,9 @@
                     <div class="footer-widget">
                         <h5 class="footer-nav-title">Resources</h5>
                         <ul class="footer-nav dynamic-nav">
-                            <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
+                            <li><NuxtLink to="#">Portfolio</NuxtLink></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
-                            <li><NuxtLink to="/team">Team</NuxtLink></li>
+                            <li><NuxtLink to="#">Team</NuxtLink></li>
 
                         </ul>
                     </div>

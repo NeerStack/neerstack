@@ -2,69 +2,75 @@
   <header class="page-header" id="header">
     <div class="container">
         <nav class="navbar navbar-expand-lg align-items-center">
+          <div class="container-fluid">
           <NuxtLink class="navbar-brand" to="/">
-            <span v-if="Setting.color === 'light'">
-            <img :src="logoLight" alt="logo">
-            </span>
-            <span v-if="Setting.color === 'dark'">
-                <img :src="logoDark" alt="logo">
-            </span>
-          </NuxtLink>
-            <!-- End of .navbar-brand -->
+                <span v-if="Setting.color === 'light'">
+                <img :src="logoLight" alt="logo">
+                </span>
+                <span v-if="Setting.color === 'dark'">
+                    <img :src="logoDark" alt="logo">
+                </span>
+              </NuxtLink>
+                <!-- End of .navbar-brand -->
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom-navbar" aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="custom-toggler-icon"></span>
-            <span class="custom-toggler-icon"></span>
-            <span class="custom-toggler-icon"></span>
-         </button>
-            <!-- End of .navbar-toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom-navbar" aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <div>
+                    <span  class="custom-toggler-icon"></span>
+                    <span  class="custom-toggler-icon"></span>
+                    <span  class="custom-toggler-icon"></span> 
+                  </div>
+                        
+                </button>
+                <!-- End of .navbar-toggler -->
 
-            <div class="flex collapse navbar-collapse" id="custom-navbar">
-                <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
-                    <li class="nav-item has-dropdown">
-                        <a href="#" class="nav-link">Services</a>
-                        <ul class="submenu text-left">
-                            <li>
-                              <NuxtLink to="/website-design">Website Design</NuxtLink></li>
-                            <li>
-                              <NuxtLink to="/logo-and-branding">Logo &amp; Branding </NuxtLink></li>
-                            <li>
-                              <NuxtLink to="/mobile-app-development">Mobile App Development</NuxtLink></li>
-                            <li>
-                              <NuxtLink to="/search-engine-optimization">Search Engine Optimization</NuxtLink></li>
+                <div class="flex collapse navbar-collapse" id="custom-navbar">
+                    <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link">Services</a>
+                            <ul class="submenu text-left bg-gray-700">
+                                <li>
+                                  <NuxtLink to="#">Website Design</NuxtLink></li>
+                                <li>
+                                  <NuxtLink to="#">Logo &amp; Branding </NuxtLink></li>
+                                <li>
+                                  <NuxtLink to="#">Mobile App Development</NuxtLink></li>
+                                <li>
+                                  <NuxtLink to="#">Search Engine Optimization</NuxtLink></li>
 
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <NuxtLink  class="nav-link" to="/about">About</NuxtLink>
-                    </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink  class="nav-link" to="/about">About</NuxtLink>
+                        </li>
 
-                    <li class="nav-item">
-                        <NuxtLink class="nav-link" to="/team">Team</NuxtLink>
-                    </li>
-                    <li class="nav-item">
-                        <NuxtLink class="nav-link" to="/pricing">Pricing</NuxtLink>
-                    </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="#">Team</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/pricing">Pricing</NuxtLink>
+                        </li>
 
-                    <li class="nav-item">
-                        <NuxtLink class="nav-link" to="/contact-us">Contact</NuxtLink>
-                    </li>
-                    <li class="nav-item">
-                        <a class="custom-btn btn-small" data-bs-toggle="modal" data-bs-target="#quote-modal" href="#">Get Quote Now</a>
-                    </li>
-                    <!-- <li>
-                      <button @click="toggle()">
-                        <span v-if="Setting.color === 'light'">
-                         <fa6-solid-moon/>
-                        </span>
-                        <span v-if="Setting.color === 'dark'">
-                          <fa6-solid-sun/>
-                      
-                      </span>
-                      </button>
-                    </li> -->
-                </ul>
-            </div>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/contact-us">Contact</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <a class="custom-btn btn-small" data-bs-toggle="modal" data-bs-target="#quote-modal" href="#">Get Quote Now</a>
+                        </li>
+                        <!-- <li>
+                          <button @click="toggle()">
+                            <span v-if="Setting.color === 'light'">
+                            <fa6-solid-moon/>
+                            </span>
+                            <span v-if="Setting.color === 'dark'">
+                              <fa6-solid-sun/>
+                          
+                          </span>
+                          </button>
+                        </li> -->
+                    </ul>
+                </div>
+          </div>
+          
             
         </nav>
     </div>

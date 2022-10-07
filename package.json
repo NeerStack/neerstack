@@ -33,6 +33,7 @@
     "@pinia/nuxt": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "@vueuse/core": "^9.3.0",
+    "bootstrap-vue": "^2.22.0",
     "jquery": "^3.6.1",
     "pinia": "^2.0.22",
     "pinia-plugin-persistedstate": "^2.2.0",

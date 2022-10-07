@@ -342,11 +342,11 @@
             <h2 class="section-title text-center">Feedback from our clients</h2>
             <p class="larger-txt text-center">something good to build the trust of prospective clients should be here.</p>
             <div class="grid-wrapper">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center justify-center">
                     <div class="col-lg-4 col-md-6">
-                        <div class="img-card review-card text-left white-bg">
+                        <div class=" img-card review-card text-center white-bg">
                             <div class="media align-items-center">
-                                <img class="img-fluid " src="@/assets/review/reviewer-1.png" alt="reviewer image">
+                                <img class="inline-flex justify-center img-fluid " src="@/assets/review/reviewer-1.png" alt="reviewer image">
                                 <div class="media-body">
                                     <h5>007</h5>
                                     <p>CEO at
@@ -362,9 +362,9 @@
                     <!-- End of .col-lg-4 -->
 
                     <div class="col-lg-4 col-md-6">
-                        <div class="img-card review-card text-left white-bg">
+                        <div class="img-card review-card text-center white-bg">
                             <div class="media align-items-center">
-                                <img class="img-fluid " src="@/assets/review/reviewer-2.png" alt="reviewer image">
+                                <img class="inline-flex justify-center img-fluid " src="@/assets/review/reviewer-2.png" alt="reviewer image">
                                 <div class="media-body">
                                     <h5>008</h5>
                                     <p>CTO at
@@ -380,9 +380,9 @@
                     <!-- End of .col-lg-4 -->
 
                     <div class="col-lg-4 col-md-6">
-                        <div class="img-card review-card text-left white-bg">
+                        <div class="img-card review-card text-center white-bg">
                             <div class="media align-items-center">
-                                <img class="img-fluid " src="@/assets/review/reviewer-3.png" alt="reviewer image">
+                                <img class="inline-flex justify-center img-fluid " src="@/assets/review/reviewer-3.png" alt="reviewer image">
                                 <div class="media-body">
                                     <h5>009</h5>
                                     <p>COO at
