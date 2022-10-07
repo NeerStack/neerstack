@@ -98,51 +98,63 @@ export default defineNuxtConfig({
           script:[
             {
               src: "js/vendor/jquery.min.js",
-              defer: true
+              defer: true,
+              body: true
             }, 
             {
               src: "js/vendor/jquery-migrate.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/easing-1.3.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/bootstrap.bundle.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/isotope.pkgd.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/jquery.waypoints.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/jquery.counterup.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/imagesloaded.pkgd.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/owl.carousel.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/vendor/jquery.magnific-popup.min.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/plugins.js",
-              defer: true
+               defer: true,
+              body: true
             },
             {
               src: "js/main.min.js",
-              defer: true
+              defer: true,
+              body: true
             }
           ]
       },
