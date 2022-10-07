@@ -14,16 +14,16 @@
                 <!-- End of .navbar-brand -->
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom-navbar" aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                  <div>
+                  
                     <span  class="custom-toggler-icon"></span>
                     <span  class="custom-toggler-icon"></span>
                     <span  class="custom-toggler-icon"></span> 
-                  </div>
+                 
                         
                 </button>
                 <!-- End of .navbar-toggler -->
 
-                <div class="flex collapse navbar-collapse" id="custom-navbar">
+                <div class="collapse navbar-collapse" id="custom-navbar">
                     <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
                         <li class="nav-item has-dropdown">
                             <a href="#" class="nav-link">Services</a>
@@ -75,7 +75,7 @@
         </nav>
     </div>
   </header>
-  <main>
+  
      <!-- Quote modal starts -->
      <div class="modal fade full-width-modal quote-modal" id="quote-modal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -153,7 +153,7 @@
       <!-- End of .modal-dialog -->
   </div>
   <!-- End of .quote-modal -->
-  </main>
+  
 
 </template>
 <script setup>
