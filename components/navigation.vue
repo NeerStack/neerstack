@@ -89,23 +89,24 @@
               <div class="modal-body d-flex align-items-center justify-content-center text-center">
                   <div class="quote-form-wrapper text-center">
                       <h3>Get a Free Quote</h3>
-                      <form method="POST" class="quote-form text-center row" action="#">
+                      <form  @submit.once class="quote-form text-center row">
                           <div class="col-lg-6">
-                              <input type="text" name="fname" placeholder="Name">
+                              <input v-model="Email.name" type="text" name="user_name" placeholder="Name" required>
                           </div>
                           <div class="col-lg-6">
-                              <input type="text" name="email" placeholder="Email">
+                              <input v-model="Email.email" type="text" name="user_email" placeholder="Email" required>
                           </div>
 
                           <div class="col-lg-6">
-                              <input type="text" name="phone" placeholder="Phone">
+                              <input v-model="Email.phone" type="text" name="phone" placeholder="Phone">
                           </div>
                           <div class="col-lg-6">
-                              <input type="text" name="website" placeholder="Website">
+                              <input v-model="Email.website" type="text" name="website" placeholder="Website/Website Nmae">
                           </div>
                           <div class="col-lg-12">
-                              <textarea placeholder="Message" name="message"></textarea>
-                              <button type="submit" class="custom-btn secondary-btn w-100">GET A QUOTE</button>
+                              <textarea v-model="Email.message" placeholder="Message" name="message" required></textarea>
+                              <button @click="send" class="custom-btn secondary-btn w-100">GET A QUOTE</button>
+
                               <div class="social-icons-wrapper d-flex justify-content-center">
                                   <p>Follow us:</p>
                                   <ul class="social-icons">
@@ -116,7 +117,7 @@
                                           </a>
                                       </li>
                                       <li>
-                                          <a href="http://twitter.com/" target="_blank" rel="noopener">
+                                          <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-twitter"></i> -->
                                               <fa6-brands-twitter/>
                                           </a>
@@ -166,6 +167,11 @@ import Fa6BrandsBehance from '~icons/fa6-brands/behance'
 import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
 import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
+import {setEmail} from '@/store/email'
+import Swal from 'sweetalert2'
+
+const Email = setEmail()
+
   const Setting = setColor();
 
   onMounted(()=>{
@@ -208,6 +214,30 @@ var subnav = ref(false)
     Setting.toggleColor();
     set(Setting.color);
   };
+
+
+const send = () => {
+  if(!Email.name || !Email.email || !Email.message){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Fill the required information!',
+    })
+  }else{
+    Email.send()
+    .then(() =>{
+      if(Email.status){
+        Swal.fire("Sent", Email.status, 'success')
+      }
+      if(Email.error){
+        Swal.fire("Oops...", Email.error, 'error')
+      }
+    })
+  }
+}
+
+
+
 </script>
 
 <!-- <style scoped>
