@@ -894,9 +894,8 @@ textarea+.err-msg {
     }
     .navbar-nav .submenu2.show li{
         text-align: center;
-        border-bottom: 1px solid #fff;
-        border-radius: 50px;
-        
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px;
 
     }
     .navbar-nav .submenu2.show li:hover {
@@ -922,8 +921,10 @@ textarea+.err-msg {
     }
     .navbar-nav .submenu2.show li{
         text-align: center;
-        border-bottom: 1px solid #fff;
-        border-radius: 50px;
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px;
+        
+        
         
 
     }
