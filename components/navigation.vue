@@ -13,21 +13,18 @@
               </NuxtLink>
                 <!-- End of .navbar-brand -->
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom-navbar" aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                  
+                <button @click="handleNav()" class="navbar-toggler" type="button"  aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span  class="custom-toggler-icon"></span>
                     <span  class="custom-toggler-icon"></span>
                     <span  class="custom-toggler-icon"></span> 
-                 
-                        
                 </button>
                 <!-- End of .navbar-toggler -->
 
-                <div class="collapse navbar-collapse" id="custom-navbar">
+                <div class="subnav navbar-collapse" :class="{showNav: subnav == true}" id="custom-navbar">
                     <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
                         <li class="nav-item has-dropdown">
-                            <a href="#" class="nav-link">Services</a>
-                            <ul class="submenu text-left bg-gray-700">
+                            <a @click="handledrop()" href="#" class="nav-link">Services</a>
+                            <ul  class="submenu2 text-left bg-gray-700" :class="{show: submenushow == true}">
                                 <li>
                                   <NuxtLink to="#">Website Design</NuxtLink></li>
                                 <li>
@@ -174,6 +171,8 @@ import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
   onMounted(()=>{
     set(Setting.color);
   })
+var submenushow = ref(false)
+var subnav = ref(false)
 
   function handleScroll() {
     // console.log(window.scrollY)
@@ -184,13 +183,22 @@ import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
     }
     
   }
+
+  function handledrop(){
+    submenushow.value = !submenushow.value
+  }
+  function handleNav(){
+    subnav.value = !subnav.value
+  }
   
   onBeforeMount(()=>{
     window.addEventListener('scroll', handleScroll)
+  
   })
 
   onBeforeUnmount(()=>{
     window.removeEventListener('scroll', handleScroll);
+   
   })
 
   const set = (newTheme) => {

@@ -856,7 +856,7 @@ textarea+.err-msg {
 }
 
 @media (min-width: 992px) {
-    .navbar-nav li.has-dropdown:hover .submenu {
+    .navbar-nav li.has-dropdown:hover .submenu2 {
         visibility: visible;
         opacity: 1;
     }
@@ -867,11 +867,11 @@ textarea+.err-msg {
     margin-left: 1rem;
 }
 
-.navbar-nav .submenu {
+.navbar-nav .submenu2 {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #fff;
+    background: #eee;
     padding: 1.5rem 0;
     border: 1px solid #e6f2ff;
     min-width: 30rem;
@@ -880,38 +880,88 @@ textarea+.err-msg {
 }
 
 @media screen and (min-width: 992px) {
-    .navbar-nav .submenu {
+    .navbar-nav .submenu2 {
         -webkit-transition: all .3s;
         transition: all .3s;
     }
+    .navbar-nav .submenu2:not(.show) {
+        display: none;
+    }
+    .navbar-nav .submenu2.show {
+        display: block;
+        text-align: center;
+        
+    }
+    .navbar-nav .submenu2.show li{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        border-radius: 50px;
+        
+
+    }
+    .navbar-nav .submenu2.show li:hover {
+        background: #ddd;
+    }
+    .subnav:not(.showNav){
+        display: none;
+    }
+    .subnav.showNav{
+        display: block;
+    }
+    
 }
 
 @media screen and (max-width: 992px) {
-    .navbar-nav .submenu {
+    .navbar-nav .submenu2:not(.show) {
         display: none;
     }
+    .navbar-nav .submenu2.show {
+        display: block;
+        text-align: center;
+        
+    }
+    .navbar-nav .submenu2.show li{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        border-radius: 50px;
+        
+
+    }
+    .navbar-nav .submenu2.show li:hover {
+        background: #ddd;
+    }
+    .subnav:not(.showNav){
+        display: none;
+    }
+    .subnav.showNav{
+        display: block;
+    }
+
 }
 
-.navbar-nav .submenu li {
+.navbar-nav .submenu2 li {
     list-style: none;
     margin: 0;
 }
 
-.navbar-nav .submenu li a {
+.navbar-nav .submenu2 li a {
     padding: 1rem 3rem;
 }
 
-.navbar-nav .submenu li a::before {
+.navbar-nav .submenu2:not(.show) li a::before {
     display: none;
 }
+.navbar-nav .submenu2.show li a::before {
+    display: block;
+}
 
-.navbar-nav .submenu li a:hover,
-.navbar-nav .submenu li a.active {
+.navbar-nav .submenu2 li a:hover,
+.navbar-nav .submenu2 li a.active {
     color: #fc7c56;
 }
 
 @media (max-width: 992px) {
-    .navbar-nav .submenu {
+    .navbar-nav .submenu2 {
         position: static;
         visibility: visible;
         opacity: 1;

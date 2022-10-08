@@ -134,11 +134,11 @@ export default defineNuxtConfig({
             //   integrity: "sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=",
             //   crossorigin: "anonymous"
             // },
-            {
-              src: "js/vendor/easing-1.3.js",
-               defer: true,
+            // {
+            //   src: "js/vendor/easing-1.3.js",
+            //    defer: true,
              
-            },
+            // },
             // {
             //   src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
             //   defer: true
@@ -176,7 +176,6 @@ export default defineNuxtConfig({
             {
               src: "js/vendor/jquery.magnific-popup.min.js",
                defer: true,
-             
             },
             {
               src: "js/plugins.js",
