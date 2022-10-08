@@ -3,10 +3,10 @@
     <div class="banner home-banner d-flex align-items-center">
         <div class="container">
             <div class="row_reverse row no-gutters align-items-center">
-                <div class="col-lg-6 text-left text-lg-left">
-                    <h1>Outsource Web Development Gig With<br>Professional Software Engineers/Developers.</h1>
-                    <h3 class="section-title text-left">Here at CodinMage</h3>
-                    <p class="larger-txt text-left">{{wordarr[wordstr]}}</p>
+                <div class="desc col-lg-6  text-lg-left">
+                    <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
+                    <h3 class="section-title">Here at CodinMage</h3>
+                    <p class="larger-txt ">{{wordarr[wordstr]}}</p>
                     <div class="ini_project">
                          <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
                     </div>
