@@ -1045,10 +1045,11 @@ textarea+.err-msg {
     .breadcrumb-wrapper {
         background-color: #e6f2ff;
     }
-    .row_reverse{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+    .final_project{
+        display: block;
+    }
+    .ini_project{
+        display: none
     }
 }
 
@@ -1078,16 +1079,21 @@ textarea+.err-msg {
     color: currentColor;
 }
 
+.final_project{
+    display: none;
+}
 @media screen and (max-width: 991px) {
     .breadcrumb {
         padding: 2rem 0;
     }
 
-    .row_reverse{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+    .final_project{
+        display: block;
     }
+    .ini_project{
+        display: none
+    }
+   
 }
 
 .breadcrumb-item+.breadcrumb-item::before {

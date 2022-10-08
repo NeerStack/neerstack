@@ -7,8 +7,10 @@
                     <h1>Outsource Web Development Gig With<br>Professional Software Engineers/Developers.</h1>
                     <h3 class="section-title text-left">Here at CodinMage</h3>
                     <p class="larger-txt text-left">{{wordarr[wordstr]}}</p>
-
-                    <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
+                    <div class="ini_project">
+                         <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
+                    </div>
+                   
 
                 </div>
                 <!-- End of .col-lg-5 -->
@@ -18,6 +20,10 @@
                         <img :src="homeInterface" alt="Home banner image" class="img-fluid">
                     </div>
                     <!-- End of .img-container -->
+                </div>
+
+                <div class="final_project">
+                    <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
                 </div>
                 <!-- End of .col-lg-7 -->
             </div>
