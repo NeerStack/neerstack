@@ -907,6 +907,7 @@ textarea+.err-msg {
     .subnav.showNav{
         display: block;
     }
+
     
 }
 
@@ -1044,6 +1045,11 @@ textarea+.err-msg {
     .breadcrumb-wrapper {
         background-color: #e6f2ff;
     }
+    .row_reverse{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
 }
 
 .breadcrumb {
@@ -1075,6 +1081,12 @@ textarea+.err-msg {
 @media screen and (max-width: 991px) {
     .breadcrumb {
         padding: 2rem 0;
+    }
+
+    .row_reverse{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
 }
 

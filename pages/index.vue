@@ -2,7 +2,7 @@
     <main>
     <div class="banner home-banner d-flex align-items-center">
         <div class="container">
-            <div class="row no-gutters align-items-center">
+            <div class="row_reverse row no-gutters align-items-center">
                 <div class="col-lg-6 text-left text-lg-left">
                     <h1>Outsource Web Development Gig With<br>Professional Software Engineers/Developers.</h1>
                     <h3 class="section-title text-left">Here at CodinMage</h3>
