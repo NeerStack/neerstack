@@ -23,7 +23,7 @@
                 <div class="subnav navbar-collapse" :class="{showNav: subnav == true}" id="custom-navbar">
                     <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
                         <li class="nav-item has-dropdown">
-                            <a @click="handledrop()" href="" class="nav-link">Services</a>
+                            <a @click="handledrop()" href="#" class="nav-link">Services</a>
                             <ul  class="submenu2 text-left bg-gray-700" :class="{show: submenushow == true}">
                                 <li>
                                   <NuxtLink to="">UI/UX Design</NuxtLink></li>
