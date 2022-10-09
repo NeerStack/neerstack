@@ -44,8 +44,8 @@ export const setNews = defineStore('newsletter', {
   state: () =>({
     fullname: "",
     email: '',
-    status: '',
-    error: ''
+    status: null,
+    error: null
   }),
   actions: {
     async news(){
@@ -67,16 +67,22 @@ export const setNews = defineStore('newsletter', {
           headers:{
             accept: 'application/json', 
             'content-type': 'application/json',
-            mode: 'no-cors'
           },
           body: JSON.stringify(profile)
         })
-        var data = await res.json()
-        if(data?.length){
-          this.status = 'Subscribed Successfully'
-          this.fullname = '',
-          this.email = ''
-        }
+        .then(res =>{
+           var data = res.json()
+            if(data?.length){
+              this.status = 'Subscribed Successfully'
+              this.fullname = '',
+              this.email = ''
+            }
+        })
+        .catch(err => {
+          this.error = err
+          console.error(err)
+        })
+       
 
       } catch (error) {
         console.error(error);
