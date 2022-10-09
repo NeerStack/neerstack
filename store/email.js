@@ -1,7 +1,6 @@
 import {defineStore} from 'pinia'
 import emailjs from '@emailjs/browser';
 
-
 var url = 'https://a.klaviyo.com/api/v2/list/SmtzdT/subscribe?api_key=pk_9211d3bb8e27c3d2710acedb37e4d6e98f';
 
 export const setEmail = defineStore('email', {
