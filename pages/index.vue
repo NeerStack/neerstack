@@ -286,16 +286,12 @@
     </section>
     <!-- End of .team -->
 
-
-
-
-
     <section class="newsletter section-gap theme-bg-d ">
         <div class="container">
             <h2 class="text-center">Sign up for our Mageletter to stay up to
                 <br>date with tech news!</h2>
 
-            <form action="#" class="newsletter-form" method="POST">
+            <form @submit.prevent  class="newsletter-form">
                 <div class="row justify-content-between">
                     <div class="col-md">
                         <input type="text" name="fname" placeholder="Name">
@@ -339,8 +335,6 @@
         </div>
         <!-- End of .container -->
     </section>
-
-
 
     <!-- customer-reviews starts -->
     <section class="customer-reviews section-gap grey-bg">
@@ -410,7 +404,6 @@
         <!-- End of .container -->
     </section>
     <!-- End of .customer-reviews -->
-
 
     <!-- Team-modal starts -->
     <div class="modal fade team-modal" id="team-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -514,8 +507,6 @@
         <!-- End of .modal-dialog -->
     </div>
     <!-- End of .portfolio-modal -->
-
-   
 
     <!-- <div class="home">
         <div class="container">

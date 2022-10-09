@@ -75,7 +75,7 @@
   
      <!-- Quote modal starts -->
      <div class="modal fade full-width-modal quote-modal" id="quote-modal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content white-bg">
               <div class="modal-header">
                   <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
@@ -87,7 +87,7 @@
               <!-- End of .modal-header -->
 
               <div class="modal-body d-flex align-items-center justify-content-center text-center">
-                  <div class="quote-form-wrapper text-center">
+                  <div v-if="!isLoading" class="quote-form-wrapper text-center">
                       <h3>Get a Free Quote</h3>
                       <form  @submit.once class="quote-form text-center row">
                           <div class="col-lg-6">
@@ -101,7 +101,7 @@
                               <input v-model="Email.phone" type="text" name="phone" placeholder="Phone">
                           </div>
                           <div class="col-lg-6">
-                              <input v-model="Email.website" type="text" name="website" placeholder="Website/Website Nmae">
+                              <input v-model="Email.website" type="text" name="website" placeholder="Website/Website Name">
                           </div>
                           <div class="col-lg-12">
                               <textarea v-model="Email.message" placeholder="Message" name="message" required></textarea>
@@ -143,7 +143,11 @@
                       <!-- End of .quote-form -->
                   </div>
                   <!-- End of .quote-form-wrapper -->
+                  <div v-else>
+                    <img :src="loading" alt="loader">
+                  </div>
               </div>
+
               <!-- End of .modal-body -->
           </div>
           <!-- End of .modal-content -->
@@ -169,7 +173,7 @@ import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
 import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
 import {setEmail} from '@/store/email'
 import Swal from 'sweetalert2'
-
+import loading from '@/assets/loading.gif'
 const Email = setEmail()
 
   const Setting = setColor();
@@ -215,6 +219,7 @@ var subnav = ref(false)
     set(Setting.color);
   };
 
+const isLoading = ref(false)
 
 const send = () => {
   if(!Email.name || !Email.email || !Email.message){
@@ -224,12 +229,15 @@ const send = () => {
       text: 'Fill the required information!',
     })
   }else{
+    isLoading.value = true
     Email.send()
     .then(() =>{
       if(Email.status){
+        isLoading.value = false
         Swal.fire("Sent", Email.status, 'success')
       }
       if(Email.error){
+        isLoading.value = false
         Swal.fire("Oops...", Email.error, 'error')
       }
     })

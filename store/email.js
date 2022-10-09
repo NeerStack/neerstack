@@ -36,3 +36,23 @@ export const setEmail = defineStore('email', {
           }
     }
 })
+
+export const setNews = defineStore('newsletter', {
+  state: () =>({
+    fullname: "",
+    email: '',
+    status: '',
+    error: ''
+  }),
+  actions: {
+    async news(){
+      this.status = null;
+      this.error = null
+      try {
+        
+      } catch (error) {
+        
+      }
+    }
+  }
+})
