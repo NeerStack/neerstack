@@ -1,6 +1,9 @@
 import {defineStore} from 'pinia'
 import emailjs from '@emailjs/browser';
 
+
+var url = 'https://a.klaviyo.com/api/v2/list/SmtzdT/subscribe?api_key=pk_9211d3bb8e27c3d2710acedb37e4d6e98f';
+
 export const setEmail = defineStore('email', {
     state: ()=>({
         name: '',
@@ -47,11 +50,37 @@ export const setNews = defineStore('newsletter', {
   actions: {
     async news(){
       this.status = null;
-      this.error = null
+      this.error = null;
+      const profile = {
+        profiles: [
+        {
+          email: this.email,
+          fullname: this.fullname
+        }
+        
+      ]
+    };
+
       try {
-        
+        const res = await fetch(url, {
+          method: 'POST',
+          headers:{
+            accept: 'application/json', 
+            'content-type': 'application/json',
+            mode: 'no-cors'
+          },
+          body: JSON.stringify(profile)
+        })
+        var data = await res.json()
+        if(data?.length){
+          this.status = 'Subscribed Successfully'
+          this.fullname = '',
+          this.email = ''
+        }
+
       } catch (error) {
-        
+        console.error(error);
+        this.error = error
       }
     }
   }
