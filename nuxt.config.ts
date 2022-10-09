@@ -108,6 +108,10 @@ export default defineNuxtConfig({
           ],
           script:[
             {
+              type:"text/javascript",
+              src:"//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VsQiNE"
+            },
+            {
               src: "js/vendor/jquery.min.js",
               defer: true,
              
