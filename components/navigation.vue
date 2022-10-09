@@ -26,13 +26,17 @@
                             <a @click="handledrop()" href="#" class="nav-link">Services</a>
                             <ul  class="submenu2 text-left bg-gray-700" :class="{show: submenushow == true}">
                                 <li>
-                                  <NuxtLink to="#">Website Design</NuxtLink></li>
+                                  <NuxtLink to="#">UI/UX Design</NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="#">Logo &amp; Branding </NuxtLink></li>
+                                  <NuxtLink to="#">Web Development </NuxtLink></li>
                                 <li>
                                   <NuxtLink to="#">Mobile App Development</NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="#">Search Engine Optimization</NuxtLink></li>
+                                  <NuxtLink to="#">Api Development</NuxtLink></li>
+                                <li>
+                                  <NuxtLink to="">Software Testing</NuxtLink></li>
+                                <li>
+                                  <NuxtLink to="">Product Management</NuxtLink></li>
 
                             </ul>
                         </li>
