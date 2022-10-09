@@ -294,14 +294,14 @@
             <form @submit.prevent  class="newsletter-form">
                 <div class="row justify-content-between">
                     <div class="col-md">
-                        <input type="text" name="fname" placeholder="Name">
+                        <input v-model="News.fullname" type="text" name="fname" placeholder="Fullname" required>
                     </div>
                     <div class="col-md">
-                        <input type="text" name="email" placeholder="Email">
+                        <input v-model="News.email" type="text" name="email" placeholder="Email" required>
                     </div>
 
                     <div class="col-md-auto">
-                        <a href="#" class="custom-btn secondary-btn">SUBSCRIBE</a>
+                        <a @click="sendEmail" class="custom-btn secondary-btn">SUBSCRIBE</a>
                     </div>
                 </div>
                 <!-- End of .row -->
@@ -317,7 +317,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                        <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
                             <fa6-brands-twitter/>
                         </a>
                     </li>
@@ -664,6 +664,11 @@ import Fa6BrandsBehance from '~icons/fa6-brands/behance'
 import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
 import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
+import { setNews } from '@/store/email'
+import Swal from 'sweetalert2'
+
+const News = setNews();
+
 const setdata = {
     title: "CodinMage | Home"
 }
@@ -723,32 +728,17 @@ const project2_work = () =>{
     }
 }
 
-   
-
-
-
-// let counter = setInterval(() =>{
-//     client()
-// }, 500)
-// const client = () =>{
-//     client_count.value++
-//     project_com.value++
-//     project_run.value++
-//     if(client_count.value == 20){
-//         client_count.value = 20
-//     }
-//     if(project_com.value == 5){
-//         project_com.value = 5
-//     }
-    
-//     if(project_run.value == 50){
-//         clearInterval(() =>{
-//             client()
-//         })
-//     }
-// }
-
-
+const sendEmail = () => {
+    News.news()
+    .then(() =>{
+        if(News.status){
+            Swal.fire('Done', News.status, 'success')
+        }
+        if(News.error){
+            Swal.fire('Oops..', News.error, 'error')
+        }
+    })
+}
 
 
 
