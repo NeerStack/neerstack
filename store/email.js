@@ -1,7 +1,8 @@
 import {defineStore} from 'pinia'
 import emailjs from '@emailjs/browser';
+// import  fetch from 'node-fetch'
 
-var url = 'https://a.klaviyo.com/api/v2/list/SmtzdT/subscribe?api_key=pk_9211d3bb8e27c3d2710acedb37e4d6e98f';
+const url = 'https://codinmage-server.herokuapp.com/subscribe';
 
 export const setEmail = defineStore('email', {
     state: ()=>({
@@ -44,24 +45,21 @@ export const setNews = defineStore('newsletter', {
     fullname: "",
     email: '',
     status: null,
+    message: null,
     error: null
   }),
   actions: {
     async news(){
       this.status = null;
       this.error = null;
+      this.message = null
       const profile = {
-        profiles: [
-        {
           email: this.email,
           fullname: this.fullname
-        }
-        
-      ]
-    };
+        };
 
       try {
-        const res = await fetch(url, {
+        await fetch(url, {
           method: 'POST',
           headers:{
             accept: 'application/json', 
@@ -69,10 +67,16 @@ export const setNews = defineStore('newsletter', {
           },
           body: JSON.stringify(profile)
         })
-        .then(res =>{
-           var data = res.json()
-            if(data?.length){
-              this.status = 'Subscribed Successfully'
+        .then(async (res) =>{
+           var data = await res.json()
+            if(data.status){
+              this.status = data.status
+              this.message = data.message
+              this.fullname = '',
+              this.email = ''
+            }else{
+              this.status = data.status
+              this.error = data.message
               this.fullname = '',
               this.email = ''
             }

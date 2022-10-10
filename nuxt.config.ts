@@ -117,44 +117,6 @@ export default defineNuxtConfig({
               src:"//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VsQiNE"
             },
             {
-              hid: 'Rudder-JS',
-              src: 'https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js',
-              defer: true
-            },
-            {
-              hid: 'rudder-js',
-              innerHTML: `
-                  rudderanalytics = window.rudderanalytics = [];
-                  var  methods = [
-                      'load',
-                      'page',
-                      'track',
-                      'identify',
-                      'alias',
-                      'group',
-                      'ready',
-                      'reset',
-                      'getAnonymousId',
-                      'setAnonymousId'
-                  ];
-                  for (var i = 0; i < methods.length; i++) {
-                        var method = methods[i];
-                        rudderanalytics[method] = function (methodName) {
-                              return function () {
-                                                 rudderanalytics.push([methodName].concat(Array.prototype.slice.call(arguments)));
-                              };
-                            }(method);
-                  }
-                  rudderanalytics.load("2FujsbuXG2Dfkhw1ZncnlQNibvF", "https://codinmageti.dataplane.rudderstack.com");
-                  rudderanalytics.ready(()=>{
-                    console.log("We are all set");
-                  });
-                  //rudderanalytics.page();
-                  `,
-              type: 'text/javascript',
-              charset: 'utf-8'
-            },
-            {
               src: "js/vendor/jquery.min.js",
               defer: true,
              

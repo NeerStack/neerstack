@@ -294,7 +294,7 @@
             <form @submit.prevent  class="newsletter-form">
                 <div class="row justify-content-between">
                     <div class="col-md">
-                        <input v-model="News.fullname" type="text" name="fname" placeholder="Fullname" required>
+                        <input v-model="News.fullname" type="text" name="fname" placeholder="Firstname Lastname" required>
                     </div>
                     <div class="col-md">
                         <input v-model="News.email" type="text" name="email" placeholder="Email" required>
@@ -732,7 +732,9 @@ const sendEmail = () => {
     News.news()
     .then(() =>{
         if(News.status){
-            Swal.fire('Done', News.status, 'success')
+            Swal.fire('Done', News.message, 'success')
+        }else{
+            Swal.fire('Oops..', News.error, 'error')
         }
         if(News.error){
             Swal.fire('Oops..', News.error, 'error')
