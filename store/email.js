@@ -115,7 +115,7 @@ export const setNews = defineStore('newsletter', {
   }
 })
 
-export const setContact = defineStore('email', {
+export const setContact = defineStore('contact', {
   state: ()=>({
       name: '',
       email: '',
