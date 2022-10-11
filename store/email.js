@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser';
 // import  fetch from 'node-fetch'
 
 const url = 'https://codinmage-server.herokuapp.com/subscribe';
-
+const quoteUrl = 'https://codinmage-server.herokuapp.com/quote';
+const contactUrl = 'https://codinmage-server.herokuapp.com/contact';
 export const setEmail = defineStore('email', {
     state: ()=>({
         name: '',
@@ -25,16 +26,30 @@ export const setEmail = defineStore('email', {
                 website: this.website,
                 message: this.message
             }
-            await emailjs.send('service_ci60g5d','template_gqunup8', form, 'HyiU9sJQVja8wklEE' )
-            .then((result) =>{
-              this.name ='';
-              this.email = '';
-              this.phone = '';
-              this.website = '';
-              this.message = ''
-              this.status = result.text
-            }, (error) => {
-              this.error = error.text
+            await fetch(quoteUrl, {
+              method: 'POST',
+              headers:{
+                accept: 'application/json', 
+                'content-type': 'application/json',
+              },
+              body: JSON.stringify(form)
+            })
+            .then(async (res) =>{
+              var data = await res.json()
+              if(data.status){
+               
+              }else{
+                this.name ='';
+                this.email = '';
+                this.phone = '';
+                this.website = '';
+                this.message = '';
+                this.error = data.message
+              }
+              
+            })
+            .catch(error => {
+              this.error = error
             })
           }
     }
@@ -92,5 +107,55 @@ export const setNews = defineStore('newsletter', {
         this.error = error
       }
     }
+  }
+})
+
+export const setContact = defineStore('email', {
+  state: ()=>({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+      status: null,
+      error: null
+  }),
+  actions: {
+      async send(){
+          this.status = null;
+          this.error = null;
+          const form = {
+              name: this.name,
+              email: this.email,
+              phone: this.phone,
+              subject: this.subject,
+              message: this.message
+          }
+          await fetch(contactUrl, {
+            method: 'POST',
+            headers:{
+              accept: 'application/json', 
+              'content-type': 'application/json',
+            },
+            body: JSON.stringify(form)
+          })
+          .then(async (res) =>{
+            var data = await res.json()
+            if(data.status){
+             
+            }else{
+              this.name ='';
+              this.email = '';
+              this.phone = '';
+              this.subject = '';
+              this.message = '';
+              this.error = data.message
+            }
+            
+          })
+          .catch(error => {
+            this.error = error
+          })
+        }
   }
 })
