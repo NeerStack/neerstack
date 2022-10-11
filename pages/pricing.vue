@@ -12,4 +12,22 @@ const setdata = {
 useHead({
     title: computed(() => setdata.title)
 })
+definePageMeta({
+  key: route => route.fullPath
+})
 </script>
+<style lang="scss">
+    .construct{
+        h1{
+            font-size: calc(80px);
+            font-weight: bolder;
+        }
+        img{
+            display: inline-flex;
+            justify-content: center;
+            width: 1000px;
+            margin-top: 30%;
+            margin-bottom: 50px;
+        }
+    }
+</style>

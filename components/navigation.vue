@@ -26,33 +26,33 @@
                             <a @click="handledrop()"  class="nav-link">Services</a>
                             <ul  class="submenu2 text-left bg-gray-700" :class="{show: submenushow == true}">
                                 <li>
-                                  <NuxtLink to="">UI/UX Design</NuxtLink></li>
+                                  <NuxtLink @click="handleClick($event)" to="">UI/UX Design</NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="">Web Development </NuxtLink></li>
+                                  <NuxtLink @click="handleClick($event)" to="">Web Development </NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="">Mobile App Development</NuxtLink></li>
+                                  <NuxtLink @click="handleClick($event)" to="">Mobile App Development</NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="">Api Development</NuxtLink></li>
+                                  <NuxtLink @click="handleClick($event)" to="">Api Development</NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="">Software Testing</NuxtLink></li>
+                                  <NuxtLink @click="handleClick($event)" to="">Software Testing</NuxtLink></li>
                                 <li>
-                                  <NuxtLink to="">Product Management</NuxtLink></li>
+                                  <NuxtLink @click="handleClick($event)" to="">Product Management</NuxtLink></li>
 
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink  class="nav-link" to="/about">About</NuxtLink>
+                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/about">About</NuxtLink>
                         </li>
 
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" to="#">Team</NuxtLink>
+                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/about#team">Team</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/pricing">Pricing</NuxtLink>
+                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/pricing">Pricing</NuxtLink>
                         </li>
 
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/contact-us">Contact</NuxtLink>
+                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/contact-us">Contact</NuxtLink>
                         </li>
                         <li class="nav-item">
                             <a class="custom-btn btn-small" data-bs-toggle="modal" data-bs-target="#quote-modal" href="#">Get Quote Now</a>
@@ -200,9 +200,25 @@ var subnav = ref(false)
 
   function handledrop(){
     submenushow.value = !submenushow.value
+    
   }
   function handleNav(){
     subnav.value = !subnav.value
+    
+    
+  }
+
+  const handleClick = (e) =>{
+    if(e.type === 'click'){
+      if(subnav.value){
+      subnav.value = false
+    }
+    if(submenushow.value){
+      submenushow.value = false
+    }
+    }
+    
+
   }
   
   onBeforeMount(()=>{

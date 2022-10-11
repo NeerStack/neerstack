@@ -667,6 +667,10 @@ import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
 import { setNews } from '@/store/email'
 import Swal from 'sweetalert2'
 
+definePageMeta({
+  key: route => route.fullPath
+})
+
 const News = setNews();
 
 const setdata = {
