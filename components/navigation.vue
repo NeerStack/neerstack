@@ -3,7 +3,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg align-items-center">
           <div class="container-fluid">
-          <NuxtLink class="navbar-brand" to="/">
+          <NuxtLink @click="handleClick($event)" class="navbar-brand" to="/">
                 <span v-if="Setting.color === 'light'">
                 <img :src="logoLight" alt="logo">
                 </span>
