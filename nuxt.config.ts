@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 import Icons from 'unplugin-icons/vite'
-import webpack from 'webpack'
+// import webpack from 'webpack'
 
 export default defineNuxtConfig({
     modules:[

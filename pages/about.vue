@@ -193,6 +193,7 @@ definePageMeta({
 
 <style lang="scss" scoped>
 .about{
+    margin-bottom: 70px;
     display: inline-block;
     justify-content: center;
     width: 60%;
