@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 text-left">
                     <div class="footer-widget widget-about">
-                        <a href=""><img class="footer-logo" :src="dark" alt="footer logo" height="16"></a>
+                        <a href="/"><img class="footer-logo" :src="dark" alt="footer logo" height="16"></a>
                         <p>Outsource Web Development Gig With Professional Software Engineers/Developers..</p>
                         <ul class="social-icons">
                             <li>
@@ -13,7 +13,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://twitter.com/" target="_blank" rel="noopener">
+                                <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
                                     <fa6-brands-twitter/>
                                 </a>
                             </li>
@@ -26,7 +26,7 @@
                         </ul>
 
 
-                        <p class="copywrite-txt">© 2022 <a href="#">CodinMage</a>. All Rights Reserved.
+                        <p class="copywrite-txt">© 2022 <a href="/">CodinMage</a>. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <ul class="footer-nav dynamic-nav">
                             <li><NuxtLink to="#">Portfolio</NuxtLink></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
-                            <li><NuxtLink to="#">Team</NuxtLink></li>
+                            <li><NuxtLink to="/about#team">Team</NuxtLink></li>
 
                         </ul>
                     </div>

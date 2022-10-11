@@ -18,6 +18,7 @@ definePageMeta({
 </script>
 <style lang="scss">
     .construct{
+        margin-top: 190px;
         h1{
             font-size: calc(80px);
             font-weight: bolder;
@@ -26,7 +27,7 @@ definePageMeta({
             display: inline-flex;
             justify-content: center;
             width: 1000px;
-            margin-top: 30%;
+            margin-top: 6%;
             margin-bottom: 50px;
         }
     }
