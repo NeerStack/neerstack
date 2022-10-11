@@ -37,7 +37,12 @@ export const setEmail = defineStore('email', {
             .then(async (res) =>{
               var data = await res.json()
               if(data.status){
-               
+                this.name ='';
+                this.email = '';
+                this.phone = '';
+                this.subject = '';
+                this.message = '';
+                this.status = data.message
               }else{
                 this.name ='';
                 this.email = '';
@@ -142,7 +147,12 @@ export const setContact = defineStore('email', {
           .then(async (res) =>{
             var data = await res.json()
             if(data.status){
-             
+              this.name ='';
+              this.email = '';
+              this.phone = '';
+              this.subject = '';
+              this.message = '';
+              this.status = data.message
             }else{
               this.name ='';
               this.email = '';
