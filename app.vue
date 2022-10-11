@@ -6,9 +6,18 @@
   </div>
 </template>
 <script setup>
+  const nuxtApp = useNuxtApp()
+
+  nuxtApp.hook("page:finish", () => {
+    window.scrollTo(0, 0)
+  })
+ 
 
 </script>
 <style>
+  html {
+    scroll-behavior: smooth; /* set scroll-behaviour to smooth here */
+  }
   :root {
     --primary: #4ade80;
     --primary-alt: #22c55e;

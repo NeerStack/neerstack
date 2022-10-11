@@ -212,7 +212,7 @@ export default defineNuxtConfig({
         classSuffix: ''
     },
     plugins:[
-         '~/plugins/piniapersist.js'
+         '~/plugins/piniapersist.js', '~/plugins/scrollToTop.client.js'
     ],
     vite:{
         plugins:[
