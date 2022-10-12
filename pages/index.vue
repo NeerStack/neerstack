@@ -585,7 +585,7 @@ useHead({
     title: computed(() => setdata.title)
 })
 
-const wordarr = ref(['Your vision plus our expertise equals new impulse to your growth.', 'We work as a remote part of your team', 'We always laugh at your jokes😂.', 'we always go extra mile.', 'We are proud to contribute to our clients\' success.', ' We Have Good Team Of Professionals Who Will Be Able To Meet Your Expectations.', 'We Use Latest Technology To Give Your Business A Unique Look.', 'We Work On Time And Deliver On Time.', 'We Provide 100% Satisfaction Guaranteed.'])
+const wordarr = ref(['We Offer Best Quality Service at Affordable Price.', 'We work as a remote part of your team', 'We always laugh at your jokes😂.', 'we always go extra mile.', 'We are proud to contribute to our clients\' success.', ' We Have Good Team Of Professionals Who Will Be Able To Meet Your Expectations.', 'We Use Latest Technology To Give Your Business A Unique Look.', 'We Work On Time And Deliver On Time.', 'We Provide 100% Satisfaction Guaranteed.', ' We Are Available 24/7 To Help You Out.', 'Your vision plus our expertise equals new impulse to your growth.' ])
 const wordstr = ref(0)
 let count = setInterval(()=>{
     word()
