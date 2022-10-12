@@ -126,18 +126,25 @@
                                               <fa6-brands-twitter/>
                                           </a>
                                       </li>
+                          
                                       <li>
-                                          <a href="http://youtube.com/" target="_blank" rel="noopener">
-                                              <!-- <i class="fab fa-youtube"></i> -->
-                                              <fa6-brands-youtube/>
-                                          </a>
-                                      </li>
-                                      <li>
-                                          <a href="http://instagram.com" target="_blank" rel="noopener">
+                                          <a href="http://www.instagram.com" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-google-plus-g"></i> -->
                                               <fa6-brands-instagram/>
                                           </a>
                                       </li>
+                                      <li>
+                                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                                            <fa6-brands-github/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                                            <!-- <i class="fab fa-behance"></i> -->
+                                            <fa6-brands-linkedin/>
+                                        </a>
+                                    </li>
                                   </ul>
                                   <!-- End of .social-icons -->
                               </div>
@@ -163,7 +170,7 @@
    <!-- Team-modal starts -->
 <div class="modal fade team-modal" id="team-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class=" modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                 <!-- <i class="fas fa-times"></i> -->
@@ -172,23 +179,28 @@
                 <!-- End of .close -->
             </div>
             <!-- End of .modal-header -->
+            <div class="flex justify-center">
+              <div class="container">
+              <div class="grid-wrapper">
+              <div class="row justify-center">
 
-            <div class="modal-body text-center">
-                <img src="@/assets/team/team-modal-img.png" alt="team modal image" class="img-fluid modal-feat-img">
+               <div class="modal-body text-center col-xl-12 ">
+                <img src="@/assets/team/Raqeeb.jpeg" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                 <div class="modal-title">
-                    <h4>Steve Johnson
-                        <span>Chief Exicutive Officer</span>
+                    <h4>Raqeeb Taiwo
+                        <span>Founder/CEO</span>
+                        <span>Software Developer</span>
                     </h4>
                 </div>
                 <!-- End of .modal-title -->
-                <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
-                    this bio should represent who you are in the eyes.</p>
+                <!-- <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
+                    this bio should represent who you are in the eyes.</p> -->
 
                 <ul class="social-icons">
                     <li>
-                        <a href="http://www.behance.net/" target="_blank" rel="noopener">
+                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-behance"></i> -->
-                            <fa6-brands-behance/>
+                            <fa6-brands-linkedin/>
                         </a>
                     </li>
                     <li>
@@ -198,20 +210,171 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://instagram.com" target="_blank" rel="noopener">
+                        <a href="http://www.github.com" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-google-plus-g"></i> -->
-                            <fa6-brands-instagram/>
+                            <fa6-brands-github/>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- End of .social-icons -->
+              </div>
+
+              <div class="modal-body text-center col-xl-4 col-lg-6">
+                <img src="@/assets/team/team-member-1.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                <div class="modal-title">
+                    <h4>Victor Ahonsi
+                        <span>Co-Founder</span>
+                        <span>Project/Product Manager</span>
+                        
+                    </h4>
+                </div>
+                <!-- End of .modal-title -->
+                <!-- <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
+                    this bio should represent who you are in the eyes.</p> -->
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-behance"></i> -->
+                            <fa6-brands-linkedin/>
                         </a>
                     </li>
                     <li>
-                        <a href="http://dribbble.com/" target="_blank" rel="noopener">
-                            <!-- <i class="fab fa-dribbble"></i> -->
-                            <fa6-brands-dribbble/>
+                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-twitter"></i> -->
+                            <fa6-brands-twitter/>
                         </a>
                     </li>
+                    <li>
+                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                            <fa6-brands-github/>
+                        </a>
+                    </li>
+                    
                 </ul>
                 <!-- End of .social-icons -->
+              </div>
+
+              <div class="modal-body text-center col-xl-4 col-lg-6">
+                <img src="@/assets/team/team-member-3.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                <div class="modal-title">
+                    <h4>Opeyemi Awotunde
+                        <span>Co-Founder</span>
+                        <span>Software Developer</span>
+                        
+                    </h4>
+                </div>
+                <!-- End of .modal-title -->
+                <!-- <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
+                    this bio should represent who you are in the eyes.</p> -->
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-behance"></i> -->
+                            <fa6-brands-linkedin/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-twitter"></i> -->
+                            <fa6-brands-twitter/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                            <fa6-brands-github/>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- End of .social-icons -->
+              </div>
+
+              <div class="modal-body text-center col-xl-4 col-lg-6">
+                <img src="@/assets/team/team-member-5.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                <div class="modal-title">
+                    <h4>Mateen Williams
+                        <span>Partner</span>
+                        <span>UI/UX Designer</span>
+                    </h4>
+                </div>
+                <!-- End of .modal-title -->
+                <!-- <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
+                    this bio should represent who you are in the eyes.</p> -->
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-behance"></i> -->
+                            <fa6-brands-linkedin/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-twitter"></i> -->
+                            <fa6-brands-twitter/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                            <fa6-brands-github/>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- End of .social-icons -->
+              </div>
+
+              <div class="modal-body text-center col-xl-4 col-lg-6">
+                <img src="@/assets/team/team-member-6.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                <div class="modal-title">
+                    <h4>Nurudeen Rabiu
+                        <span>Partner</span>
+                        <span>Software Developer</span>
+                        
+                    </h4>
+                </div>
+                <!-- End of .modal-title -->
+                <!-- <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
+                    this bio should represent who you are in the eyes.</p> -->
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-behance"></i> -->
+                            <fa6-brands-linkedin/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-twitter"></i> -->
+                            <fa6-brands-twitter/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                            <fa6-brands-github/>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- End of .social-icons -->
+              </div>
+
+              </div>
+              </div>
+              </div>
             </div>
+            
+            
+            
+           
             <!-- End of .modal-body -->
         </div>
         <!-- End of .modal-content -->
@@ -271,6 +434,8 @@ import Fa6SolidMoon from '~icons/fa6-solid/moon'
 import { setColor } from "@/store/color";
 import logoDark from "@/assets/dark_copy.svg";
 import logoLight from "@/assets/light_copy.svg"
+import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
+import Fa6BrandsGithub from '~icons/fa6-brands/github'
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
 import Fa6SolidXmark from '~icons/fa6-solid/xmark'

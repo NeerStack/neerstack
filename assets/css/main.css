@@ -1750,17 +1750,20 @@ textarea+.err-msg {
 }
 
 .team-modal .modal-dialog {
-    max-width: 42rem;
+    max-width: 90rem;
 }
 
 .portfolio-card {
     border: none;
 }
 
+
+
 .modal .modal-content {
-    border: 1px solid #e6f2ff;
-    padding: 5rem 3rem 4rem;
-    border-radius: 6px;
+    padding: 1rem 5rem 5rem;
+    border: none;
+    background-color: #f9fcff;
+    
 }
 
 .modal .modal-content .close {
@@ -1795,12 +1798,22 @@ textarea+.err-msg {
 }
 
 .team-modal .modal-body {
-    padding: 0;
+    background-color: #fff;
+    border: 1px solid #e6f2ff;
+    border-radius: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    
 }
 
 .team-modal .modal-body img {
-    max-width: 28rem;
-    border-radius: 6px;
+    max-width: 30rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 40px;
 }
 
 .team-modal .modal-body p {
@@ -2342,8 +2355,13 @@ figure img {
 }
 
 .review-card {
+    
     max-width: 100%;
-    padding: 4rem 3rem 2.4rem;
+    padding: 2rem 2rem 2rem;
+}
+
+.review-card p{
+    font-size: 1.4rem;
 }
 
 .review-card .media {
@@ -2353,8 +2371,10 @@ figure img {
 }
 
 .review-card .media img {
-    margin-right: 4rem;
+    display: inline-flex;
+    justify-content: center;
     border-radius: 100%;
+    padding: 5px 5px 10px;
 }
 
 .review-card .media h5 {

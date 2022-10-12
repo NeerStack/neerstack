@@ -36,18 +36,25 @@
                                               <fa6-brands-twitter/>
                                           </a>
                                       </li>
-                                      <li>
-                                          <a href="http://youtube.com/" target="_blank" rel="noopener">
-                                              <!-- <i class="fab fa-youtube"></i> -->
-                                              <fa6-brands-youtube/>
-                                          </a>
-                                      </li>
+                                      
                                       <li>
                                           <a href="http://instagram.com" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-google-plus-g"></i> -->
                                               <fa6-brands-instagram/>
                                           </a>
                                       </li>
+                                      <li>
+                                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                                            <fa6-brands-github/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                                            <!-- <i class="fab fa-behance"></i> -->
+                                            <fa6-brands-linkedin/>
+                                        </a>
+                                    </li>
                                   </ul>
                                   <!-- End of .social-icons -->
                               </div>
@@ -72,6 +79,8 @@ import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
 import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
+import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
+import Fa6BrandsGithub from '~icons/fa6-brands/github'
 import under from '@/assets/under-construction.png'
 import {setContact} from '@/store/email'
 const Email = setContact()

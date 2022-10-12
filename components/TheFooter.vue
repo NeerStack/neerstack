@@ -23,6 +23,18 @@
                                     <fa6-brands-instagram/>
                                 </a>
                             </li>
+                            <li>
+                                <a href="http://www.github.com" target="_blank" rel="noopener">
+                                    <!-- <i class="fab fa-google-plus-g"></i> -->
+                                    <fa6-brands-github/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                                    <!-- <i class="fab fa-behance"></i> -->
+                                    <fa6-brands-linkedin/>
+                                </a>
+                            </li>
                         </ul>
 
 
@@ -83,6 +95,8 @@ import light from "@/assets/light_copy.svg"
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
+import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
+import Fa6BrandsGithub from '~icons/fa6-brands/github'
 </script>
 <!-- <style scoped>
     .dark .footer{

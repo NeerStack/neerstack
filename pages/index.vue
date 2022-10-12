@@ -7,6 +7,7 @@
                     <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
                     <h3 class="section-title">Here at CodinMage</h3>
                     <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p>
+                    
                     <div class="ini_project">
                          <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
                     </div>
@@ -348,7 +349,7 @@
             <div class="grid-wrapper">
                 <div class="row justify-content-center justify-center">
                     <div class="col-lg-4 col-md-6">
-                        <div class=" img-card review-card text-center white-bg">
+                        <div class="img-card review-card text-center white-bg">
                             <div class="media align-items-center">
                                 <img class="inline-flex justify-center img-fluid " src="@/assets/review/reviewer-1.png" alt="reviewer image">
                                 <div class="media-body">
