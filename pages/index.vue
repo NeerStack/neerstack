@@ -196,13 +196,14 @@
                     <div class="col-lg-5">
                         <div class="features-content">
                             <h2 class="section-title">Why choose us?</h2>
-                            <p>This is where we brag about everything we can do or have done but more importantly let them know we are proffesionals and they are in good hands.</p>
+                            <p class="text-justify">Our website design services are affordable and reliable. We offer free estimates and don not charge any hidden fees. Our goal is to make our customers happy and satisfied with their purchase. We strive to meet deadlines and deliver quality work product.  
+                            <br>
+                            We want you to feel comfortable and confident when making your choice! 
+                            <br>
+                            <a class="hyperlink" href="/contact-us">Contact us today!</a> 
+                            </p>
 
-
-
-
-
-                            <a href="" class="hyperlink">Learn More About Us</a>
+                            <!-- <a href="/about" class="hyperlink">Learn more about us</a> -->
 
                         </div>
                         <!-- End of .features-content -->
@@ -227,13 +228,8 @@
                     <div class="col-lg-5 offset-lg-1">
                         <div class="features-content">
                             <h2 class="section-title">Better Strategy With Quality Business.</h2>
-                            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics.</p>
-
-
-
-
-
-                            <a href="" class="hyperlink">Learn More About Us</a>
+                            <p class="text-justify">Do not forget about the Quality of your Business, if you do not have Quality products, then even though you have a lot of money, you might go bankrupt. If you are offering a service, you should offer the best quality of service.</p>
+                            <a href="/about" class="hyperlink">Learn more about us</a>
 
                         </div>
                         <!-- End of .features-content -->
@@ -253,10 +249,18 @@
     <!-- Projects starts -->
     <section class="projects section-gap grey-bg" id="our-projects" data-scroll-offset="75">
         <div class="container">
-            <h2 class="section-title text-center">Portfolio section</h2>
-            <p class="larger-txt text-center">(we can all add our best individual gigs here)</p>
+            <h2 class="section-title text-center">Our Portfolio</h2>
+            <p class="larger-txt text-center">Take a moment to go through our previously done work</p>
 
+            <div class="grid-wrapper">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-modal" class="custom-btn secondary-btn">SEE OUR PREVIOUS WORKS</a>
+                    </div>
 
+                </div>
+                <!-- End of .row -->
+            </div>
             <!-- End of .project-showcase -->
         </div>
         <!-- End of .container -->
@@ -274,7 +278,7 @@
 
 
                     <div class="col-12 text-center">
-                        <a href="" class="custom-btn secondary-btn">SEE ALL TEAM MEMBERS</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#team-modal" class="custom-btn secondary-btn">SEE ALL TEAM MEMBERS</a>
                     </div>
 
                 </div>
@@ -405,108 +409,9 @@
     </section>
     <!-- End of .customer-reviews -->
 
-    <!-- Team-modal starts -->
-    <div class="modal fade team-modal" id="team-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <!-- <i class="fas fa-times"></i> -->
-                    <fa6-solid-xmark/>
-                </button>
-                    <!-- End of .close -->
-                </div>
-                <!-- End of .modal-header -->
+   
 
-                <div class="modal-body text-center">
-                    <img src="@/assets/team/team-modal-img.png" alt="team modal image" class="img-fluid modal-feat-img">
-                    <div class="modal-title">
-                        <h4>Steve Johnson
-                            <span>Chief Exicutive Officer</span>
-                        </h4>
-                    </div>
-                    <!-- End of .modal-title -->
-                    <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
-                        this bio should represent who you are in the eyes.</p>
-
-                    <ul class="social-icons">
-                        <li>
-                            <a href="http://www.behance.net/" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-behance"></i> -->
-                                <fa6-brands-behance/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com/" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-twitter"></i> -->
-                                <fa6-brands-twitter/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://instagram.com" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-google-plus-g"></i> -->
-                                <fa6-brands-instagram/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://dribbble.com/" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-dribbble"></i> -->
-                                <fa6-brands-dribbble/>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End of .social-icons -->
-                </div>
-                <!-- End of .modal-body -->
-            </div>
-            <!-- End of .modal-content -->
-        </div>
-        <!-- End of .modal-dialog -->
-    </div>
-    <!-- End of .team-modal -->
-
-    <!-- Product Modal Starts -->
-    <div class="modal fade full-width-modal product-modal" id="product-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <!-- <i class="fas fa-times"></i> -->
-                    <fa6-solid-xmark/>
-                </button>
-                    <!-- End of .close -->
-                </div>
-                <!-- End of .modal-header -->
-
-                <div class="modal-body">
-                    <div class="row no-gutters">
-                        <div class="col-lg-6">
-                            <div class="modal-img text-center">
-                                <img src="@/assets/products/portfolio-modal.png" alt="product-modal" class="img-fluid">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="modal-body__inner-content">
-                                <h4>
-                                    <span>Chief Exicutive Officer</span> Creative Web Design
-                                </h4>
-                                <p>In the early years of the commercial web, we were all Web Designers. Digital interactions, at that stage, were not incredibly sophisticated: most websites were structured as a set of individual pages connected to each other
-                                    via buttons and links.</p>
-
-                                <p>In more complex websites and information-heavy systems, the web designer would pair with an Information Architect to make sure content was organized in a way that made for that.</p>
-                                <NuxtLink to="/about" class="hyperlink">Launch Website</NuxtLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of .modal-body -->
-            </div>
-            <!-- End of .modal-content -->
-        </div>
-        <!-- End of .modal-dialog -->
-    </div>
-    <!-- End of .portfolio-modal -->
+   
 
     <!-- <div class="home">
         <div class="container">

@@ -82,7 +82,7 @@
                     
                     </p>
             </div>
-            <div id="team">
+            <!-- <div id="team">
                 <div class="team_str">
                     <h1>Meet Our Team</h1>
                     <p>team story can be writen here</p>
@@ -164,7 +164,7 @@
                     </ul>
 
                 </div>
-            </div> 
+            </div>  -->
             </div>
 
         

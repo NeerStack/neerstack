@@ -35,12 +35,12 @@
                     <div class="footer-widget">
                         <h5 class="footer-nav-title">Services</h5>
                         <ul class="footer-nav dynamic-nav">
-                            <li><NuxtLink href="#">UI/UX Design</NuxtLink></li>
-                            <li><NuxtLink href="#">Web Development </NuxtLink></li>
-                            <li><NuxtLink href="#">Mobile App Development</NuxtLink></li>
-                            <li><NuxtLink href="#">API Development </NuxtLink></li>
-                            <li><NuxtLink href="#">Software Testing</NuxtLink></li>
-                            <li><NuxtLink href="#">Product Management</NuxtLink></li>
+                            <li><NuxtLink href="/design">UI/UX Design</NuxtLink></li>
+                            <li><NuxtLink href="/web-dev">Web Development </NuxtLink></li>
+                            <li><NuxtLink href="/mobile-dev">Mobile App Development</NuxtLink></li>
+                            <li><NuxtLink href="/api-dev">API Development </NuxtLink></li>
+                            <li><NuxtLink href="/software-test">Software Testing</NuxtLink></li>
+                            <li><NuxtLink href="/product-management">Product Management</NuxtLink></li>
                         </ul>
                     </div>
                 </div>
@@ -50,9 +50,9 @@
                     <div class="footer-widget">
                         <h5 class="footer-nav-title">Resources</h5>
                         <ul class="footer-nav dynamic-nav">
-                            <li><NuxtLink to="#">Portfolio</NuxtLink></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#product-modal">Portfolio</a></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
-                            <li><NuxtLink to="/about#team">Team</NuxtLink></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#team-modal">Team</a></li>
 
                         </ul>
                     </div>
