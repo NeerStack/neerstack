@@ -197,7 +197,7 @@
                     <div class="col-lg-5">
                         <div class="features-content">
                             <h2 class="section-title">Why choose us?</h2>
-                            <p class="text-justify">Our website design services are affordable and reliable. We offer free estimates and don not charge any hidden fees. Our goal is to make our customers happy and satisfied with their purchase. We strive to meet deadlines and deliver quality work product.  
+                            <p class="text-justify">Our website design services are affordable and reliable. We offer free estimates and do not charge any hidden fees. Our goal is to make our customers happy and satisfied with their purchase. We strive to meet deadlines and deliver quality work product.  
                             <br>
                             We want you to feel comfortable and confident when making your choice! 
                             </p>
