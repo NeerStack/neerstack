@@ -3,10 +3,10 @@
     <div class="banner home-banner d-flex align-items-center">
         <div class="container">
             <div class="row_reverse row no-gutters align-items-center">
-                <div class="desc col-lg-6  text-lg-left">
+                <div class="desc col-lg-6  text-lg-justify">
                     <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
                     <h3 class="section-title">Here at CodinMage</h3>
-                    <p class="larger-txt ">{{wordarr[wordstr]}}</p>
+                    <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p>
                     <div class="ini_project">
                          <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
                     </div>
@@ -108,61 +108,61 @@
                     <div class="row justify-center">
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/design" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-1.png" alt="UI/UX Design">
                                 <h4>UI/UX Design</h4>
                                 <p>We will design accurately based on client's project description.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/web-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-2.png" alt="Web Development">
                                 <h4>Web Development</h4>
                                 <p>We will bring the UI design to accessible Web page.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/mobile-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-3.png" alt="Mobile App Development">
                                 <h4>Mobile App Development</h4>
                                 <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/api-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/Api.png" alt="API Development">
                                 <h4>API Development</h4>
                                 <p>We will create scalable and efficient API for client's project.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/software-test" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/software.png" alt="Software Testing">
                                 <h4>Software Testing</h4>
                                 <p>We will test every angle of the website to suit the client's project.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="#" class="service-block text-center">
+                            <NuxtLink to="/product-management" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/product-chain.png" alt="Product Management">
                                 <h4>Product Management</h4>
                                 <p>We will take full responsiblity of client's product/project.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->

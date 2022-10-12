@@ -1367,6 +1367,7 @@ textarea+.err-msg {
 
 .service-block h4,
 .service-block .h4 {
+    color: #000;
     margin-bottom: 1.8rem;
     -webkit-transition: all .5s;
     transition: all .5s;
