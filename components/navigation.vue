@@ -185,7 +185,7 @@
               <div class="row justify-center">
 
                <div class="modal-body text-center col-xl-12 ">
-                <img src="@/assets/team/Raqeeb.jpeg" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                <img src="@/assets/team/Raqeeb.jpg" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                 <div class="modal-title">
                     <h4>Raqeeb Taiwo
                         <span>Founder/CEO</span>
