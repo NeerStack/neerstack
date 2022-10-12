@@ -247,7 +247,7 @@ definePageMeta({
         p{
             color: #000;
             padding: 10px 40px 10px 40px;
-            text-align:center;
+            text-align: center;
         }
         ul{
             li{
