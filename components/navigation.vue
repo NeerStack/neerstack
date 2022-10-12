@@ -221,7 +221,7 @@
               </div>
 
               <div class="modal-body text-center col-xl-4 col-lg-6">
-                <img src="@/assets/team/team-member-1.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                <img src="@/assets/team/victor.jpeg" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                 <div class="modal-title">
                     <h4>Victor Ahonsi
                         <span>Co-Founder</span>
