@@ -1,17 +1,12 @@
 <template>
   <div class="app dark:bg-black dark:text-white">
     <NuxtLayout >
-      <NuxtPage :key="$route.path" />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
 <script setup>
-  const nuxtApp = useNuxtApp()
-
-  nuxtApp.hook("page:finish", () => {
-    window.scrollTo(0, 0)
-  })
- 
+  
 
 </script>
 <style>

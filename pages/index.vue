@@ -5,8 +5,8 @@
             <div class="row_reverse row no-gutters align-items-center">
                 <div class="desc col-lg-6  text-lg-justify">
                     <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
-                    <h3 class="section-title">Here at CodinMage</h3>
-                    <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p>
+                    <h3 class="section-title pb-5 mb-5">Here at CodinMage, <span id="typewriper">{{word}}</span> <span id="cursor">|</span></h3>
+                    <!-- <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p> -->
                     
                     <div class="ini_project">
                          <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
@@ -555,26 +555,14 @@
 </template>
 <script setup>
 import homeInterface from '@/assets/croods-user-interface.png';
-import Fa6SolidUserGroup from '~icons/fa6-solid/user-group'
-import UI from '@/assets/ui-design.png'
-import Web from '@/assets/web-design.png'
-import Product from '@/assets/product-chain.png'
-import Software from '@/assets/software.png'
-import Api from '@/assets/Api.png'
-import crood from '@/assets/crood2.png'
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
-import Fa6SolidXmark from '~icons/fa6-solid/xmark'
-import Fa6BrandsBehance from '~icons/fa6-brands/behance'
-import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
-import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
 import { setNews } from '@/store/email'
 import Swal from 'sweetalert2'
+import {setPost} from '@/store/post'
 
-definePageMeta({
-  key: route => route.fullPath
-})
+var Post = setPost()
 
 const News = setNews();
 
@@ -585,18 +573,56 @@ useHead({
     title: computed(() => setdata.title)
 })
 
-const wordarr = ref(['We Offer Best Quality Service at Affordable Price.', 'We work as a remote part of your team', 'We always laugh at your jokes😂.', 'we always go extra mile.', 'We are proud to contribute to our clients\' success.', ' We Have Good Team Of Professionals Who Will Be Able To Meet Your Expectations.', 'We Use Latest Technology To Give Your Business A Unique Look.', 'We Work On Time And Deliver On Time.', 'We Provide 100% Satisfaction Guaranteed.', ' We Are Available 24/7 To Help You Out.', 'Your vision plus our expertise equals new impulse to your growth.' ])
-const wordstr = ref(0)
-let count = setInterval(()=>{
-    word()
-}, 3000)
-
-const word = ()=>{
-    wordstr.value++
-    if(wordstr.value >= wordarr.value.length){
-        wordstr.value = 0
-    }
+function sleep(ms){
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+var word = ref('')
+
+    var writeLoop = async() =>{
+        while(true){
+            let curWord = Post.wordarr[Post.curPhraseIndex];
+            
+            for(let i = 0; i < curWord.length; i++){
+                word.value = curWord.substring(0, i+1).toLowerCase(); 
+                await sleep(Post.sleepTime);
+            }
+
+            await sleep(Post.sleepTime * 10);
+
+            for(let i = curWord.length; i > 0; i--){
+                word.value = curWord.substring(0, i-1).toLowerCase(); 
+                await sleep(Post.sleepTime);
+            }
+
+            await sleep(Post.sleepTime * 5);
+
+            if(Post.curPhraseIndex === Post.wordarr.length - 1){
+                Post.curPhraseIndex = 0;
+            }else{
+                Post.curPhraseIndex++;
+            }
+           
+        }
+    };
+
+    writeLoop();
+
+   
+
+
+
+// const wordstr = ref(0)
+// let count = setInterval(()=>{
+//     word()
+// }, 3000)
+
+// const word = ()=>{
+//     wordstr++
+//     if(wordstr >= wordarr.length){
+//         wordstr = 0
+//     }
+// }
 const client_count = ref(0);
 const project_run = ref(0);
 const project_com = ref(0);
@@ -654,6 +680,25 @@ const sendEmail = () => {
 
 
 </script>
+<style scoped>
+    #typewriper{
+        color: #ee2528;
+        font-weight: bold;
+    }
+    #cursor{
+        color: #ee2528;
+        animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0%;
+        }
+    }
+</style>
 <!-- <style lang="scss" scoped>
 
 .services{

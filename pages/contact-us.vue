@@ -91,9 +91,7 @@ const setdata = {
 useHead({
     title: computed(() => setdata.title)
 })
-definePageMeta({
-  key: route => route.fullPath
-})
+
 
 const isLoading = ref(false)
 
