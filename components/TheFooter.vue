@@ -98,7 +98,7 @@ import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
 import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
 import Fa6BrandsGithub from '~icons/fa6-brands/github'
 </script>
-
+<!-- <style scoped>
     .dark .footer{
         border-top: 1px solid #ee2528;
     }
