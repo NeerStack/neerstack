@@ -200,6 +200,11 @@ export default defineNuxtConfig({
       },
       
     },
+    nitro:{
+      prerender:{
+        routes: ['/rss.xml']
+      }
+    },
     
     tailwindcss:{
         cssPath: '~/assets/tailwind.css',
