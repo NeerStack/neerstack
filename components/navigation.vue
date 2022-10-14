@@ -47,9 +47,9 @@
                         <!-- <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/#cynic-team">Team</NuxtLink>
                         </li> -->
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/pricing">Pricing</NuxtLink>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/contact-us">Contact</NuxtLink>

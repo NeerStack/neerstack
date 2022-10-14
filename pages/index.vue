@@ -341,7 +341,7 @@
     </section>
 
     <!-- customer-reviews starts -->
-    <section class="customer-reviews section-gap grey-bg">
+    <!-- <section class="customer-reviews section-gap grey-bg">
         <div class="container">
             <h2 class="section-title text-center">Feedback from our clients</h2>
             <p class="larger-txt text-center">something good to build the trust of prospective clients should be here.</p>
@@ -358,12 +358,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- End of .media -->
+                         
                             <p>“I like CodinMage.” </p>
                         </div>
-                        <!-- End of .img-card -->
+                       
                     </div>
-                    <!-- End of .col-lg-4 -->
+                    
 
                     <div class="col-lg-4 col-md-6">
                         <div class="img-card review-card text-center white-bg">
@@ -376,12 +376,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- End of .media -->
+                           
                             <p>“I love CodinMage” </p>
                         </div>
-                        <!-- End of .img-card -->
+                        
                     </div>
-                    <!-- End of .col-lg-4 -->
+                    
 
                     <div class="col-lg-4 col-md-6">
                         <div class="img-card review-card text-center white-bg">
@@ -394,19 +394,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- End of .media -->
+                           
                             <p>“CodinMages are very professional.” </p>
                         </div>
-                        <!-- End of .img-card -->
+                        
                     </div>
-                    <!-- End of .col-lg-4 -->
+                  
                 </div>
-                <!-- End of .row -->
+                
             </div>
-            <!-- End of .grid-wrapper -->
+           
         </div>
-        <!-- End of .container -->
-    </section>
+        
+    </section> -->
     <!-- End of .customer-reviews -->
 
    
