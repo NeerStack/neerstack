@@ -3,37 +3,7 @@
        <div class="about">
             <div class="title">
                 <h1> About Us</h1>
-                <p>CodinMage is a Digital Agency Company that Design Website for Clients All Over the World Using Latest Technologies. We have been working since 2010 and we are proud of our work. Our team of experts is highly experienced in their respective fields. We offer services like Web Development, Graphic Designing, SEO Services, SMO Services, Content Writing etc. If you need a best web designer for your project who is good at his job,you have come to right place... We are the best in this field and we have employees who is really expert and having experience of 10+ year in their respective domain....so our quality should be according to experienced......
-                    <ul>
-                        <h3>We provide following services :</h3> 
-                        <li>
-                            Web Designer
-                        </li>
-                        <li>
-                            Web Developer
-                        </li>
-                        <li>
-                            Graphic Design
-                        </li>
-                        <li>
-                            Logo Design
-                        </li>
-                        <li>
-                            Web Hosting
-                        </li>
-                        <li>
-                            Email Marketing
-                        </li>
-                        <li>
-                            SEO Services
-                        </li>
-                        <li>
-                            Website Promotion
-                        </li>
-                        <li>
-                            Corporate IdentityDesign
-                        </li>
-                    </ul>
+                <p>CodinMage is a Digital Agency Company that Design Website for Clients All Over the World Using Latest Technologies.Our team of experts is highly experienced in their respective fields. We offer services like Web Development, Graphic Designing, SEO Services, SMO Services, Content Writing etc.
                 </p>
             </div>
             <div class="vision">
