@@ -141,12 +141,6 @@
 </template>
 
 <script setup>
-import under from '@/assets/under-construction.png'
-import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
-import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
-import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
-import image from '@/assets/og.png'
-import rect from '@/assets/Rectangle.png'
 const setdata = {
     title: "CodinMage | About"
 }
@@ -182,7 +176,7 @@ useHead({
         }
     }
     .vision{
-        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('@/assets/Rectangle\ 2.png');
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~/assets/rect.png');
         background-size: cover;
         h1{
             font-size: xx-large;
@@ -310,7 +304,7 @@ useHead({
             }
         }
         .vision{
-            background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/Rectangle.png");
+            background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("~/assets/rect.png");
             background-size: cover;
             max-width: 100%;
             width: 100%;
