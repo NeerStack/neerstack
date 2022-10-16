@@ -298,7 +298,8 @@ useHead({
 @media screen and (max-width: 991px) {
    
     .about{
-        width: 96%;
+        max-width: 100%;
+        width: 95%;
         .title{
             width: 95%;
             margin: 0px 10px 0px 10px;
@@ -308,9 +309,10 @@ useHead({
             }
         }
         .vision{
-            background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(~/assets/Rectangle2.png);
+            background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(~/assets/Rectangle.png);
             background-size: cover;
             max-width: 100%;
+            width: 100%;
             h1{
                 font-size: medium;
                 color: #fff;
