@@ -308,7 +308,7 @@ useHead({
             }
         }
         .vision{
-            background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('@/assets/Rectangle2.png');
+            background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(~/assets/Rectangle2.png);
             background-size: cover;
             max-width: 100%;
             h1{
