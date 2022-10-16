@@ -38,6 +38,11 @@ export default defineNuxtConfig({
               {
                 href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
                 rel: 'stylesheet'
+              },
+              {
+                rel: 'alternate',
+                type: 'application/rss+xml',
+                href: '/rss'
               }
               
           ],
@@ -195,6 +200,19 @@ export default defineNuxtConfig({
               src: "js/main.min.js",
               defer: true,
              
+            },
+            {
+              src: "https://www.googletagmanager.com/gtag/js?id=G-YY4WR0ZRCR",
+              async: true
+            },
+            {
+              children: `( window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+              
+                gtag('config', 'G-YY4WR0ZRCR');)`,
+              type: "text/javascript",
+              async: true
             }
           ]
       },
