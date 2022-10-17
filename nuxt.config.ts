@@ -42,7 +42,7 @@ export default defineNuxtConfig({
               {
                 rel: 'alternate',
                 type: 'application/rss+xml',
-                href: '/rss'
+                href: 'https://codinmage.org/rss'
               }
               
           ],
@@ -64,15 +64,15 @@ export default defineNuxtConfig({
               },
               {
                   property: "og:title",
-                  content: "CodinMage™ | Digital Agency"
+                  content: "CodinMage | Digital Agency"
                 },
                 {
                   property: "og:site_name",
-                  content: "CodinMage™"
+                  content: "CodinMage"
                 },
                 {
                   property: "og:url",
-                  content: "/"
+                  content: "https://codinmage.org"
                 },
                 {
                   property: "og:type",
@@ -81,7 +81,7 @@ export default defineNuxtConfig({
                 {
                   property: "og:image",
                   itemProp: "image",
-                  content: "/og.png"
+                  content: "https://codinmage.org/og.png"
                 },
                 {
                   property: "og:locale",
@@ -105,7 +105,7 @@ export default defineNuxtConfig({
                 },
                 {
                   name: "twitter:title",
-                  content: "CodinMage™"
+                  content: "CodinMage"
                 },
                 {
                   name: "twitter:description",
@@ -113,7 +113,7 @@ export default defineNuxtConfig({
                 },
                 {
                   name: "twitter:image",
-                  content: "/og.png"
+                  content: "https://codinmage.org/og.png"
                 }
           ],
           script:[
@@ -124,6 +124,7 @@ export default defineNuxtConfig({
             {
               src: "js/vendor/jquery.min.js",
               defer: true,
+              type: "text/javascript",
              
             }, 
             // {
@@ -132,7 +133,8 @@ export default defineNuxtConfig({
             // },
             {
               src:"https://code.jquery.com/ui/1.13.2/jquery-ui.min.js",integrity:"sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=",crossorigin:"anonymous",
-              defer: true
+              defer: true,
+              type: "text/javascript",
             },
             // {
             //   src: "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
@@ -141,6 +143,7 @@ export default defineNuxtConfig({
             {
               src: "js/vendor/jquery-migrate.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             // {
@@ -151,6 +154,7 @@ export default defineNuxtConfig({
             {
               src: "js/vendor/easing-1.3.js",
                defer: true,
+               type: "text/javascript",
              
             },
             // {
@@ -160,45 +164,54 @@ export default defineNuxtConfig({
             {
               src: "js/vendor/bootstrap.bundle.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/vendor/isotope.pkgd.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/vendor/jquery.waypoints.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/vendor/jquery.counterup.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/vendor/imagesloaded.pkgd.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/vendor/owl.carousel.min.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/vendor/jquery.magnific-popup.min.js",
                defer: true,
+               type: "text/javascript",
             },
             {
               src: "js/plugins.js",
                defer: true,
+               type: "text/javascript",
              
             },
             {
               src: "js/main.min.js",
               defer: true,
+              type: "text/javascript",
              
             },
             {
