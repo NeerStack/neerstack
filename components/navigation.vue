@@ -134,13 +134,13 @@
                                           </a>
                                       </li>
                                       <li>
-                                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                                        <a href="https://github.com/CodinMage" target="_blank" rel="noopener">
                                             <!-- <i class="fab fa-google-plus-g"></i> -->
                                             <fa6-brands-github/>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                                        <a href="https://www.linkedin.com/company/codinmage/" target="_blank" rel="noopener">
                                             <!-- <i class="fab fa-behance"></i> -->
                                             <fa6-brands-linkedin/>
                                         </a>
@@ -198,19 +198,19 @@
 
                 <ul class="social-icons">
                     <li>
-                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                        <a href="http://www.linkedin.com/in/taiworoqeeb" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-behance"></i> -->
                             <fa6-brands-linkedin/>
                         </a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                        <a href="http://twitter.com/TaiwoRaqeeb" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-twitter"></i> -->
                             <fa6-brands-twitter/>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                        <a href="http://www.github.com/taiworoqeeb" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-google-plus-g"></i> -->
                             <fa6-brands-github/>
                         </a>
@@ -308,21 +308,21 @@
 
                 <ul class="social-icons">
                     <li>
-                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                        <a href="https://www.linkedin.com/in/olawami-williams-927b50175" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-behance"></i> -->
                             <fa6-brands-linkedin/>
                         </a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/" target="_blank" rel="noopener">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-twitter"></i> -->
                             <fa6-brands-twitter/>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                        <a href="https://www.behance.net/olawamiwilliams" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-google-plus-g"></i> -->
-                            <fa6-brands-github/>
+                            <fa6-brands-behance/>
                         </a>
                     </li>
                     

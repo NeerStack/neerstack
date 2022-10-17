@@ -206,11 +206,11 @@ export default defineNuxtConfig({
               async: true
             },
             {
-              children: `( window.dataLayer = window.dataLayer || [];
+              children: `window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
               
-                gtag('config', 'G-YY4WR0ZRCR');)`,
+                gtag('config', 'G-YY4WR0ZRCR');`,
               type: "text/javascript",
               async: true
             }
