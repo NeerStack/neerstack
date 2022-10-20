@@ -272,7 +272,7 @@
 
                 <ul class="social-icons">
                     <li>
-                        <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                        <a href="https://www.linkedin.com/in/opeyemi-awotunde-b7631219b" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-behance"></i> -->
                             <fa6-brands-linkedin/>
                         </a>
@@ -284,7 +284,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.github.com" target="_blank" rel="noopener">
+                        <a href="Https://www.github.com/sirtiva" target="_blank" rel="noopener">
                             <!-- <i class="fab fa-google-plus-g"></i> -->
                             <fa6-brands-github/>
                         </a>
