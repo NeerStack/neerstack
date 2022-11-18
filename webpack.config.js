@@ -9,9 +9,21 @@ module.exports = {
           { loader: MiniCssExtractPlugin.loader },
           "css-loader",
           "postcss-loader",
-          "sass-loader"
+          "sass-loader",
+          
         ]
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|webp|avif)$/i,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            esModule: false,
+            limit: 1000, // 1kB
+            name: 'img/[name].[contenthash:7].[ext]'
+          }
+        }]
+      },
     ]
   },
   resolve:{

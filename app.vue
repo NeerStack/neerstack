@@ -1,14 +1,18 @@
 <template>
   <div class="app dark:bg-black dark:text-white">
     <NuxtLayout >
-      <NuxtPage :key="$route.path" />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
 <script setup>
+  
 
 </script>
 <style>
+  html {
+    scroll-behavior: smooth; /* set scroll-behaviour to smooth here */
+  }
   :root {
     --primary: #4ade80;
     --primary-alt: #22c55e;

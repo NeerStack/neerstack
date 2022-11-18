@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 text-left">
                     <div class="footer-widget widget-about">
-                        <a href=""><img class="footer-logo" :src="dark" alt="footer logo" height="16"></a>
+                        <a href="/"><img class="footer-logo" :src="dark" alt="footer logo" height="16"></a>
                         <p>Outsource Web Development Gig With Professional Software Engineers/Developers..</p>
                         <ul class="social-icons">
                             <li>
@@ -13,7 +13,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://twitter.com/" target="_blank" rel="noopener">
+                                <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
                                     <fa6-brands-twitter/>
                                 </a>
                             </li>
@@ -23,10 +23,22 @@
                                     <fa6-brands-instagram/>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://github.com/CodinMage" target="_blank" rel="noopener">
+                                    <!-- <i class="fab fa-google-plus-g"></i> -->
+                                    <fa6-brands-github/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/codinmage/" target="_blank" rel="noopener">
+                                    <!-- <i class="fab fa-behance"></i> -->
+                                    <fa6-brands-linkedin/>
+                                </a>
+                            </li>
                         </ul>
 
 
-                        <p class="copywrite-txt">© 2022 <a href="#">CodinMage</a>. All Rights Reserved.
+                        <p class="copywrite-txt">© 2022 <a href="/">CodinMage</a>. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -35,12 +47,12 @@
                     <div class="footer-widget">
                         <h5 class="footer-nav-title">Services</h5>
                         <ul class="footer-nav dynamic-nav">
-                            <li><NuxtLink href="#">UI/UX Design</NuxtLink></li>
-                            <li><NuxtLink href="#">Web Development </NuxtLink></li>
-                            <li><NuxtLink href="#">Mobile App Development</NuxtLink></li>
-                            <li><NuxtLink href="#">API Development </NuxtLink></li>
-                            <li><NuxtLink href="#">Software Testing</NuxtLink></li>
-                            <li><NuxtLink href="#">Product Management</NuxtLink></li>
+                            <li><NuxtLink href="/design">UI/UX Design</NuxtLink></li>
+                            <li><NuxtLink href="/web-dev">Web Development </NuxtLink></li>
+                            <li><NuxtLink href="/mobile-dev">Mobile App Development</NuxtLink></li>
+                            <li><NuxtLink href="/api-dev">API Development </NuxtLink></li>
+                            <li><NuxtLink href="/software-test">Software Testing</NuxtLink></li>
+                            <li><NuxtLink href="/product-management">Product Management</NuxtLink></li>
                         </ul>
                     </div>
                 </div>
@@ -50,9 +62,9 @@
                     <div class="footer-widget">
                         <h5 class="footer-nav-title">Resources</h5>
                         <ul class="footer-nav dynamic-nav">
-                            <li><NuxtLink to="#">Portfolio</NuxtLink></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#product-modal">Portfolio</a></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
-                            <li><NuxtLink to="#">Team</NuxtLink></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#team-modal">Team</a></li>
 
                         </ul>
                     </div>
@@ -83,6 +95,8 @@ import light from "@/assets/light_copy.svg"
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
+import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
+import Fa6BrandsGithub from '~icons/fa6-brands/github'
 </script>
 <!-- <style scoped>
     .dark .footer{

@@ -3,10 +3,11 @@
     <div class="banner home-banner d-flex align-items-center">
         <div class="container">
             <div class="row_reverse row no-gutters align-items-center">
-                <div class="desc col-lg-6  text-lg-left">
+                <div class="desc col-lg-6  text-lg-justify">
                     <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
-                    <h3 class="section-title">Here at CodinMage</h3>
-                    <p class="larger-txt ">{{wordarr[wordstr]}}</p>
+                    <h3 class="section-title pb-5 mb-5">Here at CodinMage, <span id="typewriper">{{word}}</span> <span id="cursor">|</span></h3>
+                    <!-- <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p> -->
+                    
                     <div class="ini_project">
                          <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
                     </div>
@@ -108,61 +109,61 @@
                     <div class="row justify-center">
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/design" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-1.png" alt="UI/UX Design">
                                 <h4>UI/UX Design</h4>
                                 <p>We will design accurately based on client's project description.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/web-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-2.png" alt="Web Development">
                                 <h4>Web Development</h4>
                                 <p>We will bring the UI design to accessible Web page.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/mobile-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-3.png" alt="Mobile App Development">
                                 <h4>Mobile App Development</h4>
                                 <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/api-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/Api.png" alt="API Development">
                                 <h4>API Development</h4>
                                 <p>We will create scalable and efficient API for client's project.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="" class="service-block text-center">
+                            <NuxtLink to="/software-test" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/software.png" alt="Software Testing">
                                 <h4>Software Testing</h4>
                                 <p>We will test every angle of the website to suit the client's project.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
-                            <a href="#" class="service-block text-center">
+                            <NuxtLink to="/product-management" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/product-chain.png" alt="Product Management">
                                 <h4>Product Management</h4>
                                 <p>We will take full responsiblity of client's product/project.</p>
-                            </a>
+                            </NuxtLink>
                             <!-- End of .service-block -->
                         </div>
                         <!-- End of .col-lg-4 -->
@@ -196,13 +197,13 @@
                     <div class="col-lg-5">
                         <div class="features-content">
                             <h2 class="section-title">Why choose us?</h2>
-                            <p>This is where we brag about everything we can do or have done but more importantly let them know we are proffesionals and they are in good hands.</p>
+                            <p class="text-justify">Our website design services are affordable and reliable. We offer free estimates and do not charge any hidden fees. Our goal is to make our customers happy and satisfied with their purchase. We strive to meet deadlines and deliver quality work product.  
+                            <br>
+                            We want you to feel comfortable and confident when making your choice! 
+                            </p>
+                            <a class="hyperlink" href="/contact-us">Contact us today!</a> 
 
-
-
-
-
-                            <a href="" class="hyperlink">Learn More About Us</a>
+                            <!-- <a href="/about" class="hyperlink">Learn more about us</a> -->
 
                         </div>
                         <!-- End of .features-content -->
@@ -227,13 +228,8 @@
                     <div class="col-lg-5 offset-lg-1">
                         <div class="features-content">
                             <h2 class="section-title">Better Strategy With Quality Business.</h2>
-                            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics.</p>
-
-
-
-
-
-                            <a href="" class="hyperlink">Learn More About Us</a>
+                            <p class="text-justify">Do not forget about the Quality of your Business, if you do not have Quality products, then even though you have a lot of money, you might go bankrupt. If you are offering a service, you should offer the best quality of service.</p>
+                            <a href="/about" class="hyperlink">Learn more about us</a>
 
                         </div>
                         <!-- End of .features-content -->
@@ -253,10 +249,18 @@
     <!-- Projects starts -->
     <section class="projects section-gap grey-bg" id="our-projects" data-scroll-offset="75">
         <div class="container">
-            <h2 class="section-title text-center">Portfolio section</h2>
-            <p class="larger-txt text-center">(we can all add our best individual gigs here)</p>
+            <h2 class="section-title text-center">Our Portfolio</h2>
+            <p class="larger-txt text-center">Take a moment to go through our previously done work</p>
 
+            <div class="grid-wrapper">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-modal" class="custom-btn secondary-btn">SEE OUR PREVIOUS WORKS</a>
+                    </div>
 
+                </div>
+                <!-- End of .row -->
+            </div>
             <!-- End of .project-showcase -->
         </div>
         <!-- End of .container -->
@@ -274,7 +278,7 @@
 
 
                     <div class="col-12 text-center">
-                        <a href="" class="custom-btn secondary-btn">SEE ALL TEAM MEMBERS</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#team-modal" class="custom-btn secondary-btn">SEE ALL TEAM MEMBERS</a>
                     </div>
 
                 </div>
@@ -337,14 +341,14 @@
     </section>
 
     <!-- customer-reviews starts -->
-    <section class="customer-reviews section-gap grey-bg">
+    <!-- <section class="customer-reviews section-gap grey-bg">
         <div class="container">
             <h2 class="section-title text-center">Feedback from our clients</h2>
             <p class="larger-txt text-center">something good to build the trust of prospective clients should be here.</p>
             <div class="grid-wrapper">
                 <div class="row justify-content-center justify-center">
                     <div class="col-lg-4 col-md-6">
-                        <div class=" img-card review-card text-center white-bg">
+                        <div class="img-card review-card text-center white-bg">
                             <div class="media align-items-center">
                                 <img class="inline-flex justify-center img-fluid " src="@/assets/review/reviewer-1.png" alt="reviewer image">
                                 <div class="media-body">
@@ -354,12 +358,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- End of .media -->
+                         
                             <p>“I like CodinMage.” </p>
                         </div>
-                        <!-- End of .img-card -->
+                       
                     </div>
-                    <!-- End of .col-lg-4 -->
+                    
 
                     <div class="col-lg-4 col-md-6">
                         <div class="img-card review-card text-center white-bg">
@@ -372,12 +376,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- End of .media -->
+                           
                             <p>“I love CodinMage” </p>
                         </div>
-                        <!-- End of .img-card -->
+                        
                     </div>
-                    <!-- End of .col-lg-4 -->
+                    
 
                     <div class="col-lg-4 col-md-6">
                         <div class="img-card review-card text-center white-bg">
@@ -390,123 +394,24 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- End of .media -->
+                           
                             <p>“CodinMages are very professional.” </p>
                         </div>
-                        <!-- End of .img-card -->
+                        
                     </div>
-                    <!-- End of .col-lg-4 -->
+                  
                 </div>
-                <!-- End of .row -->
+                
             </div>
-            <!-- End of .grid-wrapper -->
+           
         </div>
-        <!-- End of .container -->
-    </section>
+        
+    </section> -->
     <!-- End of .customer-reviews -->
 
-    <!-- Team-modal starts -->
-    <div class="modal fade team-modal" id="team-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <!-- <i class="fas fa-times"></i> -->
-                    <fa6-solid-xmark/>
-                </button>
-                    <!-- End of .close -->
-                </div>
-                <!-- End of .modal-header -->
+   
 
-                <div class="modal-body text-center">
-                    <img src="@/assets/team/team-modal-img.png" alt="team modal image" class="img-fluid modal-feat-img">
-                    <div class="modal-title">
-                        <h4>Steve Johnson
-                            <span>Chief Exicutive Officer</span>
-                        </h4>
-                    </div>
-                    <!-- End of .modal-title -->
-                    <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
-                        this bio should represent who you are in the eyes.</p>
-
-                    <ul class="social-icons">
-                        <li>
-                            <a href="http://www.behance.net/" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-behance"></i> -->
-                                <fa6-brands-behance/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com/" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-twitter"></i> -->
-                                <fa6-brands-twitter/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://instagram.com" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-google-plus-g"></i> -->
-                                <fa6-brands-instagram/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://dribbble.com/" target="_blank" rel="noopener">
-                                <!-- <i class="fab fa-dribbble"></i> -->
-                                <fa6-brands-dribbble/>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End of .social-icons -->
-                </div>
-                <!-- End of .modal-body -->
-            </div>
-            <!-- End of .modal-content -->
-        </div>
-        <!-- End of .modal-dialog -->
-    </div>
-    <!-- End of .team-modal -->
-
-    <!-- Product Modal Starts -->
-    <div class="modal fade full-width-modal product-modal" id="product-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <!-- <i class="fas fa-times"></i> -->
-                    <fa6-solid-xmark/>
-                </button>
-                    <!-- End of .close -->
-                </div>
-                <!-- End of .modal-header -->
-
-                <div class="modal-body">
-                    <div class="row no-gutters">
-                        <div class="col-lg-6">
-                            <div class="modal-img text-center">
-                                <img src="@/assets/products/portfolio-modal.png" alt="product-modal" class="img-fluid">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="modal-body__inner-content">
-                                <h4>
-                                    <span>Chief Exicutive Officer</span> Creative Web Design
-                                </h4>
-                                <p>In the early years of the commercial web, we were all Web Designers. Digital interactions, at that stage, were not incredibly sophisticated: most websites were structured as a set of individual pages connected to each other
-                                    via buttons and links.</p>
-
-                                <p>In more complex websites and information-heavy systems, the web designer would pair with an Information Architect to make sure content was organized in a way that made for that.</p>
-                                <NuxtLink to="/about" class="hyperlink">Launch Website</NuxtLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of .modal-body -->
-            </div>
-            <!-- End of .modal-content -->
-        </div>
-        <!-- End of .modal-dialog -->
-    </div>
-    <!-- End of .portfolio-modal -->
+   
 
     <!-- <div class="home">
         <div class="container">
@@ -650,26 +555,14 @@
 </template>
 <script setup>
 import homeInterface from '@/assets/croods-user-interface.png';
-import Fa6SolidUserGroup from '~icons/fa6-solid/user-group'
-import UI from '@/assets/ui-design.png'
-import Web from '@/assets/web-design.png'
-import Product from '@/assets/product-chain.png'
-import Software from '@/assets/software.png'
-import Api from '@/assets/Api.png'
-import crood from '@/assets/crood2.png'
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
-import Fa6SolidXmark from '~icons/fa6-solid/xmark'
-import Fa6BrandsBehance from '~icons/fa6-brands/behance'
-import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
-import Fa6BrandsYoutube from '~icons/fa6-brands/youtube'
 import { setNews } from '@/store/email'
 import Swal from 'sweetalert2'
+import {setPost} from '@/store/post'
 
-definePageMeta({
-  key: route => route.fullPath
-})
+var Post = setPost()
 
 const News = setNews();
 
@@ -680,18 +573,56 @@ useHead({
     title: computed(() => setdata.title)
 })
 
-const wordarr = ref(['Your vision plus our expertise equals new impulse to your growth.', 'We work as a remote part of your team', 'we always laugh at your jokes😂.', 'we always go extra mile.', 'we are proud to contribute to our clients\' success.'])
-const wordstr = ref(0)
-let count = setInterval(()=>{
-    word()
-}, 3000)
-
-const word = ()=>{
-    wordstr.value++
-    if(wordstr.value >= wordarr.value.length){
-        wordstr.value = 0
-    }
+function sleep(ms){
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+var word = ref('')
+
+    var writeLoop = async() =>{
+        while(true){
+            let curWord = Post.wordarr[Post.curPhraseIndex];
+            
+            for(let i = 0; i < curWord.length; i++){
+                word.value = curWord.substring(0, i+1).toLowerCase(); 
+                await sleep(Post.sleepTime);
+            }
+
+            await sleep(Post.sleepTime * 10);
+
+            for(let i = curWord.length; i > 0; i--){
+                word.value = curWord.substring(0, i-1).toLowerCase(); 
+                await sleep(Post.sleepTime);
+            }
+
+            await sleep(Post.sleepTime * 5);
+
+            if(Post.curPhraseIndex === Post.wordarr.length - 1){
+                Post.curPhraseIndex = 0;
+            }else{
+                Post.curPhraseIndex++;
+            }
+           
+        }
+    };
+
+    writeLoop();
+
+   
+
+
+
+// const wordstr = ref(0)
+// let count = setInterval(()=>{
+//     word()
+// }, 3000)
+
+// const word = ()=>{
+//     wordstr++
+//     if(wordstr >= wordarr.length){
+//         wordstr = 0
+//     }
+// }
 const client_count = ref(0);
 const project_run = ref(0);
 const project_com = ref(0);
@@ -749,6 +680,25 @@ const sendEmail = () => {
 
 
 </script>
+<style scoped>
+    #typewriper{
+        color: #ee2528;
+        font-weight: bold;
+    }
+    #cursor{
+        color: #ee2528;
+        animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0%;
+        }
+    }
+</style>
 <!-- <style lang="scss" scoped>
 
 .services{
