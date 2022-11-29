@@ -82,7 +82,7 @@
         <section class="our-process section-gap light-grey-bg">
             <div class="container">
                 <h2 class="section-title text-center">Our Process</h2>
-                <p class="larger-txt text-center">We provide great websites that adds great values to your business. From wire-framing to
+                <p class="larger-txt text-center">We provide great websites that adds great values to your business. From developing to
                     <br>hosting and maintaining, we do it all.</p>
         
                 <div class="process-tab-container grid-wrapper">
