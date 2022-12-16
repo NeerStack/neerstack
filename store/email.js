@@ -2,9 +2,9 @@ import {defineStore} from 'pinia'
 import emailjs from '@emailjs/browser';
 // import  fetch from 'node-fetch'
 
-const url = 'https://codinmage-server.herokuapp.com/subscribe';
-const quoteUrl = 'https://codinmage-server.herokuapp.com/quote';
-const contactUrl = 'https://codinmage-server.herokuapp.com/contact';
+const url = 'https://codinmage-server.onrender.com/subscribe';
+const quoteUrl = 'https://codinmage-server.onrender.com/quote';
+const contactUrl = 'https://codinmage-server.onrender.com/contact';
 export const setEmail = defineStore('email', {
     state: ()=>({
         name: '',
@@ -29,7 +29,7 @@ export const setEmail = defineStore('email', {
             await fetch(quoteUrl, {
               method: 'POST',
               headers:{
-                accept: 'application/json', 
+                accept: 'application/json',
                 'content-type': 'application/json',
               },
               body: JSON.stringify(form)
@@ -51,7 +51,7 @@ export const setEmail = defineStore('email', {
                 this.message = '';
                 this.error = data.message
               }
-              
+
             })
             .catch(error => {
               this.error = error
@@ -82,7 +82,7 @@ export const setNews = defineStore('newsletter', {
         await fetch(url, {
           method: 'POST',
           headers:{
-            accept: 'application/json', 
+            accept: 'application/json',
             'content-type': 'application/json',
           },
           body: JSON.stringify(profile)
@@ -105,7 +105,7 @@ export const setNews = defineStore('newsletter', {
           this.error = err
           console.error(err)
         })
-       
+
 
       } catch (error) {
         console.error(error);
@@ -139,7 +139,7 @@ export const setContact = defineStore('contact', {
           await fetch(contactUrl, {
             method: 'POST',
             headers:{
-              accept: 'application/json', 
+              accept: 'application/json',
               'content-type': 'application/json',
             },
             body: JSON.stringify(form)
@@ -161,7 +161,7 @@ export const setContact = defineStore('contact', {
               this.message = '';
               this.error = data.message
             }
-            
+
           })
           .catch(error => {
             this.error = error

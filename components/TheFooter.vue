@@ -48,9 +48,9 @@
                         <h5 class="footer-nav-title">Services</h5>
                         <ul class="footer-nav dynamic-nav">
                             <li><NuxtLink href="/design">UI/UX Design</NuxtLink></li>
-                            <li><NuxtLink href="/web-dev">Web Development </NuxtLink></li>
+                            <li><NuxtLink href="/web-dev">Website Development </NuxtLink></li>
                             <li><NuxtLink href="/mobile-dev">Mobile App Development</NuxtLink></li>
-                            <li><NuxtLink href="/api-dev">API Development </NuxtLink></li>
+                            <!-- <li><NuxtLink href="/api-dev">API Development </NuxtLink></li> -->
                             <li><NuxtLink href="/software-test">Software Testing</NuxtLink></li>
                             <li><NuxtLink href="/product-management">Product Management</NuxtLink></li>
                         </ul>
@@ -84,9 +84,9 @@
 
 
             </div>
-           
+
         </div>
-     
+
     </footer>
 </template>
 <script setup>
@@ -103,7 +103,7 @@ import Fa6BrandsGithub from '~icons/fa6-brands/github'
         border-top: 1px solid #ee2528;
     }
     .footer{
-       
+
         margin-top: 200px;
         margin-left: 0;
         margin-right: 0;

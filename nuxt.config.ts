@@ -2,9 +2,10 @@
 import Icons from 'unplugin-icons/vite'
 // import webpack from 'webpack'
 
+
 export default defineNuxtConfig({
     modules:[
-        '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'bootstrap-vue/nuxt'
+        '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'bootstrap-vue/nuxt', 'nuxt-compress'
     ],
     css: [
         '@fortawesome/fontawesome-svg-core/styles.css', '~/assets/tailwind.css',
@@ -19,7 +20,8 @@ export default defineNuxtConfig({
     directives: ['VBModal', 'VBPopover', 'VBTooltip', 'VBScrollspy'],
     Icons: true
     },
-    build:{
+    build: {
+      
       transpile:[
         'klaviyo-sdk'
       ]
@@ -261,5 +263,15 @@ export default defineNuxtConfig({
     layoutTransition:{
         name: 'default',
         mode: 'out-in'
+    },
+    'nuxt-compress':{
+      gzip: {
+        threshold: 8192,
+      },
+      brotli: {
+        threshold: 8192,
+      },
     }
+    
+    
 })
