@@ -14,7 +14,7 @@
             </nav>
 
 
-            <div class="container mt-80 mb-80">
+            <div class="container  mt-10 mb-20">
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6  text-center text-lg-left">
                         <h1 class="mt-20">Software Testing</h1>
