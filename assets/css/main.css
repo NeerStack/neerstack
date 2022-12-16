@@ -9,22 +9,22 @@
 
 /*-- == Table of contents =====================
 
- 
-1. Base 
-2. Form 
-3. Header 
-4. Banner 
-5. Achievements 
-6. Services 
-7. Features 
-8. Projects 
-9. Team 
-10. Clients 
+
+1. Base
+2. Form
+3. Header
+4. Banner
+5. Achievements
+6. Services
+7. Features
+8. Projects
+9. Team
+10. Clients
 11. Pricing style
 12. Newsletter style
-13. News 
-14. Reviews 
-15. Location 
+13. News
+14. Reviews
+15. Location
 16. Footer
 
 
@@ -890,10 +890,10 @@ textarea+.err-msg {
     .navbar-nav .submenu2.show {
         display: block;
         text-align: center;
-        
+
     }
     .navbar-nav .submenu2.show li{
-        text-align: center;
+        text-align: justify;
         border-bottom: 1px solid #ddd;
         border-radius: 10px;
 
@@ -908,7 +908,7 @@ textarea+.err-msg {
         display: block;
     }
 
-    
+
 }
 
 @media screen and (max-width: 992px) {
@@ -918,15 +918,15 @@ textarea+.err-msg {
     .navbar-nav .submenu2.show {
         display: block;
         text-align: center;
-        
+
     }
     .navbar-nav .submenu2.show li{
         text-align: center;
         border-bottom: 1px solid #ddd;
         border-radius: 10px;
-        
-        
-        
+
+
+
 
     }
     .navbar-nav .submenu2.show li:hover {
@@ -1015,6 +1015,7 @@ textarea+.err-msg {
 
 .banner h1 {
     margin: .3rem 0 2.5rem;
+    margin-top: 8rem;
 }
 
 .banner p {
@@ -1103,7 +1104,7 @@ textarea+.err-msg {
     .desc{
         text-align: center;
     }
-   
+
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -1497,7 +1498,7 @@ textarea+.err-msg {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 2.8rem;
     color: #888FB8;
     font-weight: 500;
@@ -1763,7 +1764,7 @@ textarea+.err-msg {
     padding: 1rem 5rem 5rem;
     border: none;
     background-color: #f9fcff;
-    
+
 }
 
 .modal .modal-content .close {
@@ -1806,7 +1807,7 @@ textarea+.err-msg {
     align-items: center;
     padding: 10px 10px 10px 10px;
     margin: 5px;
-    
+
 }
 
 .team-modal .modal-body img {
@@ -2355,7 +2356,7 @@ figure img {
 }
 
 .review-card {
-    
+
     max-width: 100%;
     padding: 2rem 2rem 2rem;
 }
@@ -2652,6 +2653,7 @@ figure img {
 
 .process-card-content p {
     margin-bottom: 2rem;
+    font-size: medium;
 }
 
 

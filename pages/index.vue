@@ -7,11 +7,11 @@
                     <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
                     <h3 class="section-title pb-5 mb-5">Here at CodinMage, <span id="typewriper">{{word}}</span> <span id="cursor">|</span></h3>
                     <!-- <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p> -->
-                    
+
                     <div class="ini_project">
                          <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
                     </div>
-                   
+
 
                 </div>
                 <!-- End of .col-lg-5 -->
@@ -121,7 +121,7 @@
                         <div class="col-xl-4 col-lg-6">
                             <NuxtLink to="/web-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/service-icon-2.png" alt="Web Development">
-                                <h4>Web Development</h4>
+                                <h4>Website Development</h4>
                                 <p>We will bring the UI design to accessible Web page.</p>
                             </NuxtLink>
                             <!-- End of .service-block -->
@@ -138,14 +138,14 @@
                         </div>
                         <!-- End of .col-lg-4 -->
 
-                        <div class="col-xl-4 col-lg-6">
+                        <!-- <div class="col-xl-4 col-lg-6">
                             <NuxtLink to="/api-dev" class="service-block text-center">
                                 <img class="inline-flex justify-center" src="@/assets/services/Api.png" alt="API Development">
                                 <h4>API Development</h4>
                                 <p>We will create scalable and efficient API for client's project.</p>
                             </NuxtLink>
-                            <!-- End of .service-block -->
-                        </div>
+
+                        </div> -->
                         <!-- End of .col-lg-4 -->
 
                         <div class="col-xl-4 col-lg-6">
@@ -197,11 +197,11 @@
                     <div class="col-lg-5">
                         <div class="features-content">
                             <h2 class="section-title">Why choose us?</h2>
-                            <p class="text-justify">Our website design services are affordable and reliable. We offer free estimates and do not charge any hidden fees. Our goal is to make our customers happy and satisfied with their purchase. We strive to meet deadlines and deliver quality work product.  
+                            <p class="text-justify">Our website design services are affordable and reliable. We offer free estimates and do not charge any hidden fees. Our goal is to make our customers happy and satisfied with their purchase. We strive to meet deadlines and deliver quality work product.
                             <br>
-                            We want you to feel comfortable and confident when making your choice! 
+                            We want you to feel comfortable and confident when making your choice!
                             </p>
-                            <a class="hyperlink" href="/contact-us">Contact us today!</a> 
+                            <a class="hyperlink" href="/contact-us">Contact us today!</a>
 
                             <!-- <a href="/about" class="hyperlink">Learn more about us</a> -->
 
@@ -358,12 +358,12 @@
                                     </p>
                                 </div>
                             </div>
-                         
+
                             <p>“I like CodinMage.” </p>
                         </div>
-                       
+
                     </div>
-                    
+
 
                     <div class="col-lg-4 col-md-6">
                         <div class="img-card review-card text-center white-bg">
@@ -376,12 +376,12 @@
                                     </p>
                                 </div>
                             </div>
-                           
+
                             <p>“I love CodinMage” </p>
                         </div>
-                        
+
                     </div>
-                    
+
 
                     <div class="col-lg-4 col-md-6">
                         <div class="img-card review-card text-center white-bg">
@@ -394,24 +394,24 @@
                                     </p>
                                 </div>
                             </div>
-                           
+
                             <p>“CodinMages are very professional.” </p>
                         </div>
-                        
+
                     </div>
-                  
+
                 </div>
-                
+
             </div>
-           
+
         </div>
-        
+
     </section> -->
     <!-- End of .customer-reviews -->
 
-   
 
-   
+
+
 
     <!-- <div class="home">
         <div class="container">
@@ -421,13 +421,13 @@
                     <th class="story1">
                         <div>
                             <h2 class="intro">Outsource Web
-                            Development Agency 
+                            Development Agency
                             With Trained Software Engineers/Developers</h2>
-                               
+
                             <span>
-                                <h3>Here at CodinMage<h4>{{wordarr[wordstr]}}</h4></h3> 
+                                <h3>Here at CodinMage<h4>{{wordarr[wordstr]}}</h4></h3>
                             </span>
-                        
+
                             <div class="button">
                                 <button class="quote">
                                     Get Quote Now
@@ -444,9 +444,9 @@
                 </tr>
             </tbody>
             </table>
-            
+
             <table class="table2">
-                
+
                 <tbody>
                     <tr>
                         <th>
@@ -454,7 +454,7 @@
                                 <h1>
                                     Our Services
                                 </h1>
-                                
+
                             </div>
                         </th>
                     </tr>
@@ -467,7 +467,7 @@
                                         <h5>UI/UX Design</h5>
                                     </span>
                                     <p>We will design accurately based on client's project description</p>
-        
+
                                 </div>
                             </div>
                         </th>
@@ -479,7 +479,7 @@
                                         <h5>Web Development</h5>
                                     </span>
                                     <p>We will bring the UI design to accessible Web page</p>
-        
+
                                 </div>
                             </div>
                         </th>
@@ -491,7 +491,7 @@
                                         <h5>API Development</h5>
                                     </span>
                                     <p>We will create scalable and efficient API for client's project </p>
-        
+
                                 </div>
                             </div>
                         </th>
@@ -503,7 +503,7 @@
                                         <h5>Software Testing</h5>
                                     </span>
                                     <p>We will test every angle of the website to suit the client's project</p>
-        
+
                                 </div>
                             </div>
                         </th>
@@ -515,7 +515,7 @@
                                         <h5>Product Management</h5>
                                     </span>
                                     <p>We will take full responsiblity of client's product/project</p>
-        
+
                                 </div>
                             </div>
                         </th>
@@ -530,16 +530,16 @@
                         <th>
                             <div>
                             <h2>
-                                Better Strategy 
+                                Better Strategy
                                 With Quality Business
                             </h2>
                             <p>
-                                Problems trying to resolve the conflict between 
-                                the two major realms of Classical physics: Newtonian mechanics 
+                                Problems trying to resolve the conflict between
+                                the two major realms of Classical physics: Newtonian mechanics
                             </p>
                         </div>
                         </th>
-                        
+
                     </tr>
                     <tr class="row4">
                         <th>
@@ -582,16 +582,16 @@ var word = ref('')
     var writeLoop = async() =>{
         while(true){
             let curWord = Post.wordarr[Post.curPhraseIndex];
-            
+
             for(let i = 0; i < curWord.length; i++){
-                word.value = curWord.substring(0, i+1).toLowerCase(); 
+                word.value = curWord.substring(0, i+1).toLowerCase();
                 await sleep(Post.sleepTime);
             }
 
             await sleep(Post.sleepTime * 10);
 
             for(let i = curWord.length; i > 0; i--){
-                word.value = curWord.substring(0, i-1).toLowerCase(); 
+                word.value = curWord.substring(0, i-1).toLowerCase();
                 await sleep(Post.sleepTime);
             }
 
@@ -602,13 +602,13 @@ var word = ref('')
             }else{
                 Post.curPhraseIndex++;
             }
-           
+
         }
     };
 
     writeLoop();
 
-   
+
 
 
 
@@ -638,7 +638,7 @@ const project_com = ref(0);
         project2_work()
     }, 50)
 
-    
+
 
 const client_work = () =>{
     client_count.value++
@@ -723,7 +723,7 @@ const sendEmail = () => {
 }
 
 .dark .home .services{
-    
+
     box-shadow: -5px -5px 10px rgba(30, 41, 59,0.8), 5px 5px 10px rgba(0,0,0,0.25);
     h1{
         color: #fff
@@ -734,7 +734,7 @@ const sendEmail = () => {
 }
 .home {
     width: 100%;
-    
+
     .container{
         display: inline-table;
         justify-content: center;
@@ -744,7 +744,7 @@ const sendEmail = () => {
             margin-top: 30px;
             margin-bottom: 30px;
             .row1{
-                
+
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -756,33 +756,33 @@ const sendEmail = () => {
                         h2.intro{
                             display: flex;
                             font-weight: bold;
-                            
+
                             text-align: left;
                             word-wrap: break-word;
                             color: #000;
-                            
+
                         }
                         span{
                             padding: 10px 2px;
                             h3{
                             margin-top: 10px;
                             font-weight: bold;
-                            
+
                             text-align: left;
                             color: #000;
                             h4{
-                            
+
                                 font-weight: lighter;
-                                
+
                                 text-align: left;
                                 color: #ee2528;
                                 word-wrap: break-word;
-                                
+
                             }
                             }
-                            
+
                         }
-                       
+
                         .button{
                             display: flex;
                             justify-content: flex-start;
@@ -795,7 +795,7 @@ const sendEmail = () => {
                                 border-radius: 20px;
                                 background: #ee2528;
                                 color: #fff;
-                                
+
                                 font-weight: lighter;
                                 box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0,0,0,0.25);
                                 &:hover{
@@ -833,8 +833,8 @@ const sendEmail = () => {
                     }
                 }
             }
-           
-            
+
+
         }
         .table2{
             display: inline-table;
@@ -850,11 +850,11 @@ const sendEmail = () => {
                     justify-content: center;
                     margin-bottom: 20px;
                     .card{
-                        
+
                         border: 1px solid #ee2528;
                         border-radius: 20px;
                         padding: 10px 10px;
-                        
+
                         box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0,0,0,0.25);
                         span{
                             display: flex;
@@ -864,7 +864,7 @@ const sendEmail = () => {
                             padding: 3px;
                             h5{
                                 margin-left: 10px;
-                                
+
                                 font-weight: bold;
                                 color: #000;
                                 margin-top: 11px;
@@ -876,7 +876,7 @@ const sendEmail = () => {
                         }
                         p{
                             text-align: left;
-                            
+
                             font-weight: lighter;
                             color: #ee2528;
                             padding: 3px;
@@ -935,14 +935,14 @@ const sendEmail = () => {
                         justify-content: center;
                         align-items: center;
                         margin-bottom: 40px;
-                        
+
                     }
                 }
             }
         }
     &:hover{
        background: #ddd;
-        
+
     }
     }
 
@@ -962,7 +962,7 @@ const sendEmail = () => {
                                 color: #ee2528
                             }
                         }
-                        
+
                         .button{
                             button.quote{
                                 box-shadow: -5px -5px 10px rgba(30, 41, 59,0.8), 5px 5px 10px rgba(0,0,0,0.25);
@@ -989,16 +989,16 @@ const sendEmail = () => {
                         span{
                             h5{
                                 color: #fff;
-                               
+
                             }
                             svg{
-                                
+
                                 color: #fff;
                             }
                         }
                         p{
                             color: #ee2528;
-                            
+
                         }
                         &:hover{
                             background: var(--black-alt);
@@ -1006,7 +1006,7 @@ const sendEmail = () => {
                     }
                 }
             }
-            
+
         }
     }
     .feature{
@@ -1017,16 +1017,16 @@ const sendEmail = () => {
             .row3{
                 th{
                     div{
-                       
+
                         h2{
-                            
+
                             color: #fff;
                         }
-                        
+
                     }
                 }
             }
-            
+
             .row3{
                 th{
                     div{
@@ -1039,7 +1039,7 @@ const sendEmail = () => {
         }
     &:hover{
        background: var(--black-alt);
-        
+
     }
     }
 
@@ -1072,7 +1072,7 @@ const sendEmail = () => {
                 }
             }
         }
-        
+
     }
 }
     .story2{
@@ -1080,20 +1080,20 @@ const sendEmail = () => {
         display: flex;
         justify-content: center;
         img{
-            
+
             width: 400px;
             height: auto;
         }
     }
     .table2{
-        
+
         .row2{
-           
+
             th{
-                
+
                 .card{
                     width: 500px;
-                    
+
                     span{
                         h5{
                             margin-left: 10px;
@@ -1151,17 +1151,17 @@ const sendEmail = () => {
                 }
             }
         }
-        
+
     }
     .table2{
-        
+
         .row2{
-           
+
             th{
-                
+
                 .card{
                     width: 500px;
-                    
+
                     span{
                         h5{
                             margin-left: 10px;
@@ -1195,13 +1195,13 @@ const sendEmail = () => {
         display: flex;
         justify-content: center;
         img{
-           
+
             width: 400px;
             height: auto;
         }
     }
 
-    
+
 }
 @media (max-width: 1080px) {
 
@@ -1222,7 +1222,7 @@ const sendEmail = () => {
         display: flex;
         justify-content: center;
         img{
-            
+
             width: 400px;
             height: auto;
         }
@@ -1241,18 +1241,18 @@ const sendEmail = () => {
                 }
             }
         }
-        
+
     }
 }
 .table2{
-        
+
     .row2{
-       
+
         th{
-            
+
             .card{
                 width: 500px;
-                
+
                 span{
                     h5{
                         margin-left: 10px;
@@ -1280,7 +1280,7 @@ const sendEmail = () => {
         }
     }
 }
-    
+
 }
 
 @media (max-width: 520px) {
@@ -1310,7 +1310,7 @@ const sendEmail = () => {
                 }
             }
         }
-        
+
     }
     .story2{
         margin: 5px;
@@ -1321,14 +1321,14 @@ const sendEmail = () => {
     }
     }
     .table2{
-        
+
         .row2{
-           
+
             th{
-                
+
                 .card{
                     width: 300px;
-                    
+
                     span{
                         h5{
                             margin-left: 10px;
@@ -1356,8 +1356,8 @@ const sendEmail = () => {
             }
         }
     }
-    
-    
+
+
 }
 
 @media (max-width: 420px) {
@@ -1387,7 +1387,7 @@ const sendEmail = () => {
                 }
             }
         }
-        
+
     }
     .story2{
         margin: 5px;
@@ -1399,14 +1399,14 @@ const sendEmail = () => {
     }
 
     .table2{
-        
+
         .row2{
-           
+
             th{
-                
+
                 .card{
                     width: 300px;
-                    
+
                     span{
                         h5{
                             margin-left: 10px;
@@ -1434,8 +1434,8 @@ const sendEmail = () => {
             }
         }
     }
-    
-    
+
+
 }
 
 @media (max-width: 300px) {
@@ -1465,7 +1465,7 @@ const sendEmail = () => {
                 }
             }
         }
-        
+
     }
     .story2{
         margin: 5px;
@@ -1476,14 +1476,14 @@ const sendEmail = () => {
     }
     }
     .table2{
-        
+
         .row2{
-           
+
             th{
-                
+
                 .card{
                     width: 200px;
-                    
+
                     span{
                         h5{
                             margin-left: 10px;
@@ -1511,7 +1511,7 @@ const sendEmail = () => {
             }
         }
     }
-    
+
 }
 
 </style> -->
