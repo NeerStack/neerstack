@@ -16,7 +16,7 @@
                 <button @click="handleNav()" class="navbar-toggler" type="button"  aria-controls="custom-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span  class="custom-toggler-icon"></span>
                     <span  class="custom-toggler-icon"></span>
-                    <span  class="custom-toggler-icon"></span> 
+                    <span  class="custom-toggler-icon"></span>
                 </button>
                 <!-- End of .navbar-toggler -->
 
@@ -24,18 +24,16 @@
                     <ul class="navbar-nav ml-auto align-items-center dynamic-nav">
                         <li class="nav-item has-dropdown">
                             <a @click="handledrop()"  class="nav-link">Services</a>
-                            <ul  class="submenu2 text-left bg-gray-700" :class="{show: submenushow == true}">
-                                <li>
+                            <ul  class="submenu2 text-justify bg-gray-700" :class="{show: submenushow == true}">
+                                <li class="text-justify">
                                   <NuxtLink @click="handleClick($event)" to="/design">UI/UX Design</NuxtLink></li>
-                                <li>
-                                  <NuxtLink @click="handleClick($event)" to="/web-dev">Web Development </NuxtLink></li>
-                                <li>
+                                <li class="text-justify">
+                                  <NuxtLink @click="handleClick($event)" to="/web-dev">Website Development </NuxtLink></li>
+                                <li class="text-justify">
                                   <NuxtLink @click="handleClick($event)" to="/mobile-dev">Mobile App Development</NuxtLink></li>
-                                <li>
-                                  <NuxtLink @click="handleClick($event)" to="/api-dev">API Development</NuxtLink></li>
-                                <li>
+                                <li class="text-justify">
                                   <NuxtLink @click="handleClick($event)" to="/software-test">Software Testing</NuxtLink></li>
-                                <li>
+                                <li class="text-justify">
                                   <NuxtLink @click="handleClick($event)" to="/product-management">Product Management</NuxtLink></li>
 
                             </ul>
@@ -64,19 +62,19 @@
                             </span>
                             <span v-if="Setting.color === 'dark'">
                               <fa6-solid-sun/>
-                          
+
                           </span>
                           </button>
                         </li> -->
                     </ul>
                 </div>
           </div>
-          
-            
+
+
         </nav>
     </div>
   </header>
-  
+
      <!-- Quote modal starts -->
      <div class="modal fade full-width-modal quote-modal" id="quote-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -126,7 +124,7 @@
                                               <fa6-brands-twitter/>
                                           </a>
                                       </li>
-                          
+
                                       <li>
                                           <a href="http://www.instagram.com" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-google-plus-g"></i> -->
@@ -166,7 +164,7 @@
       <!-- End of .modal-dialog -->
     </div>
     <!-- End of .quote-modal -->
-  
+
    <!-- Team-modal starts -->
     <div class="modal fade team-modal" id="team-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -185,11 +183,12 @@
                   <div class="row justify-center">
 
                   <div class="modal-body text-center col-xl-12 ">
-                    <img src="https://res.cloudinary.com/taiworoqeeb/image/upload/v1666615605/raqeeb_taiwo-removebg-preview_ctxdnv.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                    <!-- <img src="https://res.cloudinary.com/taiworoqeeb/image/upload/v1666615605/raqeeb_taiwo-removebg-preview_ctxdnv.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/> -->
+                    <img src="@/assets/team/team-member-3.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                     <div class="modal-title">
                         <h4>Raqeeb Taiwo
-                            <span>Founder/CEO</span>
-                            <span>Software Developer</span>
+                            <!-- <span>CEO/Team Lead</span> -->
+                            <span>Software Developer/Team Lead</span>
                         </h4>
                     </div>
                     <!-- End of .modal-title -->
@@ -215,18 +214,19 @@
                                 <fa6-brands-github/>
                             </a>
                         </li>
-                        
+
                     </ul>
                     <!-- End of .social-icons -->
                   </div>
 
                   <div class="modal-body text-center col-xl-4 col-lg-6">
-                    <img src="https://res.cloudinary.com/taiworoqeeb/image/upload/v1666615773/victor-removebg-preview_foqtez.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                    <!-- <img src="https://res.cloudinary.com/taiworoqeeb/image/upload/v1666615773/victor-removebg-preview_foqtez.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/> -->
+                    <img src="@/assets/team/team-member-3.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                     <div class="modal-title">
                         <h4>Victor Ahonsi
-                            <span>Co-Founder</span>
+                            <!-- <span>Marketing/Sale Manager</span> -->
                             <span>Project/Product Manager</span>
-                            
+
                         </h4>
                     </div>
                     <!-- End of .modal-title -->
@@ -252,7 +252,7 @@
                                 <fa6-brands-github/>
                             </a>
                         </li>
-                        
+
                     </ul>
                     <!-- End of .social-icons -->
                   </div>
@@ -261,9 +261,9 @@
                     <img src="@/assets/team/team-member-3.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                     <div class="modal-title">
                         <h4>Opeyemi Awotunde
-                            <span>Co-Founder</span>
+                            <!-- <span>CTO</span> -->
                             <span>Software Developer</span>
-                            
+
                         </h4>
                     </div>
                     <!-- End of .modal-title -->
@@ -289,7 +289,7 @@
                                 <fa6-brands-github/>
                             </a>
                         </li>
-                        
+
                     </ul>
                     <!-- End of .social-icons -->
                   </div>
@@ -298,7 +298,7 @@
                     <img src="@/assets/team/team-member-5.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                     <div class="modal-title">
                         <h4>Mateen Williams
-                            <span>Partner</span>
+                            <!-- <span>Team Member</span> -->
                             <span>UI/UX Designer</span>
                         </h4>
                     </div>
@@ -325,7 +325,7 @@
                                 <fa6-brands-behance/>
                             </a>
                         </li>
-                        
+
                     </ul>
                     <!-- End of .social-icons -->
                   </div>
@@ -334,9 +334,9 @@
                     <img src="@/assets/team/team-member-6.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
                     <div class="modal-title">
                         <h4>Nurudeen Rabiu
-                            <span>Partner</span>
+                          <!-- <span>Team Member</span> -->
                             <span>Software Developer</span>
-                            
+
                         </h4>
                     </div>
                     <!-- End of .modal-title -->
@@ -362,7 +362,44 @@
                                 <fa6-brands-github/>
                             </a>
                         </li>
-                        
+
+                    </ul>
+                    <!-- End of .social-icons -->
+                  </div>
+
+                  <div class="modal-body text-center col-xl-4 col-lg-6">
+                    <img src="@/assets/team/team-member-6.png" alt="team modal image" class="inline-flex justify-center img-fluid modal-feat-img"/>
+                    <div class="modal-title">
+                        <h4>Oladapo Olatunbosun
+                          <!-- <span>Team Member</span> -->
+                            <span>Flutter Developer</span>
+
+                        </h4>
+                    </div>
+                    <!-- End of .modal-title -->
+                    <!-- <p>To be fair, in certain contexts, your professional bio does need to be more formal, like Mr. Erickson's up there. But in many cases, writing a bio that's readable even conversational is actually a really good thing. But once created,
+                        this bio should represent who you are in the eyes.</p> -->
+
+                    <ul class="social-icons">
+                        <li>
+                            <a href="http://www.linkedin.com/" target="_blank" rel="noopener">
+                                <!-- <i class="fab fa-behance"></i> -->
+                                <fa6-brands-linkedin/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/" target="_blank" rel="noopener">
+                                <!-- <i class="fab fa-twitter"></i> -->
+                                <fa6-brands-twitter/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.github.com" target="_blank" rel="noopener">
+                                <!-- <i class="fab fa-google-plus-g"></i> -->
+                                <fa6-brands-github/>
+                            </a>
+                        </li>
+
                     </ul>
                     <!-- End of .social-icons -->
                   </div>
@@ -371,10 +408,10 @@
                   </div>
                   </div>
                 </div>
-                
-                
-                
-              
+
+
+
+
                 <!-- End of .modal-body -->
             </div>
             <!-- End of .modal-content -->
@@ -425,7 +462,7 @@
     <!-- End of .modal-dialog -->
   </div>
   <!-- End of .portfolio-modal -->
-  
+
 
 </template>
 <script setup>
@@ -463,17 +500,17 @@ var subnav = ref(false)
     }else{
       document.getElementById('header').classList.remove('scrolled')
     }
-    
+
   }
 
   function handledrop(){
     submenushow.value = !submenushow.value
-    
+
   }
   function handleNav(){
     subnav.value = !subnav.value
-    
-    
+
+
   }
 
   const handleClick = (e) =>{
@@ -485,18 +522,18 @@ var subnav = ref(false)
       submenushow.value = false
     }
     }
-    
+
 
   }
-  
+
   onBeforeMount(()=>{
     window.addEventListener('scroll', handleScroll)
-  
+
   })
 
   onBeforeUnmount(()=>{
     window.removeEventListener('scroll', handleScroll);
-   
+
   })
 
   const set = (newTheme) => {
@@ -535,6 +572,8 @@ const send = () => {
 
 
 </script>
+
+
 
 <!-- <style scoped>
   .navigation {
@@ -623,7 +662,7 @@ const send = () => {
   }
   .dark nav{
     background: var(--black);
-    
+
   }
   .dark .navigation .links a{
     color: #fff;
@@ -685,7 +724,7 @@ const send = () => {
     margin-left: 20px;
     border-radius: 4px;
     cursor: pointer;
-    
+
   }
   nav .links a.router-link-exact-active {
     color: black;
@@ -698,5 +737,5 @@ const send = () => {
     color: #ee2528;
     text-decoration: 3px underline solid #ee2528;
   }
-  
+
 </style> -->
