@@ -90,19 +90,19 @@
                         <div class="col-lg-5">
                             <div class="nav nav-pills">
 
-                                    <a class="nav-link active" data-bs-toggle="pill" href="#process-tab-1">
+                                    <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#process-tab-1" href="#">
                                         <span>01</span>
                                          Consultation
                                         <i class="fal fa-long-arrow-right"></i>
                                     </a>
 
-                                    <a class="nav-link " data-bs-toggle="pill" href="#process-tab-2">
+                                    <a class="nav-link " data-bs-toggle="pill" data-bs-target="#process-tab-2" href="#">
                                         <span>02</span>
                                         Wire-framing
                                         <i class="fal fa-long-arrow-right"></i>
                                     </a>
 
-                                    <a class="nav-link " data-bs-toggle="pill" href="#process-tab-3">
+                                    <a class="nav-link " data-bs-toggle="pill" data-bs-target="#process-tab-3" href="#">
                                         <span>03</span>
                                         Final Design
                                         <i class="fal fa-long-arrow-right"></i>
