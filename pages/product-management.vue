@@ -90,7 +90,7 @@
                         <div class="col-lg-5">
                             <div class="nav nav-pills">
 
-                                    <a class="nav-link active" data-bs-toggle="pill" href="#process-tab-1">
+                                    <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#process-tab-1" href="#">
                                         <span>01</span>
                                          Product Management
                                         <i class="fal fa-long-arrow-right"></i>
