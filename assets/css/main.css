@@ -52,6 +52,18 @@
     }
 }
 
+*::-webkit-scrollbar{
+    background-color: #f9fcff;
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb{
+    background-color: #ee2528;
+    border-radius: 30px;
+  }
+
+
 @keyframes fadeInRight {
     0% {
         display: none;
