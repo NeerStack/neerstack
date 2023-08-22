@@ -7,7 +7,7 @@
 <script setup>
 import under from '@/assets/under-construction.png'
 const setdata = {
-    title: "CodinMage | Pricing"
+    title: "NeerStack | Pricing"
 }
 useHead({
     title: computed(() => setdata.title)

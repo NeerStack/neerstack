@@ -8,10 +8,10 @@
     <description>
       <![CDATA[ Outsource Web Development Agency With Trained Software Engineers/Developers ]]>
     </description>
-    <link>https://codinmage.org</link>
+    <link>https://neerstack.com</link>
     <generator>RSS for Node</generator>
     <lastBuildDate>Sun, 14 Oct 2022 18:14:16 GMT</lastBuildDate>
-    <atom:link href="https://codinmage.org/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://neerstack.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>
         <![CDATA[ CodinMage | About ]]>
@@ -19,15 +19,15 @@
       <description>
         <![CDATA[ CodinMage is a Digital Agency Company that Design Website for Clients All Over the World Using Latest Technologies. ]]>
       </description>
-      <link>https://codinmage.org/about</link>
-      <guid isPermaLink="true">https://codinmage.org/about</guid>
+      <link>https://neerstack.com/about</link>
+      <guid isPermaLink="true">https://neerstack.com/about</guid>
     </item>
     <item>
       <title>
         <![CDATA[ CodinMage | Countact Us ]]>
       </title>
-      <link>https://codinmage.org/contact-us</link>
-      <guid isPermaLink="true">https://codinmage.org/contact-us</guid>
+      <link>https://neerstack.com/contact-us</link>
+      <guid isPermaLink="true">https://neerstack.com/contact-us</guid>
     </item>
   </channel>
 </rss>

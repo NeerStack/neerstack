@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     Icons: true
     },
     build: {
-      
+
       transpile:[
         'klaviyo-sdk'
       ]
@@ -44,9 +44,9 @@ export default defineNuxtConfig({
               {
                 rel: 'alternate',
                 type: 'application/rss+xml',
-                href: 'https://codinmage.org/rss'
+                href: 'https://neerstack.com/rss'
               }
-              
+
           ],
           meta:[
               {
@@ -66,15 +66,15 @@ export default defineNuxtConfig({
               },
               {
                   property: "og:title",
-                  content: "CodinMage | Digital Agency"
+                  content: "NeerStack | Digital Agency"
                 },
                 {
                   property: "og:site_name",
-                  content: "CodinMage"
+                  content: "NeerStack"
                 },
                 {
                   property: "og:url",
-                  content: "https://codinmage.org"
+                  content: "https://neerstack.com"
                 },
                 {
                   property: "og:type",
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
                 {
                   property: "og:image",
                   itemProp: "image",
-                  content: "https://codinmage.org/og.png"
+                  content: "https://neerstack.com/og.png"
                 },
                 {
                   property: "og:locale",
@@ -103,11 +103,11 @@ export default defineNuxtConfig({
                 },
                 {
                   name: "twitter:image:alt",
-                  content: "CodinMage"
+                  content: "NeerStack"
                 },
                 {
                   name: "twitter:title",
-                  content: "CodinMage"
+                  content: "NeerStack"
                 },
                 {
                   name: "twitter:description",
@@ -115,7 +115,7 @@ export default defineNuxtConfig({
                 },
                 {
                   name: "twitter:image",
-                  content: "https://codinmage.org/og.png"
+                  content: "https://neerstack.com/og.png"
                 }
           ],
           script:[
@@ -127,8 +127,8 @@ export default defineNuxtConfig({
               src: "js/vendor/jquery.min.js",
               defer: true,
               type: "text/javascript",
-             
-            }, 
+
+            },
             // {
             //   src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js',
             //   defer: true
@@ -146,7 +146,7 @@ export default defineNuxtConfig({
               src: "js/vendor/jquery-migrate.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             // {
             //   src:"https://code.jquery.com/jquery-migrate-3.4.0.min.js",
@@ -157,7 +157,7 @@ export default defineNuxtConfig({
               src: "js/vendor/easing-1.3.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             // {
             //   src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
@@ -167,37 +167,37 @@ export default defineNuxtConfig({
               src: "js/vendor/bootstrap.bundle.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/vendor/isotope.pkgd.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/vendor/jquery.waypoints.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/vendor/jquery.counterup.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/vendor/imagesloaded.pkgd.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/vendor/owl.carousel.min.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/vendor/jquery.magnific-popup.min.js",
@@ -208,13 +208,13 @@ export default defineNuxtConfig({
               src: "js/plugins.js",
                defer: true,
                type: "text/javascript",
-             
+
             },
             {
               src: "js/main.min.js",
               defer: true,
               type: "text/javascript",
-             
+
             },
             {
               src: "https://www.googletagmanager.com/gtag/js?id=G-YY4WR0ZRCR",
@@ -224,21 +224,21 @@ export default defineNuxtConfig({
               children: `window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-              
+
                 gtag('config', 'G-YY4WR0ZRCR');`,
               type: "text/javascript",
               async: true
             }
           ]
       },
-      
+
     },
     nitro:{
       prerender:{
         routes: ['/rss.xml']
       }
     },
-    
+
     tailwindcss:{
         cssPath: '~/assets/tailwind.css',
         configPath: '~/tailwind.config.js',
@@ -259,7 +259,7 @@ export default defineNuxtConfig({
             })
         ]
     },
-    
+
     layoutTransition:{
         name: 'default',
         mode: 'out-in'
@@ -272,6 +272,6 @@ export default defineNuxtConfig({
         threshold: 8192,
       },
     }
-    
-    
+
+
 })

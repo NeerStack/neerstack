@@ -120,7 +120,7 @@
                                             <img :src="ProcessImg1" alt="..." class="img-fluid small">
                                             <div class="process-card-content">
                                                 <h3>Consultation</h3>
-                                                <p class="text-justify">The first step in creating a <strong>GREAT</strong> user interface and user experience is by understand the project fully, at CodinMage we will organise a session with the client to get full understand of the project and derive a comprehensive documentation from it.</p>
+                                                <p class="text-justify">The first step in creating a <strong>GREAT</strong> user interface and user experience is by understand the project fully, at NeerStack we will organise a session with the client to get full understand of the project and derive a comprehensive documentation from it.</p>
                                             </div>
                                         </div>
                                         <!-- comment -->

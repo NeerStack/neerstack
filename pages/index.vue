@@ -5,7 +5,7 @@
             <div class="row_reverse row no-gutters align-items-center">
                 <div class="desc col-lg-6  text-lg-justify">
                     <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
-                    <h3 class="section-title pb-5 mb-5">Here at CodinMage, <span id="typewriper">{{word}}</span> <span id="cursor">|</span></h3>
+                    <h3 class="section-title pb-5 mb-5">Here at NeerStack, <span id="typewriper">{{word}}</span> <span id="cursor">|</span></h3>
                     <!-- <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p> -->
 
                     <div class="ini_project">
@@ -321,7 +321,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
+                        <a href="http://twitter.com/NeerStack" target="_blank" rel="noopener">
                             <fa6-brands-twitter/>
                         </a>
                     </li>
@@ -359,7 +359,7 @@
                                 </div>
                             </div>
 
-                            <p>“I like CodinMage.” </p>
+                            <p>“I like NeerStack.” </p>
                         </div>
 
                     </div>
@@ -377,7 +377,7 @@
                                 </div>
                             </div>
 
-                            <p>“I love CodinMage” </p>
+                            <p>“I love NeerStack” </p>
                         </div>
 
                     </div>
@@ -395,7 +395,7 @@
                                 </div>
                             </div>
 
-                            <p>“CodinMages are very professional.” </p>
+                            <p>“NeerStacks are very professional.” </p>
                         </div>
 
                     </div>
@@ -425,7 +425,7 @@
                             With Trained Software Engineers/Developers</h2>
 
                             <span>
-                                <h3>Here at CodinMage<h4>{{wordarr[wordstr]}}</h4></h3>
+                                <h3>Here at NeerStack<h4>{{wordarr[wordstr]}}</h4></h3>
                             </span>
 
                             <div class="button">
@@ -567,7 +567,7 @@ var Post = setPost()
 const News = setNews();
 
 const setdata = {
-    title: "CodinMage | Home"
+    title: "NeerStack | Home"
 }
 useHead({
     title: computed(() => setdata.title)
@@ -682,11 +682,11 @@ const sendEmail = () => {
 </script>
 <style scoped>
     #typewriper{
-        color: #ee2528;
+        color: #6384ff;
         font-weight: bold;
     }
     #cursor{
-        color: #ee2528;
+        color: #6384ff;
         animation: blink 1s linear infinite;
     }
 

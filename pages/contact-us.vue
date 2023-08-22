@@ -1,5 +1,5 @@
 <template>
-    
+
               <div class="contact flex align-center justify-center text-center">
                   <div v-if="!isLoading" class="quote-form-wrapper text-center">
                       <h3>Contact Us</h3>
@@ -31,12 +31,12 @@
                                           </a>
                                       </li>
                                       <li>
-                                          <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
+                                          <a href="http://twitter.com/NeerStack" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-twitter"></i> -->
                                               <fa6-brands-twitter/>
                                           </a>
                                       </li>
-                                      
+
                                       <li>
                                           <a href="http://instagram.com" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-google-plus-g"></i> -->
@@ -44,13 +44,13 @@
                                           </a>
                                       </li>
                                       <li>
-                                        <a href="https://github.com/CodinMage" target="_blank" rel="noopener">
+                                        <a href="https://github.com/NeerStack" target="_blank" rel="noopener">
                                             <!-- <i class="fab fa-google-plus-g"></i> -->
                                             <fa6-brands-github/>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/codinmage/" target="_blank" rel="noopener">
+                                        <a href="https://www.linkedin.com/company/NeerStack/" target="_blank" rel="noopener">
                                             <!-- <i class="fab fa-behance"></i> -->
                                             <fa6-brands-linkedin/>
                                         </a>
@@ -69,8 +69,8 @@
                   </div>
               </div>
 
-         
-  
+
+
 </template>
 <script setup>
 import Swal from 'sweetalert2'
@@ -86,7 +86,7 @@ import {setContact} from '@/store/email'
 const Email = setContact()
 
 const setdata = {
-    title: "CodinMage | Contact"
+    title: "NeerStack | Contact"
 }
 useHead({
     title: computed(() => setdata.title)

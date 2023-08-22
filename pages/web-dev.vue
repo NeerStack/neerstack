@@ -121,7 +121,7 @@
                                             <div class="process-card-content">
                                                 <h3>Backend Development</h3>
                                                 <p class="text-justify">Backend development refers to the development of the server-side of a web application, which includes the database, server, and application logic. It is responsible for managing data, performing calculations, and interacting with other systems.</p>
-                                                <p class="text-justify">At CodinMage, we will create server-side API for both your website and mobile application.</p>
+                                                <p class="text-justify">At NeerStack, we will create server-side API for both your website and mobile application.</p>
                                             </div>
                                         </div>
                                         <!-- comment -->
@@ -133,7 +133,7 @@
                                             <div class="process-card-content">
                                                 <h3>Frontend Development</h3>
                                                 <p class="text-justify" >Frontend development, on the other hand, refers to the development of the client-side of a web application, which is what users see and interact with in their web browsers. It involves the use of HTML, CSS, and JavaScript to build the user interface and create interactive elements on a website.</p>
-                                                <p class="text-justify">At CodinMage, we will create client-side of your web application excellently.</p>
+                                                <p class="text-justify">At NeerStack, we will create client-side of your web application excellently.</p>
                                             </div>
                                         </div>
                                         <!-- comment -->
@@ -145,7 +145,7 @@
                                             <div class="process-card-content">
                                                 <h3>Deployment</h3>
                                                 <p class="text-justify">Website deployment is the process of making a website accessible to the public via the internet. This typically involves uploading the website's files to a web server and configuring the server to serve the website to visitors.</p>
-                                                <p class="text-justify">At CodinMage, we will deploy your website in any hosting provider of your choice and we will give different options to select from e.g. Heroku, Hostlinger, NameCheap, Digital Oceans e.t.c.</p>
+                                                <p class="text-justify">At NeerStack, we will deploy your website in any hosting provider of your choice and we will give different options to select from e.g. Heroku, Hostlinger, NameCheap, Digital Oceans e.t.c.</p>
                                             </div>
                                         </div>
                                         <!-- comment -->

@@ -120,7 +120,7 @@
                                             <div class="process-card-content">
                                                 <h3>Mobile app development</h3>
                                                 <p class="text-justify">Mobile app development refers to the process of creating software applications that are designed to run on mobile devices, such as smartphones and tablets. These apps can be native, meaning they are built specifically for a particular platform (such as iOS or Android), or they can be cross-platform, meaning they can be used on multiple platforms.</p>
-                                                <p class="text-justify">At CodinMage, we will create mobile application for your company.<br/> Mobile app development can be a complex process, but it can also be a rewarding and exciting way to create innovative solutions for mobile users. </p>
+                                                <p class="text-justify">At NeerStack, we will create mobile application for your company.<br/> Mobile app development can be a complex process, but it can also be a rewarding and exciting way to create innovative solutions for mobile users. </p>
                                             </div>
                                         </div>
                                         <!-- comment -->
@@ -132,7 +132,7 @@
                                             <div class="process-card-content">
                                                 <h3>Frontend Development</h3>
                                                 <p class="text-justify" >Frontend development, on the other hand, refers to the development of the client-side of a web application, which is what users see and interact with in their web browsers. It involves the use of HTML, CSS, and JavaScript to build the user interface and create interactive elements on a website.</p>
-                                                <p class="text-justify">At CodinMage, we will create client-side of your web application excellently.</p>
+                                                <p class="text-justify">At NeerStack, we will create client-side of your web application excellently.</p>
                                             </div>
                                         </div>
 
@@ -144,7 +144,7 @@
                                             <div class="process-card-content">
                                                 <h3>Deployment & Support</h3>
                                                 <p class="text-justify">Both mobile application deployment and support are critical components of the mobile app development process. Without proper deployment and support, an app may not function as intended and may not be used by a large number of users.</p>
-                                                <p class="text-justify">At CodinMage, we will deploy your mobile app to Google playstore or IOS appstore.</p>
+                                                <p class="text-justify">At NeerStack, we will deploy your mobile app to Google playstore or IOS appstore.</p>
                                             </div>
                                         </div>
                                         <!-- comment -->

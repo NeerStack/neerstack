@@ -119,7 +119,7 @@
                                           </a>
                                       </li>
                                       <li>
-                                          <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
+                                          <a href="http://twitter.com/NeerStack" target="_blank" rel="noopener">
                                               <!-- <i class="fab fa-twitter"></i> -->
                                               <fa6-brands-twitter/>
                                           </a>
@@ -132,13 +132,13 @@
                                           </a>
                                       </li>
                                       <li>
-                                        <a href="https://github.com/CodinMage" target="_blank" rel="noopener">
+                                        <a href="https://github.com/NeerStack" target="_blank" rel="noopener">
                                             <!-- <i class="fab fa-google-plus-g"></i> -->
                                             <fa6-brands-github/>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/codinmage/" target="_blank" rel="noopener">
+                                        <a href="https://www.linkedin.com/company/neerstack/" target="_blank" rel="noopener">
                                             <!-- <i class="fab fa-behance"></i> -->
                                             <fa6-brands-linkedin/>
                                         </a>
@@ -469,8 +469,8 @@
 import Fa6SolidSun from '~icons/fa6-solid/sun'
 import Fa6SolidMoon from '~icons/fa6-solid/moon'
 import { setColor } from "@/store/color";
-import logoDark from "@/assets/dark_copy.svg";
-import logoLight from "@/assets/light_copy.svg"
+import logoDark from "@/assets/newLogo.png";
+import logoLight from "@/assets/newLogo.png"
 import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
 import Fa6BrandsGithub from '~icons/fa6-brands/github'
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'

@@ -4,7 +4,7 @@
         <div class="row">
             <h1> About Us</h1>
              <div class="title">
-                <p class="col-xl-12">CodinMage is a Digital Agency Company that Design Websites for Clients All Over the World Using Latest Technologies. Our team of experts is highly experienced in their respective fields. We offer services like Web Development, Graphic Designing, SEO Services etc.
+                <p class="col-xl-12">NeerStack is a Digital Agency Company that Design Websites for Clients All Over the World Using Latest Technologies. Our team of experts is highly experienced in their respective fields. We offer services like Web Development, Graphic Designing, SEO Services etc.
                 </p>
             </div>
             <div class="flex mission">
@@ -14,13 +14,13 @@
                     </p>
                     <ul>
                         <li>
-                            <p>Deliver quality web solutions</p>  
+                            <p>Deliver quality web solutions</p>
                         </li>
                         <li>
-                            <p>Provide timely service</p> 
+                            <p>Provide timely service</p>
                         </li>
                         <li>
-                            <p>Ensure that your project meets its deadlines</p> 
+                            <p>Ensure that your project meets its deadlines</p>
                         </li>
                         <li>
                             <p>Keep costs down</p>
@@ -29,22 +29,22 @@
                             <p>Increase sales</p>
                         </li>
                     </ul>
-                                        
+
                 </div>
-                
+
             </div>
             <div class="flex vision">
                 <h1 class="col-lg-6">Our Vision</h1>
                 <p class="col-xl-4">We believe in providing the best products and services to our clients. We strive to deliver high-quality results, while exceeding expectations. To us, success means being able to exceed customer's expectations. We encourage innovation and creativity to achieve success. We value integrity, professionalism, hard work, loyalty, respect, and teamwork. When we do well, we do right. We welcome challenges.</p>
             </div>
-         
+
             <div class="flex value">
                 <h1 class="col-lg-6">Our Value</h1>
                 <div class="col-xl-4">
-                    <p>We have several values that guide our behavior and motivate us to keep striving to be the best. These values are: </p>   
+                    <p>We have several values that guide our behavior and motivate us to keep striving to be the best. These values are: </p>
                     <p><span>Passionate</span> - Passionate people are driven by their interests and talents. They take pride in what they do and enjoy the journey.</p>
-                    <p><span>Dedicated</span> - Dedicated people put 100% of their effort into everything they do. They make decisions based upon facts rather than emotions.</p> 
-                    <p><span>Creative</span> - Creative people think outside the box to find innovative solutions to problems.</p>     
+                    <p><span>Dedicated</span> - Dedicated people put 100% of their effort into everything they do. They make decisions based upon facts rather than emotions.</p>
+                    <p><span>Creative</span> - Creative people think outside the box to find innovative solutions to problems.</p>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>  
+                        </li>
                         <li class="card">
                             <div>
                                 <img :src="image" alt="userImage">
@@ -102,7 +102,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>  
+                        </li>
                         <li class="card">
                             <div>
                                 <img :src="image" alt="userImage">
@@ -126,23 +126,23 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>  
+                        </li>
                     </ul>
 
                 </div>
             </div>  -->
             </div>
 
-        
+
     </main>
-    
-    
+
+
 
 </template>
 
 <script setup>
 const setdata = {
-    title: "CodinMage | About"
+    title: "NeerStack | About"
 }
 useHead({
     title: computed(() => setdata.title)
@@ -166,7 +166,7 @@ useHead({
         margin-left: 20%;
         width: 60%;
         display: inline-flex;
-        
+
         p{
             display: inline-flex;
             justify-content: center;
@@ -192,7 +192,7 @@ useHead({
     .mission{
         background: #030B4E;
         color: #fff;
-        
+
         div{
             padding: 50px 40px 50px 40px;
         }
@@ -204,7 +204,7 @@ useHead({
         p{
             color: #fff;
             text-align: justify;
-            
+
         }
         ul{
             li{
@@ -229,7 +229,7 @@ useHead({
                 font-weight: bold;
             }
         }
-       
+
     }
     .team_str{
         margin-top: 100px;
@@ -241,7 +241,7 @@ useHead({
             color: #000;
             margin-bottom: 30px;
         }
-        
+
     }
     .team{
         padding: 5px 10px;
@@ -272,17 +272,17 @@ useHead({
                 justify-content: center;
                 li{
                     a{
-                        
-                        
+
+
                         svg{
                             margin: 5px;
                             font-size: large;
                             margin-left: 10px;
                             color: #000;
                         }
-                        
+
                     }
-                    
+
                 }
             }
         }
@@ -291,7 +291,7 @@ useHead({
 }
 
 @media screen and (max-width: 991px) {
-   
+
     .about{
         max-width: 100%;
         width: 95%;
@@ -326,7 +326,7 @@ useHead({
         .mission{
             background: #030B4E;
             color: #fff;
-            
+
             max-width: 100%;
             div{
                 padding: 50px 20px 50px 20px;
@@ -343,7 +343,7 @@ useHead({
                 color: #fff;
                 text-align: justify;
                 font-size: x-small;
-                
+
             }
             ul{
                 li{
@@ -368,13 +368,13 @@ useHead({
             p{
                 font-size: x-small;
                 color: #000;
-                
+
                 text-align: justify;
                 span{
                     font-weight: bold;
                 }
             }
-           
+
         }
         .team_str{
             margin-top: 100px;
@@ -386,7 +386,7 @@ useHead({
                 color: #000;
                 margin-bottom: 30px;
             }
-            
+
         }
         .team{
             padding: 5px 10px;
@@ -417,22 +417,22 @@ useHead({
                     justify-content: center;
                     li{
                         a{
-                            
-                            
+
+
                             svg{
                                 margin: 5px;
                                 font-size: large;
                                 margin-left: 10px;
                                 color: #000;
                             }
-                            
+
                         }
-                        
+
                     }
                 }
             }
         }
-    
+
     }
 }
 

@@ -13,7 +13,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://twitter.com/CodinMage" target="_blank" rel="noopener">
+                                <a href="http://twitter.com/NeerStack" target="_blank" rel="noopener">
                                     <fa6-brands-twitter/>
                                 </a>
                             </li>
@@ -24,13 +24,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/CodinMage" target="_blank" rel="noopener">
+                                <a href="https://github.com/NeerStack" target="_blank" rel="noopener">
                                     <!-- <i class="fab fa-google-plus-g"></i> -->
                                     <fa6-brands-github/>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/company/codinmage/" target="_blank" rel="noopener">
+                                <a href="https://www.linkedin.com/company/neerstack/" target="_blank" rel="noopener">
                                     <!-- <i class="fab fa-behance"></i> -->
                                     <fa6-brands-linkedin/>
                                 </a>
@@ -38,7 +38,7 @@
                         </ul>
 
 
-                        <p class="copywrite-txt">© 2022 <a href="/">CodinMage</a>. All Rights Reserved.
+                        <p class="copywrite-txt">© 2022 <a href="/">NeerStack</a>. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
     </footer>
 </template>
 <script setup>
-import dark from "@/assets/dark_copy.svg"
+import dark from "@/assets/newLogo_light.png"
 import light from "@/assets/light_copy.svg"
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
 import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'

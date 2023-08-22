@@ -121,7 +121,7 @@
                                             <div class="process-card-content">
                                                 <h3>Product Management</h3>
                                                 <p class="text-justify">Product management is the process of defining, implementing, and executing an effective product strategy. Product thinking covers what to build, when to build it and how to build it. It encompasses the entire lifecycle of a product, from ideation to development through go-to-market steps from customer interactions and sales channel solutions.</p>
-                                                <p class="text-justify">At CodinMage, we will manage your product for you.<br/> Successfully managing a product requires so much more than just technical competency. That's why this course is designed to provide a blueprint on integrating management with technology. </p>
+                                                <p class="text-justify">At NeerStack, we will manage your product for you.<br/> Successfully managing a product requires so much more than just technical competency. That's why this course is designed to provide a blueprint on integrating management with technology. </p>
                                             </div>
                                         </div>
                                         <!-- comment -->
@@ -133,7 +133,7 @@
                                             <div class="process-card-content">
                                                 <h3>Frontend Development</h3>
                                                 <p class="text-justify" >Frontend development, on the other hand, refers to the development of the client-side of a web application, which is what users see and interact with in their web browsers. It involves the use of HTML, CSS, and JavaScript to build the user interface and create interactive elements on a website.</p>
-                                                <p class="text-justify">At CodinMage, we will create client-side of your web application excellently.</p>
+                                                <p class="text-justify">At NeerStack, we will create client-side of your web application excellently.</p>
                                             </div>
                                         </div>
 
@@ -145,7 +145,7 @@
                                             <div class="process-card-content">
                                                 <h3>Deployment & Support</h3>
                                                 <p class="text-justify">Both mobile application deployment and support are critical components of the mobile app development process. Without proper deployment and support, an app may not function as intended and may not be used by a large number of users.</p>
-                                                <p class="text-justify">At CodinMage, we will deploy your mobile app to Google playstore or IOS appstore.</p>
+                                                <p class="text-justify">At NeerStack, we will deploy your mobile app to Google playstore or IOS appstore.</p>
                                             </div>
                                         </div>
 
