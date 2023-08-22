@@ -433,27 +433,41 @@
             </div>
             <!-- End of .modal-header -->
 
-            <div class="modal-body">
+            <div class="modal-body mt-40">
                 <div class="row no-gutters">
                     <div class="col-lg-6">
-                        <div class="modal-img text-center">
-                            <img src="@/assets/products/portfolio-modal.png" alt="product-modal" class="img-fluid">
+                        <div class="modal-img text-center" style="width: 500px; height: 500px; justify-content:center; align-content:center; align-item: center; display: flex">
+                            <img src="@/assets/products/Producemart.png" alt="product-modal" class="img-fluid">
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="modal-body inner-content">
                             <h4>
-                                <span>Chief Exicutive Officer</span> Creative Web Design
+                                <span style="font-family: 'Poppins'; ">ProduceMart</span>
                             </h4>
-                            <p>In the early years of the commercial web, we were all Web Designers. Digital interactions, at that stage, were not incredibly sophisticated: most websites were structured as a set of individual pages connected to each other
-                                via buttons and links.</p>
-
-                            <p>In more complex websites and information-heavy systems, the web designer would pair with an Information Architect to make sure content was organized in a way that made for that.</p>
-                            <NuxtLink to="/about" class="hyperlink">Launch Website</NuxtLink>
+                            <p style="text-align: justify;">Producemart.com is an online B2B marketplace for wholesale agricultural produce and ingredients. Producemart makes it simpler than ever to list and source produce at a local, regional or international level. Acting as a platform for both suppliers and buyers, Producemart.com allows more efficient connections and assists with overcoming challenges such as language barriers, potential security concerns around engaging with new buyers and suppliers and cross-border purchases.</p>
+                            <NuxtLink to="https://www.producemart.com" target="_blank" class="hyperlink">Launch Website</NuxtLink>
                         </div>
                     </div>
                 </div>
+                <div class="row no-gutters">
+                  <div class="col-lg-6">
+                      <div class="modal-img text-center" style="width: 500px; height: 500px; justify-content:center; align-content:center; align-item: center; display: flex">
+                          <img src="@/assets/products/mageHub.png" alt="product-modal" class="img-fluid">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                      <div class="modal-body inner-content">
+                          <h4>
+                              <span style="font-family:'Josefin Sans', san-serif; ">MageHUB</span>
+                          </h4>
+                          <p style="text-align: justify;">Discover the incredible potential of MageHUB, a revolutionary app that empowers you to connect with friends and forge new connections with a diverse community spanning the globe. Seamlessly communicate with your friends through our innovative chat feature, while also leveraging the power of advanced AI tools to enhance your experience. Engage in meaningful conversations, expand your network, and explore endless possibilities with MageHUB. Join us today and unlock a world of boundless opportunities at your fingertips.</p>
+                          <NuxtLink to="#" class="hyperlink" :disabled="true">Coming Soon...</NuxtLink>
+                      </div>
+                  </div>
+              </div>
             </div>
             <!-- End of .modal-body -->
         </div>
