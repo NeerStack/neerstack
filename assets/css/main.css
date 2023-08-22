@@ -59,7 +59,7 @@
   }
 
   *::-webkit-scrollbar-thumb{
-    background-color: #ee2528;
+    background-color: #000;
     border-radius: 30px;
   }
 
@@ -530,7 +530,7 @@ p.smaller-txt {
 }
 
 .custom-btn.secondary-btn::after {
-    background: rgba(228, 83, 42, 0.2);
+    background: rgba(27, 27, 27, 0.2);
 }
 
 .custom-btn.btn-small {
@@ -729,7 +729,7 @@ textarea {
 .success-msg {
     font-size: 1.4rem;
     line-height: 20px;
-    color: #ff4545;
+    color: #6384ff;
     font-weight: 400;
     text-align: left;
     margin-top: -4px;
