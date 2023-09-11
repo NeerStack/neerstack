@@ -2,9 +2,9 @@ import {defineStore} from 'pinia'
 import emailjs from '@emailjs/browser';
 // import  fetch from 'node-fetch'
 
-const url = 'https://codinmage-server.onrender.com/subscribe';
-const quoteUrl = 'https://codinmage-server.onrender.com/quote';
-const contactUrl = 'https://codinmage-server.onrender.com/contact';
+const url = 'https://neerstack-server-036b54bcba24.herokuapp.com/subscribe';
+const quoteUrl = 'https://neerstack-server-036b54bcba24.herokuapp.com/quote';
+const contactUrl = 'https://neerstack-server-036b54bcba24.herokuapp.com/contact';
 export const setEmail = defineStore('email', {
     state: ()=>({
         name: '',
