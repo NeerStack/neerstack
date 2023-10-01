@@ -64,7 +64,7 @@
                         <ul class="footer-nav dynamic-nav">
                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#product-modal">Portfolio</a></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#team-modal">Team</a></li>
+                            <!-- <li><a href="#" data-bs-toggle="modal" data-bs-target="#team-modal">Team</a></li> -->
 
                         </ul>
                     </div>

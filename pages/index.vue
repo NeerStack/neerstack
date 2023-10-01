@@ -267,7 +267,7 @@
     </section>
     <!-- End of .projects -->
 
-    <section class="team section-gap light-grey-bg" id="cynic-team" data-scroll-offset="75" data-scroll-offset-mobile="75">
+    <!-- <section class="team section-gap light-grey-bg" id="cynic-team" data-scroll-offset="75" data-scroll-offset-mobile="75">
         <div class="container">
             <h2 class="section-title text-center">Teamwork Makes the Dream Work</h2>
             <p class="larger-txt text-center">Take a moment to meet the Mages working to satisfy your needs</p>
@@ -282,12 +282,12 @@
                     </div>
 
                 </div>
-                <!-- End of .row -->
+
             </div>
-            <!-- End of .grid-wrapper -->
+
         </div>
-        <!-- End of .container -->
-    </section>
+
+    </section> -->
     <!-- End of .team -->
 
     <section class="newsletter section-gap theme-bg-d ">
