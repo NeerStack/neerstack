@@ -3,28 +3,28 @@
   xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>
-      <![CDATA[ CodinMage | Home ]]>
+      <![CDATA[ NeerStack | Home ]]>
     </title>
     <description>
       <![CDATA[ Outsource Web Development Agency With Trained Software Engineers/Developers ]]>
     </description>
     <link>https://neerstack.com</link>
     <generator>RSS for Node</generator>
-    <lastBuildDate>Sun, 14 Oct 2022 18:14:16 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 1 Oct 2023 13:35:16 GMT</lastBuildDate>
     <atom:link href="https://neerstack.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>
-        <![CDATA[ CodinMage | About ]]>
+        <![CDATA[ NeerStack | About ]]>
       </title>
       <description>
-        <![CDATA[ CodinMage is a Digital Agency Company that Design Website for Clients All Over the World Using Latest Technologies. ]]>
+        <![CDATA[ NeerStack is a Digital Agency Company that Design Website for Clients All Over the World Using Latest Technologies. ]]>
       </description>
       <link>https://neerstack.com/about</link>
       <guid isPermaLink="true">https://neerstack.com/about</guid>
     </item>
     <item>
       <title>
-        <![CDATA[ CodinMage | Countact Us ]]>
+        <![CDATA[ NeerStack | Countact Us ]]>
       </title>
       <link>https://neerstack.com/contact-us</link>
       <guid isPermaLink="true">https://neerstack.com/contact-us</guid>
