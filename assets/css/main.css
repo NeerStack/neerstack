@@ -1292,6 +1292,12 @@ textarea+.err-msg {
     margin-right: 3rem;
 }
 
+@media screen and (max-width: 991px) {
+    .counter-block .icon-container img{
+       margin-left: 4rem;
+    }
+}
+
 .achievements [class*="col-"]:last-child .counter-block::after {
     display: none;
 }
