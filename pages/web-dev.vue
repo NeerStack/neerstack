@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="banner d-flex align-items-center light-grey-bg">
+        <div class="banner d-flex align-items-center grey-bg">
 
             <!-- Breadcrumb starts -->
             <nav class="breadcrumb-wrapper mb-20" aria-label="breadcrumb">
@@ -17,7 +17,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6  text-center text-lg-left">
                         <h1 class="mt-20">Website Development</h1>
-                        <p class="larger-txt text-justify">Website development, which is typically used to refer to the actual creation and programming of websites, is closely tied to the task of developing the features and functionality of websites. Consider all the websites you have used over the years. Web developers created those sites, ensuring that they worked properly and provided a wonderful user experience. Depending on the activities they are carrying out and the platforms they are working on, web developers use different programming languages to write lines of code.</p>
+                        <p class="smaller-txt text-justify">Website development, which is typically used to refer to the actual creation and programming of websites, is closely tied to the task of developing the features and functionality of websites. Consider all the websites you have used over the years. Web developers created those sites, ensuring that they worked properly and provided a wonderful user experience. Depending on the activities they are carrying out and the platforms they are working on, web developers use different programming languages to write lines of code.</p>
 
                     </div>
 
@@ -79,7 +79,7 @@
             <!-- End of .container -->
         </section>
 
-        <section class="our-process section-gap light-grey-bg">
+        <section class="our-process section-gap grey-bg">
             <div class="container">
                 <h2 class="section-title text-center">Our Process</h2>
                 <p class="larger-txt text-center">We provide great websites that adds great values to your business. From developing to
@@ -176,6 +176,16 @@ import WebsiteDesign2 from '@/assets/webdev2.png';
 import ProcessImg1 from '@/assets/Backend.png'
 import ProImg02 from '@/assets/frontend.png';
 import ProImg03 from '@/assets/deploy.png';
+
+
+const setdata = {
+    title: "NeerStack | Website Development"
+}
+
+useHead({
+    title: computed(() => setdata.title)
+})
+
 </script>
 <!-- <style scoped>
 main{

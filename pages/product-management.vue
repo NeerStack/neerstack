@@ -1,7 +1,7 @@
 <template>
 
     <main>
-        <div class="banner d-flex align-items-center light-grey-bg">
+        <div class="banner d-flex align-items-center grey-bg">
 
             <!-- Breadcrumb starts -->
             <nav class="breadcrumb-wrapper mb-20" aria-label="breadcrumb">
@@ -18,7 +18,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6  text-center text-lg-left">
                         <h1 class="mt-20">Product Management</h1>
-                        <p class="larger-txt text-justify">Product management is the process of defining, implementing, and executing an effective product strategy. Product thinking covers what to build, when to build it and how to build it. It encompasses the entire lifecycle of a product, from ideation to development through go-to-market steps from customer interactions and sales channel solutions. Product management is a key part of any new product development lifecycle.</p>
+                        <p class="smaller-txt text-justify">Product management is the process of defining, implementing, and executing an effective product strategy. Product thinking covers what to build, when to build it and how to build it. It encompasses the entire lifecycle of a product, from ideation to development through go-to-market steps from customer interactions and sales channel solutions. Product management is a key part of any new product development lifecycle.</p>
 
                     </div>
 
@@ -80,7 +80,7 @@
             <!-- End of .container -->
         </section>
 
-        <section class="our-process section-gap light-grey-bg">
+        <section class="our-process section-gap grey-bg">
             <div class="container">
                 <h2 class="section-title text-center">Our Process</h2>
                 <p class="larger-txt text-center">We provide great product management that contributes to your business.</p>
@@ -177,6 +177,15 @@ import WebsiteDesign2 from '@/assets/manage2.png';
 import ProcessImg1 from '@/assets/manage3.png'
 // import ProImg02 from '@/assets/frontend.png';
 // import ProImg03 from '@/assets/appdeploy.png';
+
+const setdata = {
+    title: "NeerStack | Product Management"
+}
+
+useHead({
+    title: computed(() => setdata.title)
+})
+
 </script>
 
 

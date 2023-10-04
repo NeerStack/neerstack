@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="banner d-flex align-items-center light-grey-bg">
+        <div class="banner d-flex align-items-center grey-bg">
 
             <!-- Breadcrumb starts -->
             <nav class="breadcrumb-wrapper mb-20" aria-label="breadcrumb">
@@ -17,7 +17,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6  text-center text-lg-left">
                         <h1 class="mt-20">Mobile App Development</h1>
-                        <p class="larger-txt text-justify">Mobile development refers to the creation of software applications that are designed to run on mobile devices such as smartphones and tablets. These applications, also known as "apps," can be developed for a variety of purposes, including productivity, entertainment, communication, and more.</p>
+                        <p class="smaller-txt text-justify">Mobile development refers to the creation of software applications that are designed to run on mobile devices such as smartphones and tablets. These applications, also known as "apps," can be developed for a variety of purposes, including productivity, entertainment, communication, and more.</p>
 
                     </div>
 
@@ -79,7 +79,7 @@
             <!-- End of .container -->
         </section>
 
-        <section class="our-process section-gap light-grey-bg">
+        <section class="our-process section-gap grey-bg">
             <div class="container">
                 <h2 class="section-title text-center">Our Process</h2>
                 <p class="larger-txt text-center">We provide great mobile application that adds great values to your business.</p>
@@ -175,6 +175,14 @@ import WebsiteDesign2 from '@/assets/mobile2.png';
 import ProcessImg1 from '@/assets/appdev.png'
 import ProImg02 from '@/assets/frontend.png';
 import ProImg03 from '@/assets/appdeploy.png';
+
+const setdata = {
+    title: "NeerStack | Mobile App Development"
+}
+useHead({
+    title: computed(() => setdata.title)
+})
+
 </script>
 
 

@@ -246,44 +246,26 @@
     </section>
     <!-- End of .features -->
 
-   <!-- Projects starts -->
-<section class="projects section-gap grey-bg" id="cynic-projects" data-scroll-offset="75">
-    <div class="container">
-        <h2 class="section-title text-center">Our Impressive Portfolio</h2>
+    <!-- Projects starts -->
+    <section class="projects section-gap grey-bg" id="our-projects" data-scroll-offset="75">
+        <div class="container">
+            <h2 class="section-title text-center">Our Portfolio</h2>
+            <p class="larger-txt text-center">Take a moment to go through our previously done work</p>
 
-        <div class="item-showcase grid-wrapper__small-padding">
-
-            <div class="row ">
-
-                    <div class="col-lg-6 col-md-6 ">
-                        <a href="/portfolio" class="img-card text-center portfolio-card white-bg " data-bs-toggle="modal" data-bs-target="#producemart-modal">
-                            <img src="@/assets/products/Producemart.png" alt="product" class="img-fluid">
-                            <h4>
-                                <span>ProduceMart</span>Web Development</h4>
-                        </a>
-                        <!-- End of .img-card -->
+            <div class="grid-wrapper">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-modal" class="custom-btn secondary-btn">SEE OUR PREVIOUS WORKS</a>
                     </div>
-                    <!-- End of .col-lg-4 -->
 
-                    <div class="col-lg-6 col-md-6 ">
-                        <a href="/portfolio" class="img-card text-center portfolio-card white-bg " data-bs-toggle="modal" data-bs-target="#magehub-modal">
-                            <img src="@/assets/products/mageHub.png" alt="product" class="img-fluid">
-                            <h4>
-                                <span>MageHub</span>Mobile Application</h4>
-                        </a>
-                        <!-- End of .img-card -->
-                    </div>
-                    <!-- End of .col-lg-4 -->
-
+                </div>
+                <!-- End of .row -->
             </div>
-            <div class="col-12 text-center"><NuxtLink class="custom-btn secondary-btn" to="/portfolio">DISCOVER MORE WORKS</NuxtLink></div>
-            <!-- End of .row -->
+            <!-- End of .project-showcase -->
         </div>
-        <!-- End of .project-showcase -->
-    </div>
-    <!-- End of .container -->
-</section>
-<!-- End of .projects -->
+        <!-- End of .container -->
+    </section>
+    <!-- End of .projects -->
 
     <!-- <section class="team section-gap light-grey-bg" id="cynic-team" data-scroll-offset="75" data-scroll-offset-mobile="75">
         <div class="container">
@@ -308,7 +290,55 @@
     </section> -->
     <!-- End of .team -->
 
+    <section class="newsletter section-gap theme-bg-d ">
+        <div class="container">
+            <h2 class="text-center">Sign up for our Mageletter to stay up to
+                <br>date with tech news!</h2>
 
+            <form @submit.prevent  class="newsletter-form">
+                <div class="row justify-content-between">
+                    <div class="col-md">
+                        <input v-model="News.fullname" type="text" name="fname" placeholder="Firstname Lastname" required>
+                    </div>
+                    <div class="col-md">
+                        <input v-model="News.email" type="text" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <a @click="sendEmail" class="custom-btn secondary-btn">SUBSCRIBE</a>
+                    </div>
+                </div>
+                <!-- End of .row -->
+            </form>
+            <!-- End of .newsletter-form -->
+
+            <div class="social-icons-wrapper d-flex justify-content-center">
+                <p>Follow us:</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="http://www.facebook.com/" target="_blank" rel="noopener">
+                            <fa6-brands-facebook-f/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/NeerStack" target="_blank" rel="noopener">
+                            <fa6-brands-twitter/>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://instagram.com" target="_blank" rel="noopener">
+                            <!-- <i class="fab fa-google-plus-g"></i> -->
+                            <fa6-brands-instagram/>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End of .social-icons -->
+            </div>
+            <!-- End of .social-icons-wrapper -->
+        </div>
+        <!-- End of .container -->
+    </section>
 
     <!-- customer-reviews starts -->
     <!-- <section class="customer-reviews section-gap grey-bg">
@@ -525,10 +555,16 @@
 </template>
 <script setup>
 import homeInterface from '@/assets/croods-user-interface.png';
+import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
+import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
+import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
+import { setNews } from '@/store/email'
 import Swal from 'sweetalert2'
 import {setPost} from '@/store/post'
 
 var Post = setPost()
+
+const News = setNews();
 
 const setdata = {
     title: "NeerStack | Home"
@@ -625,6 +661,20 @@ const project2_work = () =>{
         clearInterval(project2)
         project_com.value = 50
     }
+}
+
+const sendEmail = () => {
+    News.news()
+    .then(() =>{
+        if(News.status){
+            Swal.fire('Done', News.message, 'success')
+        }else{
+            Swal.fire('Oops..', News.error, 'error')
+        }
+        if(News.error){
+            Swal.fire('Oops..', News.error, 'error')
+        }
+    })
 }
 
 

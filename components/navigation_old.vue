@@ -42,9 +42,9 @@
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/about">About</NuxtLink>
                         </li>
 
-                        <li class="nav-item">
-                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/portfolio">Portfolio</NuxtLink>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/#cynic-team">Team</NuxtLink>
+                        </li> -->
                         <!-- <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/pricing">Pricing</NuxtLink>
                         </li> -->
@@ -420,83 +420,62 @@
     </div>
   <!-- End of .team-modal -->
 
- <!-- Product Modal Starts -->
-<div class="modal fade full-width-modal product-modal" id="producemart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Product Modal Starts -->
+  <div class="modal fade full-width-modal product-modal" id="product-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                </button>
+                <!-- <i class="fas fa-times"></i> -->
+                <fa6-solid-xmark/>
+            </button>
                 <!-- End of .close -->
             </div>
             <!-- End of .modal-header -->
 
-            <div class="modal-body">
+            <div class="modal-body mt-40">
                 <div class="row no-gutters">
                     <div class="col-lg-6">
-                        <div class="modal-img text-center">
-                            <img src="@/assets/products/Producemart.png" alt="producemart-modal" class="img-fluid">
+                        <div class="modal-img text-center" style="width: 500px; height: 500px; justify-content:center; align-content:center; align-item: center; display: flex">
+                            <img src="@/assets/products/Producemart.png" alt="product-modal" class="img-fluid">
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="modal-body__inner-content">
+                        <div class="modal-body inner-content">
                             <h4>
-                                <!-- <span>ProduceMart</span> -->
-                                ProduceMart
+                                <span style="font-family: 'Poppins'; ">ProduceMart</span>
                             </h4>
-                            <p>Producemart.com is an online B2B marketplace for wholesale agricultural produce and ingredients. Producemart makes it simpler than ever to list and source produce at a local, regional or international level. Acting as a platform for both suppliers and buyers, Producemart.com allows more efficient connections and assists with overcoming challenges such as language barriers, potential security concerns around engaging with new buyers and suppliers and cross-border purchases.</p>
+                            <p style="text-align: justify;">Producemart.com is an online B2B marketplace for wholesale agricultural produce and ingredients. Producemart makes it simpler than ever to list and source produce at a local, regional or international level. Acting as a platform for both suppliers and buyers, Producemart.com allows more efficient connections and assists with overcoming challenges such as language barriers, potential security concerns around engaging with new buyers and suppliers and cross-border purchases.</p>
                             <NuxtLink to="https://www.producemart.com" target="_blank" class="hyperlink">Launch Website</NuxtLink>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of .modal-body -->
-        </div>
-        <!-- End of .modal-content -->
-    </div>
-    <!-- End of .modal-dialog -->
-</div>
-
-<div class="modal fade full-width-modal product-modal" id="magehub-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-                <!-- End of .close -->
-            </div>
-            <!-- End of .modal-header -->
-
-            <div class="modal-body">
                 <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <div class="modal-img text-center">
-                            <img src="@/assets/products/mageHub.png" alt="magehub-modal" class="img-fluid">
-                        </div>
-                    </div>
+                  <div class="col-lg-6">
+                      <div class="modal-img text-center" style="width: 500px; height: 500px; justify-content:center; align-content:center; align-item: center; display: flex">
+                          <img src="@/assets/products/mageHub.png" alt="product-modal" class="img-fluid">
+                      </div>
+                  </div>
 
-                    <div class="col-lg-6">
-                        <div class="modal-body__inner-content">
-                            <h4>
-                                <!-- <span>ProduceMart</span> -->
-                                MageHUB
-                            </h4>
-                            <p>Discover the incredible potential of MageHUB, a revolutionary app that empowers you to connect with friends and forge new connections with a diverse community spanning the globe. Seamlessly communicate with your friends through our innovative chat feature, while also leveraging the power of advanced AI tools to enhance your experience. Engage in meaningful conversations, expand your network, and explore endless possibilities with MageHUB. Join us today and unlock a world of boundless opportunities at your fingertips.</p>
-                            <NuxtLink to="#" class="hyperlink" :disabled="true">Coming Soon...</NuxtLink>
-                        </div>
-                    </div>
-                </div>
+                  <div class="col-lg-6">
+                      <div class="modal-body inner-content">
+                          <h4>
+                              <span style="font-family:'Josefin Sans', san-serif; ">MageHUB</span>
+                          </h4>
+                          <p style="text-align: justify;">Discover the incredible potential of MageHUB, a revolutionary app that empowers you to connect with friends and forge new connections with a diverse community spanning the globe. Seamlessly communicate with your friends through our innovative chat feature, while also leveraging the power of advanced AI tools to enhance your experience. Engage in meaningful conversations, expand your network, and explore endless possibilities with MageHUB. Join us today and unlock a world of boundless opportunities at your fingertips.</p>
+                          <NuxtLink to="#" class="hyperlink" :disabled="true">Coming Soon...</NuxtLink>
+                      </div>
+                  </div>
+              </div>
             </div>
             <!-- End of .modal-body -->
         </div>
         <!-- End of .modal-content -->
     </div>
     <!-- End of .modal-dialog -->
-</div>
-<!-- End of .portfolio-modal -->
+  </div>
+  <!-- End of .portfolio-modal -->
 
 
 </template>

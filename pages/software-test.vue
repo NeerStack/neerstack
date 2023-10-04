@@ -1,7 +1,7 @@
 <template>
 
     <main>
-        <div class="banner d-flex align-items-center light-grey-bg">
+        <div class="banner d-flex align-items-center grey-bg">
 
             <!-- Breadcrumb starts -->
             <nav class="breadcrumb-wrapper mb-20" aria-label="breadcrumb">
@@ -18,7 +18,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6  text-center text-lg-left">
                         <h1 class="mt-20">Software Testing</h1>
-                        <p class="larger-txt text-justify">Software testing is the process of evaluating a software system or its component(s) with the intent to find whether it satisfies the specified requirements or not. Testing is the process of verifying and validating that a software system or its components are working as expected. It is an important step in the software development process as it helps identify defects, bugs, and issues in the software system.</p>
+                        <p class="smaller-txt text-justify">Software testing is the process of evaluating a software system or its component(s) with the intent to find whether it satisfies the specified requirements or not. Testing is the process of verifying and validating that a software system or its components are working as expected. It is an important step in the software development process as it helps identify defects, bugs, and issues in the software system.</p>
 
                     </div>
 
@@ -80,7 +80,7 @@
             <!-- End of .container -->
         </section>
 
-        <section class="our-process section-gap light-grey-bg">
+        <section class="our-process section-gap grey-bg">
             <div class="container">
                 <h2 class="section-title text-center">Our Process</h2>
                 <p class="larger-txt text-center">We provide software testing for your application.</p>
@@ -211,6 +211,16 @@ import ProImg02 from '@/assets/test4.png';
 import ProImg03 from '@/assets/test5.png';
 import ProImg04 from '@/assets/test6.png';
 import ProImg05 from '@/assets/test7.png';
+
+
+const setdata = {
+    title: "NeerStack | Software Testing"
+}
+
+useHead({
+    title: computed(() => setdata.title)
+})
+
 </script>
 
 

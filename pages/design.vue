@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="banner d-flex align-items-center light-grey-bg">
+        <div class="banner d-flex align-items-center grey-bg">
 
             <!-- Breadcrumb starts -->
             <nav class="breadcrumb-wrapper mb-20" aria-label="breadcrumb">
@@ -17,7 +17,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6 text-center text-lg-left">
                         <h1>UI/UX Design</h1>
-                        <p class="larger-txt text-justify">The goal of a good user interface is to make using a computer easy and enjoyable for the user. A good user experience design incorporates hardware and software to make user interactions and UI easy and effective.</p>
+                        <p class="smaller-txt text-justify">The goal of a good user interface is to make using a computer easy and enjoyable for the user. A good user experience design incorporates hardware and software to make user interactions and UI easy and effective.</p>
 
                     </div>
 
@@ -79,7 +79,7 @@
             <!-- End of .container -->
         </section>
 
-        <section class="our-process section-gap light-grey-bg">
+        <section class="our-process section-gap grey-bg">
             <div class="container">
                 <h2 class="section-title text-center">Our Process</h2>
                 <p class="larger-txt text-center">We provide great websites that adds great values to your business. From wire-framing to
@@ -173,6 +173,14 @@ import ProcessImg1 from '@/assets/Consulting.png'
 import ProImg02 from '@/assets/Wireframing.png';
 import ProImg03 from '@/assets/final-design.png';
 /* import FeaturesImg3 from '@assets/features-img-3.png' */
+
+const setdata = {
+    title: "NeerStack | UI/UX Design"
+}
+useHead({
+    title: computed(() => setdata.title)
+})
+
 </script>
 
 

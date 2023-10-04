@@ -1,11 +1,11 @@
 <template>
-    <footer class="page-footer dark-footer-bg">
+    <footer class="page-footer black-footer-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-left">
                     <div class="footer-widget widget-about">
                         <a href="/"><img class="footer-logo" :src="dark" alt="footer logo" height="16"></a>
-                        <p>Outsource Web Development Gig With Professional Software Engineers/Developers..</p>
+                        <p>Outsource Web Development Gig With Professional Software Engineers/Developers.</p>
                         <ul class="social-icons">
                             <li>
                                 <a href="http://www.facebook.com/" target="_blank" rel="noopener">
@@ -38,7 +38,7 @@
                         </ul>
 
 
-                        <p class="copywrite-txt">© 2022 <a href="/">NeerStack</a>. All Rights Reserved.
+                        <p class="copywrite-txt">© {{new Date().getFullYear()}} <a href="/">NeerStack</a>. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <div class="footer-widget">
                         <h5 class="footer-nav-title">Resources</h5>
                         <ul class="footer-nav dynamic-nav">
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#product-modal">Portfolio</a></li>
+                            <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
                             <!-- <li><a href="#" data-bs-toggle="modal" data-bs-target="#team-modal">Team</a></li> -->
 

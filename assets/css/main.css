@@ -319,7 +319,7 @@ blockquote cite,
 }
 
 .light-grey-bg {
-    background-color: #f9fcff;
+    background-color: #f9fcff !important;
 }
 
 .grey-bg {
@@ -1464,7 +1464,18 @@ textarea+.err-msg {
 }
 
 .features-content p {
-    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.features-content ul li{
+    text-align: justify;
+    list-style: disc;
+}
+
+.features-content p span{
+        font-weight: bold;
 }
 
 .features-content p:nth-last-of-type(1) {
@@ -1665,11 +1676,32 @@ textarea+.err-msg {
 
 .modal.product-modal .modal-body {
     padding: 0;
+    border: #ddd solid 1px;
 }
 
 .modal.product-modal .modal-body__inner-content {
     padding: 5rem;
     padding-left: 0;
+}
+
+.modal.product-modal .modal-body__inner-content p{
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.modal.product-modal .modal-body__inner-content h4{
+    text-align: left;
+}
+
+.modal.product-modal .modal-body__inner-content a.hyperlink {
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #0a8aff;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+
 }
 
 @media (max-width: 991px) {
@@ -2510,6 +2542,18 @@ figure img {
     margin-top: 1.5rem;
 }
 
+.contact-info .info h5{
+    text-align: left;
+}
+
+.contact-info .info p{
+    text-align: left;
+}
+
+.contact-info .info a{
+    text-align: left;
+}
+
 .contact-info a:not(.custom-btn) {
     font-size: 1.8rem;
     color: #546182;
@@ -2726,6 +2770,10 @@ figure img {
 
 /* -- Footer css
 ------------------------------------- -- */
+
+.black-footer-bg {
+    background: #0a0a0a;
+}
 
 .dark-footer-bg {
     background: #171741;

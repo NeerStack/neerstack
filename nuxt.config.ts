@@ -35,12 +35,28 @@ export default defineNuxtConfig({
               {href:"https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap", rel:"stylesheet"},
               {href:"https://fonts.googleapis.com/css2?family=Material+Icons", rel:"stylesheet"},
               {
-                href:"https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900", rel:"stylesheet"
+                href:"https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900", rel:"stylesheet", type: "text/css"
               },
               {
                 href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
-                rel: 'stylesheet'
+                rel: 'stylesheet',
+                type: "text/css"
               },
+              // {
+              //   href: "~/assets/css/vendor/owl.carousel.min.css",
+              //   rel: 'stylesheet',
+              //   type: "text/css"
+              // },
+              // {
+              //   href: "~/assets/css/vendor/owl.theme.default.min.css",
+              //   rel: 'stylesheet',
+              //   type: "text/css"
+              // },
+              // {
+              //   href: "~/assets/css/vendor/magnific-popup.css",
+              //   rel: 'stylesheet',
+              //   type: "text/css"
+              // },
               {
                 rel: 'alternate',
                 type: 'application/rss+xml',
