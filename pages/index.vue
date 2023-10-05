@@ -4,13 +4,13 @@
         <div class="container">
             <div class="row_reverse row no-gutters align-items-center">
                 <div class="desc col-lg-6  text-lg-justify">
-                    <h1>Outsource Web Development Gig With<br> Professional Software Engineers/Developers.</h1>
+                    <h2>Hire Professional Software Engineers/Developers for <br> Outsourced Web Development Projects</h2>
                     <h3 class="section-title pb-5 mb-5">Here at NeerStack, <span id="typewriper">{{word}}</span> <span id="cursor">|</span></h3>
                     <!-- <p class="larger-txt text-red-600">{{wordarr[wordstr]}}</p> -->
 
-                    <div class="ini_project">
-                         <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
-                    </div>
+                    <!-- <div class="ini_project">
+                         <a href="#our-projects" class="custom-btn secondary-btn">Check our Portfolio</a>
+                    </div> -->
 
 
                 </div>
@@ -23,9 +23,9 @@
                     <!-- End of .img-container -->
                 </div>
 
-                <div class="final_project">
-                    <a href="#our-projects" class="custom-btn secondary-btn">Check our Projects</a>
-                </div>
+                <!-- <div class="final_project">
+                    <a href="#our-projects" class="custom-btn secondary-btn">Check our Portfolio</a>
+                </div> -->
                 <!-- End of .col-lg-7 -->
             </div>
             <!-- End of .row -->
@@ -247,7 +247,7 @@
     <!-- End of .features -->
 
    <!-- Projects starts -->
-<section class="projects section-gap grey-bg" id="cynic-projects" data-scroll-offset="75">
+<section class="projects section-gap grey-bg" id="our-projects" data-scroll-offset="75">
     <div class="container">
         <h2 class="section-title text-center">Our Impressive Portfolio</h2>
 

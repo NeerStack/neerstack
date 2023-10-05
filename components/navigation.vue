@@ -581,6 +581,18 @@ var subnav = ref(false)
 
 const isLoading = ref(false)
 
+const toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+})
+
 const send = () => {
   if(!Email.name || !Email.email || !Email.message){
     Swal.fire({
@@ -594,11 +606,17 @@ const send = () => {
     .then(() =>{
       if(Email.status){
         isLoading.value = false
-        Swal.fire("Sent", Email.status, 'success')
+        toast.fire({
+          icon: 'success',
+          title: 'Your quote has been sent successfully!',
+        })
       }
       if(Email.error){
         isLoading.value = false
-        Swal.fire("Oops...", Email.error, 'error')
+        toast.fire({
+          icon: 'error',
+          title: 'Something went wrong!',
+        })
       }
     })
   }

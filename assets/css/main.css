@@ -1062,6 +1062,7 @@ textarea+.err-msg {
 @media screen and (max-width: 991px) {
     .breadcrumb-wrapper {
         background-color: #e6f2ff;
+        padding: 2rem 0;
     }
     .final_project{
         display: block;
@@ -1070,7 +1071,7 @@ textarea+.err-msg {
         display: none
     }
     .desc{
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -1107,22 +1108,10 @@ textarea+.err-msg {
     text-align: left;
 }
 
-@media screen and (max-width: 991px) {
-    .breadcrumb {
-        padding: 2rem 0;
-    }
-
-    .final_project{
-        display: block;
-    }
-    .ini_project{
-        display: none
-    }
-    .desc{
-        text-align: center;
-    }
-
+.desc h2{
+    color: #000;
 }
+
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: "\f054";

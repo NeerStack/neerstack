@@ -73,16 +73,37 @@ import Swal from 'sweetalert2'
 
 const News = setNews();
 
+const toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+})
+
 const sendEmail = () => {
     News.news()
     .then(() =>{
         if(News.status){
-            Swal.fire('Done', News.message, 'success')
+            toast.fire({
+                icon: 'success',
+                title: 'You have successfully subscribed to our newsletter'
+            })
         }else{
-            Swal.fire('Oops..', News.error, 'error')
+            toast.fire({
+                icon: 'error',
+                title: 'Something went wrong, please try again later'
+            })
         }
         if(News.error){
-            Swal.fire('Oops..', News.error, 'error')
+            toast.fire({
+                icon: 'error',
+                title: 'Something went wrong, please try again later'
+            })
         }
     })
 }

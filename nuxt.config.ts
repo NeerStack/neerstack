@@ -78,11 +78,11 @@ export default defineNuxtConfig({
               },
               {
                   name: 'description',
-                  content: 'Outsource Web Development Agency With Trained Software Engineers/Developers'
+                  content: 'Hire Professional Software Engineers/Developers for Outsourced Web Development Projects'
               },
               {
                   property: "og:title",
-                  content: "NeerStack | Digital Agency"
+                  content: "NeerStack | Software Development Company"
                 },
                 {
                   property: "og:site_name",
@@ -127,7 +127,7 @@ export default defineNuxtConfig({
                 },
                 {
                   name: "twitter:description",
-                  content: "Outsource Web Development Agency With Trained Software Engineers/Developers"
+                  content: "Hire Professional Software Engineers/Developers for Outsourced Web Development Projects"
                 },
                 {
                   name: "twitter:image",
@@ -135,10 +135,10 @@ export default defineNuxtConfig({
                 }
           ],
           script:[
-            {
-              type:"text/javascript",
-              src:"//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VsQiNE"
-            },
+            // {
+            //   type:"text/javascript",
+            //   src:"//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VsQiNE"
+            // },
             {
               src: "js/vendor/jquery.min.js",
               defer: true,
