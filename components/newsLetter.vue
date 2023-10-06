@@ -64,7 +64,7 @@
 
 <script setup>
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
-import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
+import Fa6BrandsTwitter from '~icons/fa6-brands/x-twitter'
 import Fa6BrandsInstagram from '~icons/fa6-brands/instagram'
 import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
 import Fa6BrandsGithub from '~icons/fa6-brands/github'

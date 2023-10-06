@@ -509,7 +509,7 @@ import logoLight from "@/assets/newLogo.png"
 import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin'
 import Fa6BrandsGithub from '~icons/fa6-brands/github'
 import Fa6BrandsFacebookF from '~icons/fa6-brands/facebook-f'
-import Fa6BrandsTwitter from '~icons/fa6-brands/twitter'
+import Fa6BrandsTwitter from '~icons/fa6-brands/x-twitter'
 import Fa6SolidXmark from '~icons/fa6-solid/xmark'
 import Fa6BrandsBehance from '~icons/fa6-brands/behance'
 import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble'

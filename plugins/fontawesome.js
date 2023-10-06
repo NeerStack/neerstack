@@ -9,18 +9,22 @@ import {
     faSun,
     faLongArrowLeft
   } from "@fortawesome/free-solid-svg-icons";
-  
+
    import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
   import {
     faTwitter,
     faGithub,
-    faLinkedin
+    faLinkedin,
+    faXTwitter,
+    faInstagram
   } from "@fortawesome/free-brands-svg-icons";
 
 config.autoAddCss = false
 
 library.add(
     faTwitter,
+    faXTwitter,
+    faInstagram,
     faGithub,
     faLinkedin,
     faMagnifyingGlass,
