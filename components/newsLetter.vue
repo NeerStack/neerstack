@@ -86,6 +86,15 @@ const toast = Swal.mixin({
 })
 
 const sendEmail = () => {
+    if(!News.fullname || !News.email){
+        Swal.fire({
+            icon: 'warning',
+            title: "Invalid Input",
+            text: 'Please fill all fields'
+        })
+        return
+    }
+
     News.news()
     .then(() =>{
         if(News.status){
