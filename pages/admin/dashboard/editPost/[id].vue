@@ -92,7 +92,7 @@ import 'highlight.js/styles/tokyo-night-dark.css';
 import prettier from 'prettier';
 import parserMarkdown from 'prettier/parser-markdown';
 import {useEditPostStore} from '@/store/post';
-import ImageIcon from '@/assets/imageIcon.png'
+import ImageIcon from '@/assets/newLogo.png'
 
 
 definePageMeta({
