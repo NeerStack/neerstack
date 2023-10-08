@@ -355,11 +355,13 @@ config({
   margin: 0 auto;
   height: auto;
   max-height: max-content;
+  background-color: #f1f5f9;
 }
 
 .createPost body{
     width: 100%;
     margin-left: 0px;
+    background-color: #f1f5f9;
 }
 .createPost .markdown {
     text-align: left;
@@ -379,6 +381,7 @@ config({
     text-align: left;
     padding: 30px;
     border-radius: 50px;
+    border: 1px solid #000;
 }
 
 .createPost form .markdown{
@@ -387,7 +390,7 @@ config({
 
 }
 .createPost label{
-    color: #aaa;
+    color: #000;
     display: block;
     margin: 25px 0 15px;
     font-size: 0.8em;
@@ -405,7 +408,7 @@ config({
     border: none;
     border-radius: 20px;
     border-bottom: 1px solid #ddd;
-    color: #555;
+    color: #000;
     text-indent: 10px;
 }
 
