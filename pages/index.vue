@@ -531,11 +531,13 @@ import {setPost} from '@/store/post'
 var Post = setPost()
 
 const setdata = {
-    title: "NeerStack | Home"
+    title: "NeerStack | Home",
 }
 useHead({
     title: computed(() => setdata.title)
 })
+
+
 
 function sleep(ms){
     return new Promise((resolve) => setTimeout(resolve, ms));

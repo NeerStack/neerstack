@@ -6,7 +6,20 @@
   </div>
 </template>
 <script setup>
-  
+
+  const setdata = {
+    title: "NeerStack | Home",
+    description: "NeerStack is a software development company that provides software development services to clients all over the world.",
+    keywords: "NeerStack, Software Development, Web Development, Mobile App Development, UI/UX Design, API Development, Software Testing, Product Management",
+    site_name: "NeerStack",
+}
+
+useHead({
+  title: computed(() => setdata.title),
+  description: computed(() => setdata.description),
+  keywords: computed(() => setdata.keywords),
+  site_name: computed(() => setdata.site_name),
+})
 
 </script>
 <style>
@@ -46,5 +59,5 @@
     background: var(--black);
   }
 
-  
+
 </style>

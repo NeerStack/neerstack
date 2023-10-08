@@ -5,7 +5,7 @@ import Icons from 'unplugin-icons/vite'
 
 export default defineNuxtConfig({
     modules:[
-        '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'bootstrap-vue/nuxt', 'nuxt-compress'
+        '@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'bootstrap-vue/nuxt', 'nuxt-compress', '@nuxtjs/dotenv'
     ],
     css: [
         '@fortawesome/fontawesome-svg-core/styles.css', '~/assets/tailwind.css',
@@ -13,6 +13,12 @@ export default defineNuxtConfig({
         "~/assets/css/vendor/magnific-popup.css", "~/assets/css/main.css",
         '~/assets/css/fontawesome-all.min.css'
     ],
+    runtimeConfig:{
+      public:{
+        apiUrl: process.env.NUXT_API
+      }
+
+    },
     bootstrapVue: {
       bootstrapCSS: true, // Or `css: false`
       bootstrapVueCSS: true, // Or `bvCSS: false`
@@ -26,6 +32,7 @@ export default defineNuxtConfig({
         'klaviyo-sdk'
       ]
     },
+
     app:{
       head:{
         __dangerouslyDisableSanitizers: ['script'],
@@ -140,7 +147,7 @@ export default defineNuxtConfig({
             //   src:"//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VsQiNE"
             // },
             {
-              src: "js/vendor/jquery.min.js",
+              src: "/js/vendor/jquery.min.js",
               defer: true,
               type: "text/javascript",
 
@@ -159,7 +166,7 @@ export default defineNuxtConfig({
             //   defer: true
             // },
             {
-              src: "js/vendor/jquery-migrate.min.js",
+              src: "/js/vendor/jquery-migrate.min.js",
                defer: true,
                type: "text/javascript",
 
@@ -170,7 +177,7 @@ export default defineNuxtConfig({
             //   crossorigin: "anonymous"
             // },
             {
-              src: "js/vendor/easing-1.3.js",
+              src: "/js/vendor/easing-1.3.js",
                defer: true,
                type: "text/javascript",
 
@@ -180,54 +187,54 @@ export default defineNuxtConfig({
             //   defer: true
             // },
             {
-              src: "js/vendor/bootstrap.bundle.min.js",
+              src: "/js/vendor/bootstrap.bundle.min.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/vendor/isotope.pkgd.min.js",
+              src: "/js/vendor/isotope.pkgd.min.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/vendor/jquery.waypoints.min.js",
+              src: "/js/vendor/jquery.waypoints.min.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/vendor/jquery.counterup.min.js",
+              src: "/js/vendor/jquery.counterup.min.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/vendor/imagesloaded.pkgd.min.js",
+              src: "/js/vendor/imagesloaded.pkgd.min.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/vendor/owl.carousel.min.js",
+              src: "/js/vendor/owl.carousel.min.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/vendor/jquery.magnific-popup.min.js",
+              src: "/js/vendor/jquery.magnific-popup.min.js",
                defer: true,
                type: "text/javascript",
             },
             {
-              src: "js/plugins.js",
+              src: "/js/plugins.js",
                defer: true,
                type: "text/javascript",
 
             },
             {
-              src: "js/main.min.js",
+              src: "/js/main.min.js",
               defer: true,
               type: "text/javascript",
 
