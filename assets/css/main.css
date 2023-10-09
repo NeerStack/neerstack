@@ -1190,29 +1190,29 @@ textarea+.err-msg {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin-bottom: 3rem;
     list-style: none;
-}
+  }
 
-.post-metas li {
+  .post-metas li {
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: #888FB8;
     font-weight: 400;
     margin-bottom: .6rem;
     margin-right: 3rem;
-}
+  }
 
-.post-metas li:hover {
-    color: #6384ff;
-}
+  .post-metas li:hover {
+    color: #fc7c56;
+  }
 
-.post-metas li a {
+  .post-metas li a {
     font-size: inherit;
     line-height: inherit;
     color: inherit;
@@ -1220,20 +1220,20 @@ textarea+.err-msg {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+        -ms-flex-align: center;
+            align-items: center;
+  }
 
-.post-metas li i {
+  .post-metas li i {
     margin-right: .5rem;
-}
+  }
 
-.post-metas li img {
+  .post-metas li img {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
     margin-right: 1rem;
-}
+  }
 
 .widget .post-metas {
     margin-bottom: 0;
@@ -1722,6 +1722,10 @@ textarea+.err-msg {
 /* -- Team css
 ----------------------------------- -- */
 
+.blog-container{
+    display: grid;
+}
+
 .img-card {
     display: block;
     overflow: hidden;
@@ -1733,6 +1737,15 @@ textarea+.err-msg {
     transition: all .5s;
 }
 
+.img-card.news-card img{
+    width: 400px !important;
+    height: 250px !important;
+    max-width: 1280px !important;
+    max-height: 770px !important;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-card .content {
     padding: 3rem 3rem 1.7rem;
 }
@@ -1740,6 +1753,7 @@ textarea+.err-msg {
 .img-card .content h4 {
     padding: 0;
     margin-bottom: 1.7rem;
+
 }
 
 .img-card .content h4 span {
@@ -2251,7 +2265,10 @@ textarea+.err-msg {
 
 .news-card {
     background-color: #fff;
+    text-align: left;
 }
+
+
 
 .news-card .read-more {
     font-size: 1.6rem;
@@ -2338,6 +2355,7 @@ textarea+.err-msg {
 .post-details {
     padding-top: 10rem;
     padding-bottom: 5rem;
+    text-align: justify;
 }
 
 @media screen and (max-width: 991px) {
@@ -2361,6 +2379,15 @@ textarea+.err-msg {
 
 .article-details p {
     margin-bottom: 3rem;
+}
+
+.article-details h1{
+    font-size: 5rem;
+    line-height: 3.8rem;
+    color: #32325c;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    text-align: center;
 }
 
 .article-details blockquote,

@@ -71,6 +71,7 @@ export const useCreatePostStore = defineStore('createpost', {
           draft: false,
           archived: false,
           status: false,
+          newContent: null,
       }),
 
     getters: {
@@ -88,13 +89,13 @@ export const useCreatePostStore = defineStore('createpost', {
             form.append('title', this.title);
             form.append('tags', this.tags);
             form.append('content', this.content);
+            form.append('htmlContent', this.newContent);
             form.append('draft', this.draft)
             form.append('archived', this.archived)
 
             const res = await fetch(`${URL}/create`, {
               method: 'POST',
               headers:{
-                'Content-Type': 'application/json',
                 Authorization: `Bearer ${sessionStorage.getItem('Token')}`
             },
               body: form
@@ -140,6 +141,7 @@ export const useCreatePostStore = defineStore('createpost', {
           draft: null,
           archived: null,
           status: false,
+          newContent: null,
       }),
 
     getters: {
@@ -182,6 +184,7 @@ export const useCreatePostStore = defineStore('createpost', {
           this.error = error
         }
       },
+
       async UpdatePost() {
         this.message = null;
         this.status = null;
@@ -191,13 +194,13 @@ export const useCreatePostStore = defineStore('createpost', {
               title: this.title,
               tags: this.tags,
               content: this.content,
+              htmlContent: this.newContent,
               draft: this.draft
             }
 
             const res = await fetch(`${URL}/update-blog/${this.id}`, {
               method: 'PUT',
               headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${sessionStorage.getItem('Token')}`
               },
@@ -207,12 +210,12 @@ export const useCreatePostStore = defineStore('createpost', {
               if(data.status === true){
                 this.status = true
                 this.message = data.message;
-                this.title = '';
-                this.tags= [ ];
-                this.content = '';
-                this.draft = false;
-                this.archived = false;
-                this.error = null;
+                // this.title = '';
+                // this.tags= [ ];
+                // this.content = '';
+                // this.draft = false;
+                // this.archived = false;
+                // this.error = null;
               }else{
                 this.status = false
                 this.message = data.message
@@ -315,7 +318,6 @@ export const useCreatePostStore = defineStore('createpost', {
           const res = await fetch(`${URL}/change-image/${this.id}`, {
             method: 'PUT',
             headers:{
-                'Content-Type': 'application/json',
                 Authorization: `Bearer ${sessionStorage.getItem('Token')}`
             },
             body: form
@@ -324,7 +326,7 @@ export const useCreatePostStore = defineStore('createpost', {
           if(data.status === true){
             this.status = true,
             this.message = data.message,
-            this.oldImage = data.data
+            this.oldImage = data.data.image.url
           }else{
             this.status = false,
             this.message = data.message
@@ -378,7 +380,7 @@ export const useCreatePostStore = defineStore('createpost', {
     state: ()=>({
       id: '',
       error: null,
-      post: null,
+      post: {},
       message: null,
       nextPost: null,
       previousPost: null,
@@ -386,7 +388,7 @@ export const useCreatePostStore = defineStore('createpost', {
       posts: [],
       size: 3,
       current_page: 1,
-      status: false
+      status: null
     }),
 
     getters:{
@@ -438,6 +440,61 @@ export const useCreatePostStore = defineStore('createpost', {
         } catch (error) {
           this.status = false
           this.error = error.message
+        }
+      },
+      async getActivePosts(){
+        this.status = null
+        this.posts = []
+        this.message = null
+        this.error = null
+        try {
+          const res = await fetch(`${URL}/get-active-blogs`, {
+            method: 'GET',
+            headers:{
+                'Content-Type': 'application/json',
+            }
+          })
+          const data = await res.json()
+
+          if(data.status === true){
+            this.posts = data.data;
+            this.status = true
+            this.message = data.message
+            // this.displayPost = this.posts;
+         }else if(data.status === false){
+            this.status = false
+            this.message = data.message
+         }
+
+        } catch (error) {
+          this.status = false
+          this.error = error.message
+        }
+      },
+      async getBySlug(slug){
+        this.status = null
+        this.post = null
+        this.message = null
+        this.error = null
+        try {
+          const res = await fetch(`${URL}/get-blog-by-slug/${slug}`, {
+            method: 'GET',
+            headers:{
+                'Content-Type': 'application/json'
+            }
+
+          })
+          const {status, data, message} = await res.json()
+          if(status){
+            this.status = true
+            this.post = data
+          }else{
+            this.status = false
+            this.message = message
+          }
+        } catch (error) {
+          this.status = false
+          this.error = error
         }
       },
       async getDraftedPosts(){

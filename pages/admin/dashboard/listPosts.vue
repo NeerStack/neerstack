@@ -39,7 +39,7 @@
                         </td>
                         <td>
                             <div style="width: 200px">
-                                <span v-if="post.tags.length > 0" v-for="(tag, index) in post.tags" :key="index" style="margin-right: 5px; background-color: #ddd; padding: 5px; border-radius: 5px;">{{tag}}</span>
+                                <span v-if="post.tags.length > 0" v-for="(tag, index) in post.tags" :key="index" style="margin-right: 5px; background-color: #ddd; padding: 5px; border-radius: 5px; overflow: visible; word-wrap: normal; text-wrap:nowrap;">{{tag}}</span>
                                 <span v-else><p>No tags found</p></span>
                             </div>
                         </td>
@@ -80,7 +80,6 @@
 
 <script setup>
 import dayjs from 'dayjs'
-import { ref, onMounted } from 'vue';
 import { useRouter } from 'nuxt/app';
 import {usedeletePost, useEditPostStore, useGetPostStore} from '@/store/post'
 import Swal from 'sweetalert2';

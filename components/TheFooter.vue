@@ -63,7 +63,9 @@
                         <h5 class="footer-nav-title">Resources</h5>
                         <ul class="footer-nav dynamic-nav">
                             <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
+                            <li><NuxtLink to="/blog">Blog</NuxtLink></li>
                             <li><NuxtLink to="/about">About</NuxtLink></li>
+
                             <!-- <li><a href="#" data-bs-toggle="modal" data-bs-target="#team-modal">Team</a></li> -->
 
                         </ul>
@@ -75,7 +77,6 @@
                         <h5 class="footer-nav-title">Support</h5>
                         <ul class="footer-nav dynamic-nav">
                             <li><NuxtLink to="/contact-us">Contact</NuxtLink></li>
-
                             <li><NuxtLink href="#">Terms &amp; Conditions</NuxtLink></li>
                         </ul>
                     </div>

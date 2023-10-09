@@ -1,17 +1,18 @@
 <template>
     <main class="editPost">
         <logo/>
-        <body>
+        <body v-if="Post.status">
             <div class="backButton">
                 <button @click="back"><font-awesome-icon icon="fa-solid fa-arrow-left-long" /> Back</button>
             </div>
             <form @submit.prevent>
                 <label class="image" for="Image">Image:
                     <img :src="Post.oldImage" alt="post-image">
+                    <small>Please make sure the image is exact 1280 x 770 pixels</small>
                 </label>
                 <div class="actions">
                     <label>
-                        <input type="file" class="hidden" v-on:change="onFileChnage">
+                        <input type="file" class="hidden" @change="onFileChnage">
                         <span class="material-icons">add_a_photo</span>
                     </label>
                     <label>
@@ -49,11 +50,13 @@
                       :no-mermaid="false"
                       :no-iconfont="false"
                       placeholder="Enter your post content"
-                      :sanitize="sanitize"
                       :spellcheck="true"
                       :autocapitalize="true"
                       :autosave="true"
                       @onUploadImg="onUploadImg"
+                      :auto-detect-code="true"
+                      :html-preview="true"
+                      :on-html-changed="sanitize"
                     >
                     </MdEditor>
 
@@ -77,8 +80,6 @@ import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
 import {MdEditor, config} from 'md-editor-v3';
 import 'md-editor-v3/lib/style.css';
-import { ref, onMounted } from 'vue';
-import sanitizeHtml from 'sanitize-html';
 import {onUploadImg} from '@/composite/Posts'
 import screenfull from 'screenfull';
 import { useRouter, useRoute } from 'nuxt/app';
@@ -89,8 +90,8 @@ import 'cropperjs/dist/cropper.css';
 import mermaid from 'mermaid';
 import highlight from 'highlight.js';
 import 'highlight.js/styles/tokyo-night-dark.css';
-import prettier from 'prettier';
-import parserMarkdown from 'prettier/parser-markdown';
+// import prettier from 'prettier';
+// import parserMarkdown from 'prettier/parser-markdown';
 import {useEditPostStore} from '@/store/post';
 import ImageIcon from '@/assets/newLogo.png'
 
@@ -113,12 +114,11 @@ useHead({
 })
 
 config({
-
     editorExtensions: {
-    prettier: {
-      prettierInstance: prettier,
-      parserMarkdownInstance: parserMarkdown
-    },
+    // prettier: {
+    //   prettierInstance: prettier,
+    //   parserMarkdownInstance: parserMarkdown
+    // },
     highlight: {
       instance: highlight
     },
@@ -160,13 +160,13 @@ config({
           revoke: 'revoke',
           next: 'undo revoke',
           save: 'save',
-          prettier: 'prettier',
+          // prettier: 'prettier',
           pageFullscreen: 'fullscreen in page',
           fullscreen: 'fullscreen',
           preview: 'preview',
           htmlPreview: 'html preview',
           catalog: 'catalog',
-          github: 'source code'
+          // github: 'source code'
         },
         titleItem: {
           h1: 'Lv1 Heading',
@@ -343,7 +343,9 @@ config({
     })
     }
 
-    const sanitize = (html) => {return sanitizeHtml(html)};
+    const sanitize = (html) => {
+      Post.newContent = html
+    };
 
     const popup = () =>{
       Post.draft = false;
@@ -359,6 +361,7 @@ config({
       }).then((result) =>{
         if(result.isConfirmed){
             Post.UpdatePost().then(() => {
+              Post.getById(id)
               if(Post.status && Post.message){
               Swal.fire({
                 icon: 'success',
@@ -446,11 +449,14 @@ config({
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 60px;
+  width: 100%;
+  background-color: #f1f5f9 !important;
 }
 
 .editPost body{
     width: 100%;
     margin-left: 0px;
+    background-color: #f1f5f9 !important;
 }
 .editPost .markdown {
     text-align: left;
@@ -470,6 +476,7 @@ config({
     text-align: left;
     padding: 30px;
     border-radius: 50px;
+    border: 1px solid #000;
 }
 
 .editPost form .markdown{
@@ -478,7 +485,7 @@ config({
 
 }
 .editPost label{
-    color: #aaa;
+    color: #000;
     display: block;
     margin: 25px 0 15px;
     font-size: 0.8em;
@@ -496,7 +503,7 @@ config({
     border: none;
     border-radius: 20px;
     border-bottom: 1px solid #ddd;
-    color: #555;
+    color: #000;
     text-indent: 10px;
 }
 
@@ -571,7 +578,18 @@ config({
     color: #000;
 }
 
+.editPost .image{
+    width: 100%;
+}
+
+.editPost .image small{
+    font-size: 0.8em;
+    color: #000;
+    font-weight: bold;
+    margin-left: 50px;
+}
 .editPost .image img{
+    display: flex;
     margin-left: 50px;
     width: 400px;
     height: 300px;

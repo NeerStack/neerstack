@@ -32,12 +32,11 @@
                         :no-mermaid="false"
                         :no-iconfont="false"
                         placeholder="Enter your post content"
-                        :sanitize="sanitize"
                         :spellcheck="true"
                         :autocapitalize="true"
                         :autosave="true"
                         @onUploadImg="onUploadImg"
-
+                        :on-html-changed="sanitize"
                     >
                     </MdEditor>
 
@@ -63,8 +62,6 @@ import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
 import {MdEditor, config} from 'md-editor-v3';
 import 'md-editor-v3/lib/style.css';
-import { ref, onMounted } from 'vue';
-import sanitizeHtml from 'sanitize-html';
 import {onUploadImg} from '@/composite/Posts'
 import screenfull from 'screenfull';
 import katex from 'katex';
@@ -259,7 +256,9 @@ config({
       Post.image = files[0]
     }
 
-    const sanitize = (html) => {return sanitizeHtml(html)};
+    const sanitize = (html) => {
+      Post.newContent = html
+    };
 
 
 
@@ -336,10 +335,6 @@ config({
       })
 
     }
-
-
-
-
 
 </script>
 

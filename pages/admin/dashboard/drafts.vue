@@ -66,8 +66,6 @@
 
 <script setup>
 import dayjs from 'dayjs'
-// import {getDraftPosts} from '@/composite/Posts'
-import { ref, onMounted } from 'vue';
 import { useRouter } from 'nuxt/app';
 import {usedeletePost, useGetPostStore} from '@/store/post'
 import Swal from 'sweetalert2'

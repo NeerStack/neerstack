@@ -32,10 +32,10 @@
 				<span class="material-icons"> drafts </span>
 				<span class="text">Drafts</span>
 			</NuxtLink>
-			<NuxtLink to="/settings" class="button">
+			<!-- <NuxtLink to="/settings" class="button">
 				<span class="material-icons">settings</span>
 				<span class="text">Settings</span>
-			</NuxtLink>
+			</NuxtLink> -->
 			<button @click="logout" class="button">
 				<span class="material-icons">logout</span>
 				<span class="text">Log Out</span>
