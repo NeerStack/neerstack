@@ -2841,6 +2841,16 @@ figure img {
     width: 15rem;
 }
 
+@media screen and (max-width: 991px) {
+    .footer-nav{
+        margin-bottom: 5rem !important;
+    }
+
+    .footer-nav-title {
+        margin-bottom: 2rem !important;
+    }
+}
+
 .footer-nav {
     padding-left: 0;
     list-style: none;
