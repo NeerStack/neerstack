@@ -386,7 +386,7 @@ export const useCreatePostStore = defineStore('createpost', {
       previousPost: null,
       search: null,
       posts: [],
-      size: 3,
+      size: 6,
       current_page: 1,
       status: null
     }),

@@ -18,7 +18,7 @@
         <div class="row no-gutters align-items-center">
             <div class="col-lg-6 text-center text-lg-left">
                 <h1>Blog</h1>
-                <p class="larger-txt">Welcome to our software development company's blog, where we unravel the latest tech trends and share expert insights to keep you ahead in the digital world.</p>
+                <p class="smaller-txt">Our software development company's blog offers expert insights and explores the latest tech trends to keep you ahead in the digital world.</p>
 
             </div>
             <!-- End of .col-lg-5 -->
@@ -63,7 +63,7 @@
                     <button v-if="data.current_page > 1" @click="data.prevPage" class="arrows">
                     <i class="bi bi-arrow-left-circle-fill"></i>
                     </button>
-                    <button v-if="(data.posts.length>0)" class="btnButton active">{{data.current_page}}</button>
+                    <!-- <button v-if="(data.posts.length>0)" class="btnButton active">{{data.current_page}}</button> -->
                     <button v-if="(data.current_page*size) < data.posts.length" @click="data.nextPage" class="arrows">
                     <i class="bi bi-arrow-right-circle-fill"></i>
                     </button>

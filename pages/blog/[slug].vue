@@ -18,7 +18,7 @@
         <div class="row no-gutters align-items-center">
             <div class="col-lg-6 text-center text-lg-left">
                 <h1>Blog Post</h1>
-                <p class="larger-txt">Welcome to our software development company's blog, where we unravel the latest tech trends and share expert insights to keep you ahead in the digital world.</p>
+                <p class="smaller-txt">Our software development company's blog offers expert insights and explores the latest tech trends to keep you ahead in the digital world.</p>
 
             </div>
             <!-- End of .col-lg-5 -->
