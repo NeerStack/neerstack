@@ -44,7 +44,7 @@
 
         <div class="grid-wrapper" >
             <div class="row justify-content-center" v-if="data.status == true">
-                <div class="col-lg-4 col-md-6 blog-container"  v-for="(post) in data.posts" :key="post._id">
+                <div class="col-lg-4 col-md-6 blog-container"  v-for="(post) in data.searchState" :key="post._id">
                     <a :href="'/blog/'+post.slug" class="img-card news-card">
                         <img :src="post.image.url" alt="news image" class="img-fluid">
                         <div class="content ">
@@ -59,8 +59,14 @@
                 </div>
                 <!-- End of .col-lg-4 -->
 
-                <div class="col-lg-12 text-center">
-                    <a href="#" class="custom-btn secondary-btn">LOAD MORE NEWS</a>
+                <div class="col-md-12 text-center paginationSection" v-if="data.posts.length > data.size">
+                    <button v-if="data.current_page > 1" @click="data.prevPage" class="arrows">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    </button>
+                    <button v-if="(data.posts.length>0)" class="btnButton active">{{data.current_page}}</button>
+                    <button v-if="(data.current_page*size) < data.posts.length" @click="data.nextPage" class="arrows">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    </button>
                 </div>
                 <!-- End of .text-center -->
             </div>
@@ -80,6 +86,44 @@
 
     </main>
 </template>
+<style scoped>
+.paginationSection{
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
+}
+
+.paginationSection .arrows{
+  background-color: transparent !important;
+  border: none !important;
+  position: relative !important;
+  top: 5px !important;
+}
+
+.paginationSection .arrows i{
+  font-size: 30px !important;
+  color: #979797 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.paginationSection .btnButton{
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  background-color: #87ec90 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  margin-left: 9px !important;
+  margin-right: 9px !important;
+}
+
+.paginationSection button.active{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+</style>
 <script setup>
 import { useGetPostStore } from '@/store/post';
 import dayjs from 'dayjs';

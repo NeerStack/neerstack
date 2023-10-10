@@ -50,8 +50,8 @@
 
 <ul class="post-metas ">
     <!-- <li> <a href="#" class=""><img src="@/assets/post-author-1.png" alt="">Jems Anderson</a></li> -->
-    <li class=""><a href="#"><i class="far fa-calendar-alt"></i>{{ format_date(data.post.createdAt) }}</a></li>
-    <li> <a href="#" class=""><i class="far fa-tags"></i><span v-if="data.post.tags.length > 0" v-for="tag in data.post.tags" style="margin-right: 20px; text-transform: capitalize;">{{ tag }} </span> <span v-else> #NeerStack </span></a></li>
+    <li class=""><a><i class="far fa-calendar-alt"></i>{{ format_date(data.post.createdAt) }}</a></li>
+    <li> <a class=""><i class="far fa-tags"></i><span v-if="data.post.tags.length > 0" v-for="tag in data.post.tags" style="margin-right: 20px; text-transform: capitalize;">{{ tag }} </span> <span v-else> #NeerStack </span></a></li>
     <!-- <li> <a href="#" class=""><i class="far fa-bezier-curve"></i>Design</a></li> -->
 </ul>
 
