@@ -1,6 +1,6 @@
 <template>
     <main>
-    <div class="banner home-banner d-flex align-items-center">
+    <div class="banner home-banner d-flex align-items-center light-grey-bg">
         <div class="container">
             <div class="row_reverse row no-gutters align-items-center">
                 <div class="desc col-lg-6  text-lg-justify">
