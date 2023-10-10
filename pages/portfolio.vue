@@ -133,6 +133,10 @@
     </main>
 </template>
 <script setup>
+import '@/assets/css/vendor/owl.carousel.min.css'
+import '@/assets/css/vendor/magnific-popup.css'
+import '@/assets/css/vendor/owl.theme.default.min.css'
+import '@/assets/css/vendor/bootstrap.min.css'
 
 const setdata = {
     title: "NeerStack | Portfolio"
