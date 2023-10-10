@@ -34,7 +34,7 @@
             </div>
             <!-- End of .container -->
         </div>
-        <section class="features section-gap" id="cynic-about" data-scroll-offset="165">
+        <section class="features section-gap light-grey-bg" id="cynic-about" data-scroll-offset="165">
             <div class="container">
 
 

@@ -38,7 +38,7 @@
 <!-- End of .banner -->
 
 <!-- Projects starts -->
-<section class="projects section-gap " id="cynic-projects" data-scroll-offset="75">
+<section class="projects section-gap light-grey-bg" id="cynic-projects" data-scroll-offset="75">
     <div class="container">
         <h2 class="section-title text-center">Featured Projects</h2>
 

@@ -38,7 +38,7 @@
 <!-- End of .banner -->
 
 <!-- post-details starts -->
-<div class="post-details " v-if="data.status">
+<div class="post-details light-grey-bg" v-if="data.status">
     <div class="container">
         <div class="row">
             <div class="col-lg">

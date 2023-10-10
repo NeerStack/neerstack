@@ -39,7 +39,7 @@
 
 
 <!-- our features starts -->
-<section class="features section-gap" id="cynic-about" data-scroll-offset="165">
+<section class="features section-gap " id="cynic-about" data-scroll-offset="165">
     <div class="container">
 
         <div class="features-grid">
