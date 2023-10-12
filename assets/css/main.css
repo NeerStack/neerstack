@@ -1208,6 +1208,16 @@ textarea+.err-msg {
     margin-right: 3rem;
   }
 
+  @media screen and (max-width: 991px) {
+    .post-metas li {
+      font-size: 1rem;
+    }
+
+    .post-metas li span{
+        margin-right: 0.8rem !important;
+    }
+  }
+
   .post-metas li:hover {
     color: #fc7c56;
   }
@@ -2362,6 +2372,11 @@ textarea+.err-msg {
     .post-details {
         padding-top: 6rem;
         padding-bottom: 0;
+    }
+
+    .article-details h1{
+        font-size: 2.5rem !important;
+
     }
 }
 
