@@ -41,7 +41,7 @@
 
 
                         <li class="nav-item">
-                            <NuxtLink @click="handleClick($event)" class="nav-link" to="/portfolio">Portfolio</NuxtLink>
+                            <NuxtLink rel="reopener" @click="handleClick($event)" class="nav-link" to="/portfolio">Portfolio</NuxtLink>
                         </li>
                         <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/blog">Blog</NuxtLink>
@@ -52,7 +52,7 @@
                         <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/about">About</NuxtLink>
                         </li>
-                        
+
                         <li class="nav-item">
                             <NuxtLink @click="handleClick($event)" class="nav-link" to="/contact-us">Contact</NuxtLink>
                         </li>
