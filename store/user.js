@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
+import { API } from '~~/utils';
 // const config = useRuntimeConfig()
 // const API = config.public.apiUrl;
 // process.env.API ? decodeURI(process.env.API)
-const API = 'https://neerstack-server-036b54bcba24.herokuapp.com';
+// const API = 'https://neerstack-server-036b54bcba24.herokuapp.com';
 // export const useRuntime = () => {
 //     const config = useRuntimeConfig()
 //     const API = config.public.apiUrl;

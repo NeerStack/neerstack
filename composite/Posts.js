@@ -1,8 +1,9 @@
 import {ref} from 'vue';
 import { ToastAlert } from '~~/utils/SweetAlertUtl';
+import { API } from '~~/utils';
 // import dotenv from 'dotenv';
 // dotenv.config()
-const API = "https://neerstack-server-036b54bcba24.herokuapp.com"
+
 
 export const URL = `${API}/blog`;
 

@@ -1,7 +1,8 @@
 import {defineStore} from 'pinia'
 import ImageIcon from '@/assets/newLogo.png'
+import { API } from '~~/utils';
 
-const API = 'https://neerstack-server-036b54bcba24.herokuapp.com';
+// const API = 'https://neerstack-server-036b54bcba24.herokuapp.com';
 
 const URL = `${API}/blog`;
 

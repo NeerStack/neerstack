@@ -1,10 +1,12 @@
 import {defineStore} from 'pinia'
 import emailjs from '@emailjs/browser';
+import { API } from '~~/utils';
+
 // import  fetch from 'node-fetch'
 
-const url = 'https://neerstack-server-036b54bcba24.herokuapp.com/subscribe';
-const quoteUrl = 'https://neerstack-server-036b54bcba24.herokuapp.com/quote';
-const contactUrl = 'https://neerstack-server-036b54bcba24.herokuapp.com/contact';
+const url = `${API}/subscribe`;
+const quoteUrl = `${API}/quote`;
+const contactUrl = `${API}/contact`;
 export const setEmail = defineStore('email', {
     state: ()=>({
         name: '',
