@@ -110,7 +110,7 @@
                     <!-- End of .col-lg-4 -->
 
                     <div class="col-lg-4 col-md-6 item category-b">
-                        <<a href="/portfolio" class="img-card text-center portfolio-card white-bg " data-bs-toggle="modal" data-bs-target="#magehub-modal">
+                        <a href="/portfolio" class="img-card text-center portfolio-card white-bg " data-bs-toggle="modal" data-bs-target="#magehub-modal">
                             <img src="@/assets/products/enitars.png" alt="product" class="img-fluid">
                             <h4>
                                 <span>Enitars (formerly known as MageHub)</span>Mobile Application</h4>
