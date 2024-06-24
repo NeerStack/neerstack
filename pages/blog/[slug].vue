@@ -140,20 +140,20 @@ const route = useRoute()
 const data = useGetPostStore()
 
 const slug = route.params.slug
-    await data.getBySlug(slug)
-    .then(()=>{
-        if(!data.status){
-            if(data.message){
-                ToastAlert(data.message, 'error')
-            }else if(data.error){
-                ToastAlert(data.error, 'error')
-            }
+await data.getBySlug(slug)
+.then(()=>{
+    if(!data.status){
+        if(data.message){
+            ToastAlert(data.message, 'error')
+        }else if(data.error){
+            ToastAlert(data.error, 'error')
         }
-    })
+    }
+})
 
-    await data.getActivePosts()
+await data.getActivePosts()
 
-    data.posts = data.posts.filter((post) => post.slug !== slug)
+data.posts = data.posts.filter((post) => post.slug !== slug)
 
 if(data.post){
   useHead({
@@ -206,24 +206,11 @@ if(data.post){
 )
 }
 
-
-
-
-
-
-
-
-
-
-
 const format_date = (value) => {
     if (value) {
      const date = dayjs(value);
     return date.format('dddd MMMM D, YYYY');
     }
 }
-
-
-
 
 </script>
