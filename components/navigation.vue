@@ -488,7 +488,7 @@
                                 <!-- <span>ProduceMart</span> -->
                                 Enitars (formerly known as MageHub)
                             </h4>
-                            <p>Discover the incredible potential of Enitars, a revolutionary app that empowers you to connect with friends and forge new connections with a diverse community spanning the globe. Seamlessly communicate with your friends through our innovative chat feature, while also leveraging the power of advanced AI tools to enhance your experience. Engage in meaningful conversations, expand your network, and explore endless possibilities with Enitars. Join us today and unlock a world of boundless opportunities at your fingertips.</p>
+                            <p>Enitars is your all-in-one AI companion, harnessing the cutting-edge OpenAI Assistant API to bring a world of AI tools directly to your fingertips.</p>
                             <NuxtLink to="https://www.enitars.com" target="_blank" class="hyperlink">Launch Website</NuxtLink>
                         </div>
                     </div>
