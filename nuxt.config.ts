@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   ],
   css: [
     "@fortawesome/fontawesome-svg-core/styles.css",
-    "@/assets/tailwind.css",
+    // "@/assets/tailwind.css",
     "@/assets/css/vendor/bootstrap.min.css",
     "@/assets/css/vendor/owl.carousel.min.css",
     "@/assets/css/vendor/owl.theme.default.min.css",
@@ -268,10 +268,10 @@ export default defineNuxtConfig({
           src: "https://www.googletagmanager.com/gtag/js?id=G-YY4WR0ZRCR",
           async: true,
         },
-        {
-          src: "https://www.googletagmanager.com/gtag/js?id=G-YY4WR0ZRCR",
-          async: true,
-        },
+        // {
+        //   src: "https://www.googletagmanager.com/gtag/js?id=G-YY4WR0ZRCR",
+        //   async: true,
+        // },
         {
           id: "gtag-init",
           innerHTML: `
@@ -327,9 +327,6 @@ export default defineNuxtConfig({
         autoInstall: true,
       }),
     ],
-    resolve: {
-      conditions: ["development", "browser"],
-    },
   },
 
   layoutTransition: {
