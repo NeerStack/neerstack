@@ -1,7 +1,7 @@
 <template>
     <main class="editPost">
         <logo/>
-        <body v-if="Post.status">
+        <section v-if="Post.status">
             <div class="backButton">
                 <button @click="back"><font-awesome-icon icon="fa-solid fa-arrow-left-long" /> Back</button>
             </div>
@@ -70,7 +70,7 @@
                   </div>
 
             </form>
-        </body>
+          </section>
 
     </main>
 </template>
@@ -86,7 +86,7 @@ import { useRouter, useRoute } from 'nuxt/app';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import Cropper from 'cropperjs';
-import 'cropperjs/dist/cropper.css';
+// import 'cropperjs/dist/cropper.css';
 import mermaid from 'mermaid';
 import highlight from 'highlight.js';
 import 'highlight.js/styles/tokyo-night-dark.css';
@@ -453,7 +453,7 @@ config({
   background-color: #f1f5f9 !important;
 }
 
-.editPost body{
+.editPost section{
     width: 100%;
     margin-left: 0px;
     background-color: #f1f5f9 !important;

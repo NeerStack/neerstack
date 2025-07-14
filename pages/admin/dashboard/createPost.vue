@@ -1,7 +1,7 @@
 <template>
     <main class="createPost">
         <logo/>
-        <body>
+        <section>
             <form @submit.prevent>
                 <label for="Image">Image: </label>
                 <input type="file" placeholder="Post Image" v-on:change="onFileChnage" required>
@@ -50,7 +50,7 @@
                   </div>
 
             </form>
-        </body>
+        </section>
 
     </main>
 
@@ -67,7 +67,7 @@ import screenfull from 'screenfull';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import Cropper from 'cropperjs';
-import 'cropperjs/dist/cropper.css';
+// import 'cropperjs/dist/cropper.css';
 import mermaid from 'mermaid';
 import highlight from 'highlight.js';
 import 'highlight.js/styles/tokyo-night-dark.css';
@@ -353,7 +353,7 @@ config({
   background-color: #f1f5f9;
 }
 
-.createPost body{
+.createPost section{
     width: 100%;
     margin-left: 0px;
     background-color: #f1f5f9;

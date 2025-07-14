@@ -1,7 +1,7 @@
 <template>
     <main class="listPosts">
         <logo/>
-        <body>
+        <section>
             <div v-if="posts" style="background-color: transparent !important;">
              <div class="submit">
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
@@ -74,7 +74,7 @@
             <div class="card" v-else>
                 <img  src="@/assets/loading.gif" alt="loading"/>
             </div>
-        </body>
+        </section>
     </main>
 </template>
 
@@ -309,7 +309,7 @@ input:checked + .slider:before {
     margin-top: 30%;
   }
 
-body{
+section{
     margin-left: 50px;
     margin-top: 120px;
     background-color: #f1f5f9;

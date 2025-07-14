@@ -592,17 +592,22 @@ var word = ref('')
 const client_count = ref(0);
 const project_run = ref(0);
 const project_com = ref(0);
+let client
+let project1
+let project2
 
-
-    var client = setInterval(()=>{
+onMounted(() =>{
+    client = setInterval(()=>{
         client_work()
     }, 50)
-    var project1 =  setInterval(()=>{
+    project1 =  setInterval(()=>{
     project1_work()
     }, 50)
-    var project2 = setInterval(()=>{
+    project2 = setInterval(()=>{
         project2_work()
     }, 50)
+})
+
 
 
 

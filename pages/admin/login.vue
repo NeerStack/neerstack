@@ -5,7 +5,7 @@
                 <img :src="logo" alt="logo"/>
             </div>
         </header>
-        <body >
+        <section >
             <form class="grey-bg" @submit.prevent>
                 <h1>Sign in</h1>
                 <label> Email/Username: </label>
@@ -20,7 +20,7 @@
                     <button @click="handleSubmit"> Login </button>
                 </div>
             </form>
-        </body>
+        </section>
 
     </main>
 

@@ -1,7 +1,6 @@
-module.exports = {
+export default {
   plugins: {
-    tailwindcss: {config: './tailwind.config.js'},
-    autoprefixer: {},
+    '@tailwindcss/postcss': {},
     cssnano: {
       preset: 'default',
     }
