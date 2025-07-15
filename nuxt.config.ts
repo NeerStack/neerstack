@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     "@/assets/css/fontawesome-all.min.css",
     // 'bootstrap/dist/css/bootstrap.min.css'
   ],
+  compatibilityDate: "2025-07-15",
   runtimeConfig: {
     public: {
       apiUrl: process.env.NUXT_API,
