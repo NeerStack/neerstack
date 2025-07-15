@@ -5140,7 +5140,8 @@ fieldset:disabled .btn {
     float: left;
     padding-right: .5rem;
     color: #6c757d;
-    content: var(--bs-breadcrumb-divider)
+    content: var(--bs-breadcrumb-divider, "\f054");
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Pro";
 }
 
 .breadcrumb-item.active {
