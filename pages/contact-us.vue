@@ -260,6 +260,8 @@ const send = () => {
 </script>
 <style scoped>
 .contact{
+    display: flex;
+    justify-content: center;
     margin-top: 200px;
     margin-bottom: 200px;
 }

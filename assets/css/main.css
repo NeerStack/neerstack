@@ -220,7 +220,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 img {
@@ -1054,7 +1054,7 @@ textarea+.err-msg {
 
 .breadcrumb-wrapper {
     position: absolute;
-    top: 8.7rem;
+    top: 10rem;
     left: 0;
     width: 100%;
 }
