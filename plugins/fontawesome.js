@@ -7,7 +7,8 @@ import {
     faUserSecret,
     faMoon,
     faSun,
-    faLongArrowLeft
+    faLongArrowLeft,
+    faChevronRight
   } from "@fortawesome/free-solid-svg-icons";
 
    import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
@@ -34,7 +35,8 @@ library.add(
     faArrowRightLong,
     faArrowLeftLong,
     faUserSecret,
-    faPenToSquare
+    faPenToSquare,
+    faChevronRight
 )
 
 export default defineNuxtPlugin((nuxtApp) => {
