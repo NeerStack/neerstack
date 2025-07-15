@@ -866,7 +866,7 @@ textarea+.err-msg {
 
 .navbar-nav li.has-dropdown>a::after {
     content: "\f078";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
     font-size: 1.2rem;
     font-weight: 300;
     margin-left: .5rem;
@@ -1112,9 +1112,16 @@ textarea+.err-msg {
     color: #000;
 }
 
+ .breadcrumb-item+.breadcrumb-item::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+    color: currentColor;
+}
 
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "";
+/* .breadcrumb-item + .breadcrumb-item::before {
+  content: " ";
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
@@ -1122,7 +1129,7 @@ textarea+.err-msg {
     no-repeat center;
   background-size: contain;
   margin: 0.5rem 0.5rem;
-}
+} */
 
 
 /* -- Widgets css -- */

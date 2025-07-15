@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   css: [
     "@fortawesome/fontawesome-svg-core/styles.css",
     // "@/assets/tailwind.css",
-    "~/assets/css/vendor/bootstrap.min.css",
+    // "~/assets/css/vendor/bootstrap.min.css",
     "~/assets/css/vendor/owl.carousel.min.css",
     "~/assets/css/vendor/owl.theme.default.min.css",
     "~/assets/css/vendor/magnific-popup.css",
@@ -83,11 +83,11 @@ export default defineNuxtConfig({
         //   href: "https://use.fontawesome.com/releases/v5.13.0/css/all.css",
         //    type: "text/css",
         // },
-        // {
-        //   href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
-        //   rel: "stylesheet",
-        //   type: "text/css",
-        // },
+        {
+          href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
+          rel: "stylesheet",
+          type: "text/css",
+        },
         // {
         //   href: "@/assets/css/vendor/owl.carousel.min.css",
         //   rel: 'stylesheet',
@@ -221,15 +221,15 @@ export default defineNuxtConfig({
           defer: true,
           type: "text/javascript",
         },
-        // {
-        //   src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
-        //   defer: true
-        // },
         {
-          src: "/js/vendor/bootstrap.bundle.min.js",
-          defer: true,
-          type: "text/javascript",
+          src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
+          defer: true
         },
+        // {
+        //   src: "/js/vendor/bootstrap.bundle.min.js",
+        //   defer: true,
+        //   type: "text/javascript",
+        // },
         {
           src: "/js/vendor/isotope.pkgd.min.js",
           defer: true,
