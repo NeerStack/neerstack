@@ -78,11 +78,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           type: "text/css",
         },
-        {
-          href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
-          rel: "stylesheet",
-          type: "text/css",
-        },
+        // {
+        //   href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
+        //   rel: "stylesheet",
+        //   type: "text/css",
+        // },
         // {
         //   href: "@/assets/css/vendor/owl.carousel.min.css",
         //   rel: 'stylesheet',
