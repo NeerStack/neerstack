@@ -1113,12 +1113,15 @@ textarea+.err-msg {
 }
 
 
-.breadcrumb-item+.breadcrumb-item::before {
-    content: "\f054";
-    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
-    font-size: 1.2rem;
-    margin: 0 .5rem;
-    color: currentColor;
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: url("data:image/svg+xml,%3Csvg fill='currentColor' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M285.5 272.5c12.5-12.5 12.5-32.8 0-45.3L109.3 51.3c-12.5-12.5-32.8-12.5-45.3 0L64 51.3c-12.5 12.5-12.5 32.8 0 45.3L210.7 256 64 410.4c-12.5 12.5-12.5 32.8 0 45.3l0.1 0.1c12.5 12.5 32.8 12.5 45.3 0l176.1-176z'/%3E%3C/svg%3E")
+    no-repeat center;
+  background-size: contain;
+  margin: 0.5rem 0.5rem;
 }
 
 
