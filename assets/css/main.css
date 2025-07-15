@@ -1113,11 +1113,11 @@ textarea+.err-msg {
 }
 
  .breadcrumb-item+.breadcrumb-item::before {
-    content: "\f054";
-    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
-    font-size: 1.2rem;
-    margin: 0 .5rem;
-    color: currentColor;
+    content: "\f054" !important;
+    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free" !important;
+    font-size: 1.2rem !important;
+    margin: 0 .5rem !important;
+    color: currentColor !important;
 }
 
 /* .breadcrumb-item + .breadcrumb-item::before {
