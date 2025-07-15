@@ -19,12 +19,12 @@ export default defineNuxtConfig({
   css: [
     "@fortawesome/fontawesome-svg-core/styles.css",
     // "@/assets/tailwind.css",
-    "@/assets/css/vendor/bootstrap.min.css",
-    "@/assets/css/vendor/owl.carousel.min.css",
-    "@/assets/css/vendor/owl.theme.default.min.css",
-    "@/assets/css/vendor/magnific-popup.css",
-    "@/assets/css/main.css",
-    "@/assets/css/fontawesome-all.min.css",
+    "~/assets/css/vendor/bootstrap.min.css",
+    "~/assets/css/vendor/owl.carousel.min.css",
+    "~/assets/css/vendor/owl.theme.default.min.css",
+    "~/assets/css/vendor/magnific-popup.css",
+    "~/assets/css/main.css",
+    "~/assets/css/fontawesome-all.min.css",
     // 'bootstrap/dist/css/bootstrap.min.css'
   ],
   compatibilityDate: "2025-07-15",
@@ -321,7 +321,7 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
-  plugins: ["@/plugins/piniapersist.js", "@/plugins/scrollToTop.client.js"],
+  plugins: ["~/plugins/piniapersist.js", "~/plugins/scrollToTop.client.js"],
   vite: {
     plugins: [
       Icons({
