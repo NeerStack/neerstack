@@ -78,11 +78,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           type: "text/css",
         },
-        {
-          rel:"stylesheet",
-          href: "https://use.fontawesome.com/releases/v5.13.0/css/all.css",
-           type: "text/css",
-        },
+        // {
+        //   rel:"stylesheet",
+        //   href: "https://use.fontawesome.com/releases/v5.13.0/css/all.css",
+        //    type: "text/css",
+        // },
         // {
         //   href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
         //   rel: "stylesheet",
@@ -326,7 +326,7 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
-  plugins: ["~/plugins/piniapersist.js", "~/plugins/scrollToTop.client.js"],
+  plugins: ["~/plugins/piniapersist.js", '~/plugins/fontawesome.js', "~/plugins/scrollToTop.client.js"],
   vite: {
     plugins: [
       Icons({

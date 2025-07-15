@@ -1115,7 +1115,7 @@ textarea+.err-msg {
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: "\f054";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
     font-size: 1.2rem;
     margin: 0 .5rem;
     color: currentColor;
