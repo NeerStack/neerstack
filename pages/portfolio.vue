@@ -136,91 +136,13 @@
 import '@/assets/css/vendor/owl.carousel.min.css'
 import '@/assets/css/vendor/magnific-popup.css'
 import '@/assets/css/vendor/owl.theme.default.min.css'
-import '@/assets/css/vendor/bootstrap.min.css'
+// import '@/assets/css/vendor/bootstrap.min.css'
 
 const setdata = {
     title: "NeerStack | Portfolio"
 }
 useHead({
     title: computed(() => setdata.title),
-    link:[
-        {
-            rel: 'stylesheet',
-            href: '/assets/css/vendor/owl.carousel.min.css',
-            type: "text/css"
-        },
-        {
-            rel: 'stylesheet',
-            href: '/assets/css/vendor/magnific-popup.css',
-            type: "text/css"
-        },
-        {
-            rel: 'stylesheet',
-            href: '/assets/css/vendor/owl.theme.default.min.css',
-            type: "text/css"
-        },
-        {
-            rel: 'stylesheet',
-            href: '/assets/css/vendor/bootstrap.min.css',
-            type: "text/css"
-        }
-    ],
-    script: [
-
-        {
-            src: '/js/vendor/bootstrap.bundle.min.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/vendor/jquery.magnific-popup.min.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/vendor/owl.carousel.min.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/vendor/imagesloaded.pkgd.min.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/vendor/easing-1.3.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/main.min.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/plugins.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: '/js/vendor/isotope.pkgd.min.js',
-            type: 'text/javascript',
-            body: true
-        },
-        {
-            src: "/js/vendor/jquery.min.js",
-            body: true,
-            type: "text/javascript",
-
-        },
-        {
-            src: "/js/vendor/jquery-migrate.min.js",
-            defer: true,
-            type: "text/javascript",
-
-        }
-
-    ]
 })
 
 
