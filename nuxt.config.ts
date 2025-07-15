@@ -78,6 +78,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           type: "text/css",
         },
+        {
+          rel:"stylesheet",
+          href: "https://use.fontawesome.com/releases/v5.13.0/css/all.css",
+           type: "text/css",
+        },
         // {
         //   href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
         //   rel: "stylesheet",
