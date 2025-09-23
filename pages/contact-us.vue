@@ -113,7 +113,7 @@
         <h2 class="section-title text-center">Our Location</h2>
         <ul class="nav nav-tabs location-tab justify-content-center" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#location-tab-1">Ogun State</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="#location-tab-1">Nigeria</a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#location-tab-2">Miami</a>
@@ -157,7 +157,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="info">
                         <h5>Head Quarter</h5>
-                        <p>Adalemo<br>Sango Ota <br>Ogun State, Nigeria</p>
+                        <!-- <p> Adalemo<br>Sango Ota <br>Ogun State, Nigeria</p> -->
+                         <p>Nigeria</p>
                     </div>
                     <!-- End of .info -->
                 </div>
@@ -173,7 +174,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="info">
                         <h5>Phone</h5>
-                        <a href="tel:+2348130972930">+234 (81)3 097-2930</a>
+                        <a href="tel:+2348137411368">+234 (81)3 741 1368</a>
                     </div>
                     <!-- End of .info -->
                 </div>
