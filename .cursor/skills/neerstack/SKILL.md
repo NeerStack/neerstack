@@ -7,7 +7,7 @@ description: Product, brand, API, and UI rules for NeerStack. Use when changing 
 
 Tagline: **Engineering partners for teams who ship.**
 
-Stack: Next.js App Router, TypeScript, Tailwind v4, `output: "export"`.
+Stack: Next.js App Router, TypeScript, Tailwind v4, `output: "export"`, deployed on **Netlify** (`publish = out`).
 API: `NEXT_PUBLIC_API_URL` (default `https://codinmage-server.onrender.com`).
 
 Portfolio: ProduceMart, Foodelo, CitiGo, Perime, PeriPay, Moon App, Solv. Never Enitars/MageHub.
