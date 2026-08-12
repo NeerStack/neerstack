@@ -34,10 +34,10 @@ export default function ServicesPage() {
                 href={`/services/${service.slug}/`}
                 className="magnetic-card group grid overflow-hidden rounded-[1.75rem] border border-line bg-ns-white md:grid-cols-[140px_1fr_auto]"
               >
-                <div className="flex items-end bg-paper-2 px-6 py-6 md:items-center md:justify-center">
+                <div className="flex items-end bg-paper-2 px-6 py-8 md:items-center md:justify-center md:py-10">
                   <span className="font-mono text-sm text-accent">0{index + 1}</span>
                 </div>
-                <div className="p-6 md:p-8">
+                <div className="px-6 pt-8 pb-7 md:px-9 md:pt-10 md:pb-9">
                   <h2 className="font-display text-3xl tracking-tight text-ink transition group-hover:text-accent md:text-4xl">
                     {service.title}
                   </h2>
@@ -55,7 +55,7 @@ export default function ServicesPage() {
                     ))}
                   </div>
                 </div>
-                <div className="flex items-center px-6 pb-6 md:px-8 md:pb-0">
+                <div className="flex items-center px-6 pb-7 md:px-9 md:py-10">
                   <span className="text-sm font-semibold text-accent transition group-hover:translate-x-1">
                     Open
                   </span>
