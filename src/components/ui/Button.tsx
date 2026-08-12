@@ -51,7 +51,7 @@ export function Button({
   };
 
   const classes = cn(
-    "group/btn relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold tracking-tight transition-[transform,background-color,border-color,box-shadow] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] will-change-transform active:scale-[0.97] disabled:opacity-50",
+    "group/btn relative inline-flex min-h-11 items-center justify-center gap-2.5 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold tracking-tight transition-[transform,background-color,border-color,box-shadow] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] will-change-transform active:scale-[0.97] disabled:opacity-50",
     styles[variant],
     className,
   );

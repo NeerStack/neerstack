@@ -9,21 +9,21 @@ export function BlogPostView({ slug }: { slug: string }) {
 
   if (isPending) {
     return (
-      <div className="rounded-[1.5rem] border border-line bg-ns-white px-6 py-14 text-center">
+      <div className="rounded-[1.5rem] border border-line bg-ns-white px-7 py-16 text-center">
         <p className="text-sm text-muted">Loading…</p>
       </div>
     );
   }
   if (error || !post) {
     return (
-      <div className="rounded-[1.5rem] border border-line bg-paper-2/60 px-6 py-14 text-center">
+      <div className="rounded-[1.5rem] border border-line bg-paper-2/60 px-7 py-16 text-center">
         <p className="font-display text-2xl tracking-tight text-ink">Post not found</p>
         <p className="mt-2 text-sm text-muted">
           {error instanceof Error ? error.message : "This post may have been unpublished."}
         </p>
         <Link
           href="/blog/"
-          className="mt-6 inline-block text-sm font-semibold text-accent transition hover:text-accent-deep"
+          className="mt-6 inline-flex min-h-11 items-center text-sm font-semibold text-accent transition hover:text-accent-deep"
         >
           ← Back to blog
         </Link>
@@ -44,11 +44,11 @@ export function BlogPostView({ slug }: { slug: string }) {
     <article>
       <Link
         href="/blog/"
-        className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted transition hover:text-accent"
+        className="inline-flex min-h-11 items-center text-[11px] font-semibold uppercase tracking-[0.22em] text-muted transition hover:text-accent"
       >
         ← Blog
       </Link>
-      <h1 className="font-display mt-6 text-4xl tracking-tight text-ink text-balance md:text-5xl">
+      <h1 className="font-display mt-4 text-3xl tracking-tight text-ink text-balance sm:mt-6 sm:text-4xl md:text-5xl">
         {post.title}
       </h1>
       {post.image?.url ? (

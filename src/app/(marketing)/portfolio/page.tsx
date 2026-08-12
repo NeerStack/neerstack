@@ -8,13 +8,13 @@ export const metadata: Metadata = { title: "Portfolio" };
 export default function PortfolioPage() {
   return (
     <>
-      <section className="ns-mesh ns-grain relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32">
+      <section className="ns-mesh ns-grain relative pt-[7.5rem] pb-24 md:pt-[9rem] md:pb-32">
         <div className="relative z-[2] container-ns">
-          <Reveal variant="blur">
+          <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">
               Portfolio
             </p>
-            <h1 className="font-display mt-3 max-w-3xl text-5xl tracking-tight text-ink text-balance md:text-7xl">
+            <h1 className="font-display mt-4 max-w-3xl text-4xl leading-[1.08] tracking-tight text-ink text-balance sm:text-5xl md:text-7xl">
               Selected work.
             </h1>
             <p className="mt-5 max-w-2xl text-ink-soft">
@@ -22,13 +22,13 @@ export default function PortfolioPage() {
               for agricultural buyers and suppliers.
             </p>
           </Reveal>
-          <div className="mt-8 md:mt-10">
+          <div className="mt-14 md:mt-20">
             <PortfolioGrid />
           </div>
           <Reveal>
-            <div className="mt-16 flex flex-col items-start justify-between gap-6 rounded-[2rem] border border-white/10 bg-void px-8 py-10 text-on-void md:flex-row md:items-center md:px-10 md:py-11">
+            <div className="mt-16 flex flex-col items-start justify-between gap-6 rounded-[1.75rem] border border-white/10 bg-void px-8 py-11 text-on-void sm:rounded-[2rem] md:flex-row md:items-center md:px-12 md:py-14">
               <div>
-                <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+                <h2 className="font-display text-2xl tracking-tight sm:text-3xl md:text-4xl">
                   Building in this space?
                 </h2>
                 <p className="mt-2 max-w-lg text-sm leading-relaxed text-on-void/70">

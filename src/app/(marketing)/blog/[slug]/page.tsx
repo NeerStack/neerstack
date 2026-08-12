@@ -28,16 +28,16 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   if (slug === "_") {
     return (
-      <section className="ns-mesh ns-grain relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
+      <section className="ns-mesh ns-grain relative pt-[7.5rem] pb-24 md:pt-[9rem] md:pb-32">
         <div className="relative z-[2] container-ns max-w-2xl">
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Blog</p>
-          <h1 className="font-display mt-3 text-4xl tracking-tight text-ink md:text-5xl">
+          <h1 className="font-display mt-3 text-3xl tracking-tight text-ink sm:text-4xl md:text-5xl">
             No posts available yet
           </h1>
           <p className="mt-4 text-base leading-relaxed text-ink-soft">
             Nothing was published at build time. Check back soon, or explore the rest of the site.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Button href="/blog/" variant="ghost" arrow={false}>
               Back to blog
             </Button>
@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
     );
   }
   return (
-    <section className="pt-28 pb-20 md:pt-36 md:pb-28">
+    <section className="pt-[7.5rem] pb-24 md:pt-[9rem] md:pb-32">
       <div className="container-ns max-w-3xl">
         <BlogPostView slug={slug} />
       </div>

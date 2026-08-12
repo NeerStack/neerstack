@@ -39,16 +39,16 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 pt-4 md:pt-5">
+      <header className="fixed inset-x-0 top-0 z-50 pt-3 sm:pt-4 md:pt-5">
         <div
           className={cn(
-            "island-nav container-ns flex h-14 items-center justify-between rounded-full border px-3 md:h-16 md:px-4",
+            "island-nav container-ns flex h-14 min-w-0 items-center justify-between gap-2 rounded-full border px-2.5 sm:px-3 md:h-16 md:px-4",
             scrolled
               ? "border-line/80 bg-paper/85 shadow-[0_20px_60px_-40px_rgba(10,10,10,0.55)] backdrop-blur-xl"
               : "border-white/25 bg-paper/55 backdrop-blur-lg",
           )}
         >
-          <Logo />
+          <Logo className="min-w-0 shrink" />
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
             <div
               className="relative"
@@ -100,11 +100,11 @@ export function SiteHeader() {
               Get quote
             </Button>
           </div>
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 lg:hidden">
             <ThemeToggle className="!px-2.5" />
             <button
               type="button"
-              className="relative inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-ns-white/70"
+              className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-ns-white/70"
               aria-expanded={open}
               aria-label="Toggle menu"
               onClick={() => setOpen((v) => !v)}
@@ -135,17 +135,20 @@ export function SiteHeader() {
 
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-void/80 backdrop-blur-2xl transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden",
+          "fixed inset-0 z-40 overflow-y-auto overscroll-contain bg-void/90 backdrop-blur-2xl transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden",
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
         )}
       >
-        <nav className="container-ns flex h-full flex-col justify-center gap-2 pt-20" aria-label="Mobile">
+        <nav
+          className="container-ns flex min-h-full flex-col justify-center gap-1 py-28"
+          aria-label="Mobile"
+        >
           {links.map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "font-display text-4xl tracking-tight text-on-void transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                "font-display inline-flex min-h-14 items-center text-3xl tracking-tight text-on-void transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] sm:text-4xl",
                 open ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0",
               )}
               style={{ transitionDelay: open ? `${120 + i * 60}ms` : "0ms" }}

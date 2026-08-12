@@ -70,7 +70,7 @@ export function QuoteProvider({ children }: { children: React.ReactNode }) {
             role="dialog"
             aria-modal="true"
             aria-labelledby="quote-title"
-            className="relative z-10 w-full max-w-lg rounded-3xl border border-line bg-paper px-6 pt-8 pb-7 shadow-[0_40px_100px_-40px_rgba(20,18,26,0.55)] sm:px-8 sm:pt-9 sm:pb-8"
+            className="relative z-10 max-h-[min(92dvh,720px)] w-full max-w-lg overflow-y-auto rounded-3xl border border-line bg-paper px-8 pt-11 pb-9 shadow-[0_40px_100px_-40px_rgba(20,18,26,0.55)] sm:px-11 sm:pt-14 sm:pb-11"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -84,7 +84,7 @@ export function QuoteProvider({ children }: { children: React.ReactNode }) {
               <button
                 type="button"
                 onClick={closeQuote}
-                className="rounded-full border border-line px-3 py-1 text-sm text-ink-soft"
+                className="inline-flex min-h-11 shrink-0 items-center rounded-full border border-line px-4 py-2 text-sm text-ink-soft"
               >
                 Close
               </button>

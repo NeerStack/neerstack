@@ -119,7 +119,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
           </div>
           <button
             type="button"
-            className="rounded-lg border border-white/15 px-2.5 py-1.5 text-xs text-on-void/80 md:hidden"
+            className="inline-flex min-h-11 items-center rounded-lg border border-white/15 px-3 py-2 text-xs text-on-void/80 md:hidden"
             aria-expanded={mobileOpen}
             aria-controls="admin-nav"
             onClick={() => setMobileOpen((v) => !v)}
@@ -139,7 +139,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
         </div>
       </aside>
 
-      <div className="min-w-0 p-5 md:p-8 lg:p-10">{children}</div>
+      <div className="min-w-0 p-4 sm:p-5 md:p-8 lg:p-10">{children}</div>
     </div>
   );
 }

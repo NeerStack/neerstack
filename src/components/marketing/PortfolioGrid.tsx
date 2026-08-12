@@ -16,7 +16,7 @@ export function PortfolioGrid() {
         className="bezel group block"
       >
         <div className="bezel-inner">
-          <div className="aspect-[16/10] bg-paper-2 p-6 pt-5 md:p-10 md:pt-7">
+          <div className="aspect-[16/10] bg-paper-2 p-5 pt-4 sm:p-8 sm:pt-6 md:p-10 md:pt-7">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={project.image}
@@ -24,13 +24,13 @@ export function PortfolioGrid() {
               className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]"
             />
           </div>
-          <div className="border-t border-line px-7 pt-8 pb-7 md:px-9 md:pt-10 md:pb-9">
-            <div className="flex flex-wrap items-end justify-between gap-4">
-              <div>
+          <div className="border-t border-line px-8 pt-11 pb-9 md:px-11 md:pt-14 md:pb-11">
+            <div className="flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
+              <div className="min-w-0">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted">
                   {project.category}
                 </p>
-                <h2 className="font-display mt-2 text-3xl tracking-tight text-ink md:text-4xl">
+                <h2 className="font-display mt-2 text-2xl tracking-tight text-ink sm:text-3xl md:text-4xl">
                   {project.title}
                 </h2>
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft md:text-base">
@@ -47,7 +47,7 @@ export function PortfolioGrid() {
                   ))}
                 </div>
               </div>
-              <span className="text-sm font-semibold text-accent transition group-hover:translate-x-1">
+              <span className="inline-flex min-h-11 shrink-0 items-center text-sm font-semibold text-accent transition group-hover:translate-x-1">
                 Visit live ↗
               </span>
             </div>

@@ -55,12 +55,16 @@ html.dark {
   --font-mono: var(--font-mono);
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
 body {
   background: var(--ns-paper);
   color: var(--ns-ink);
   font-family: var(--font-body), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 ::selection {
   background: color-mix(in srgb, var(--ns-red) 28%, transparent);
@@ -69,8 +73,13 @@ body {
 :focus-visible { outline: 2px solid var(--ns-red); outline-offset: 3px; }
 .font-display { font-family: var(--font-display), var(--font-body), sans-serif; }
 .font-700 { font-weight: 700; }
-.container-ns { width: min(1180px, calc(100% - 2.5rem)); margin-inline: auto; }
-.container-ns-wide { width: min(1360px, calc(100% - 1.75rem)); margin-inline: auto; }
+/* ~1.5rem gutter each side on phones; scales up slightly on larger viewports */
+.container-ns { width: min(1180px, calc(100% - 3rem)); margin-inline: auto; }
+.container-ns-wide { width: min(1360px, calc(100% - 2.5rem)); margin-inline: auto; }
+@media (min-width: 768px) {
+  .container-ns { width: min(1180px, calc(100% - 4rem)); }
+  .container-ns-wide { width: min(1360px, calc(100% - 3rem)); }
+}
 
 .ns-grain {
   position: relative;
@@ -106,16 +115,13 @@ html.dark .ns-mesh {
 
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  filter: blur(10px);
+  transform: translateY(28px);
+  /* No blur — filter creates a containing block that clips large display headlines */
   transition:
     opacity 900ms var(--ns-ease),
-    transform 900ms var(--ns-ease),
-    filter 900ms var(--ns-ease);
+    transform 900ms var(--ns-ease);
 }
-/* filter:none when done — blur(0) still creates a containing block that clips
-   hover translates (interactive-row Open link, etc.). */
-.reveal.is-visible { opacity: 1; transform: translateY(0); filter: none; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
 .reveal-left {
   opacity: 0;
   transform: translateX(-48px);
@@ -129,16 +135,16 @@ html.dark .ns-mesh {
 }
 .reveal-scale.is-visible { opacity: 1; transform: scale(1); }
 .reveal-blur {
+  /* Same as .reveal — do not use filter blur (clips display type) */
   opacity: 0;
-  filter: blur(16px);
   transform: translateY(24px);
-  transition: opacity 1000ms var(--ns-ease), filter 1000ms var(--ns-ease), transform 1000ms var(--ns-ease);
+  transition: opacity 1000ms var(--ns-ease), transform 1000ms var(--ns-ease);
 }
-.reveal-blur.is-visible { opacity: 1; filter: none; transform: none; }
+.reveal-blur.is-visible { opacity: 1; transform: none; }
 
 @keyframes rise-in {
-  from { opacity: 0; transform: translateY(36px); filter: blur(12px); }
-  to { opacity: 1; transform: translateY(0); filter: none; }
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 @keyframes float-y {
   0%, 100% { transform: translateY(0); }
@@ -177,8 +183,11 @@ html.dark .ns-mesh {
 .interactive-row {
   position: relative;
   /* Horizontal padding keeps the accent rail clear of the index; bg still full-bleed */
-  padding-inline: 1rem;
+  padding-inline: 1.15rem;
   transition: background-color 400ms ease;
+}
+@media (min-width: 768px) {
+  .interactive-row { padding-inline: 1.35rem; }
 }
 .interactive-row::before {
   content: "";
@@ -227,14 +236,15 @@ html.dark .bezel-inner {
 
 /* Subtle lift for marketing cards — same motion language as .bezel */
 .magnetic-card {
+  position: relative;
+  isolation: isolate;
   transition:
     transform 600ms var(--ns-ease),
     border-color 400ms ease,
     box-shadow 500ms var(--ns-ease);
-  will-change: transform;
 }
 .magnetic-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   border-color: color-mix(in srgb, var(--ns-red) 28%, transparent);
   box-shadow: 0 22px 44px -30px rgba(10, 10, 10, 0.38);
 }
