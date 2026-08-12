@@ -1,42 +1,22 @@
-# Nuxt 3 Minimal Starter
+# NeerStack
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Static Next.js site for NeerStack (marketing + client-only admin).
 
-## Setup
-
-Make sure to install the dependencies:
-
+## Develop
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
 npm run dev
 ```
 
-## Production
+## Brand
+**Locked:** Mark C (NS Path) + Kit C.
+Active assets in `public/brand/`. Archive in `options/` and `kits/`.
 
-Build the application for production:
-
+## Build / deploy
 ```bash
-npm run build
+npm run build   # writes /out
+npx vercel login
+npx vercel --prod
 ```
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Legacy Nuxt backup: `../neerstack-legacy`

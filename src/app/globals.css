@@ -1,0 +1,387 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --ns-ink: #0a0a0a;
+  --ns-ink-soft: #3a3644;
+  --ns-muted: #6e6878;
+  --ns-paper: #f7f4ef;
+  --ns-paper-2: #efeae2;
+  --ns-line: #ddd6cb;
+  --ns-white: #ffffff;
+  --ns-red: #e31e24;
+  --ns-red-deep: #b3141e;
+  --ns-void: #0a0a0a;
+  --ns-on-void: #f7f4ef;
+  --ns-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --background: var(--ns-paper);
+  --foreground: var(--ns-ink);
+  color-scheme: light;
+}
+
+html.dark {
+  --ns-ink: #f4efe8;
+  --ns-ink-soft: #c9c2b8;
+  --ns-muted: #908a96;
+  --ns-paper: #121015;
+  --ns-paper-2: #1a171f;
+  --ns-line: #2f2b36;
+  --ns-white: #1c1922;
+  --ns-red: #e31e24;
+  --ns-red-deep: #ff4d52;
+  /* --ns-void / --ns-on-void stay fixed from :root */
+  --background: var(--ns-paper);
+  --foreground: var(--ns-ink);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ns-ink);
+  --color-ink-soft: var(--ns-ink-soft);
+  --color-muted: var(--ns-muted);
+  --color-paper: var(--ns-paper);
+  --color-paper-2: var(--ns-paper-2);
+  --color-line: var(--ns-line);
+  --color-ns-white: var(--ns-white);
+  --color-accent: var(--ns-red);
+  --color-accent-deep: var(--ns-red-deep);
+  --color-void: var(--ns-void);
+  --color-on-void: var(--ns-on-void);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ns-paper);
+  color: var(--ns-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+::selection {
+  background: color-mix(in srgb, var(--ns-red) 28%, transparent);
+  color: var(--ns-ink);
+}
+:focus-visible { outline: 2px solid var(--ns-red); outline-offset: 3px; }
+.font-display { font-family: var(--font-display), var(--font-body), sans-serif; }
+.font-700 { font-weight: 700; }
+.container-ns { width: min(1180px, calc(100% - 2.5rem)); margin-inline: auto; }
+.container-ns-wide { width: min(1360px, calc(100% - 1.75rem)); margin-inline: auto; }
+
+.ns-grain {
+  position: relative;
+  isolation: isolate;
+}
+.ns-grain::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+html.dark .ns-grain::after {
+  opacity: 0.055;
+  mix-blend-mode: soft-light;
+}
+
+.ns-mesh {
+  background:
+    radial-gradient(1100px 520px at 8% -8%, color-mix(in srgb, var(--ns-red) 16%, transparent), transparent 58%),
+    radial-gradient(900px 480px at 92% 0%, color-mix(in srgb, var(--ns-ink) 7%, transparent), transparent 52%),
+    linear-gradient(180deg, var(--ns-paper), var(--ns-paper-2));
+}
+html.dark .ns-mesh {
+  background:
+    radial-gradient(1100px 520px at 8% -8%, color-mix(in srgb, var(--ns-red) 22%, transparent), transparent 58%),
+    radial-gradient(900px 480px at 92% 0%, color-mix(in srgb, var(--ns-red) 8%, transparent), transparent 52%),
+    linear-gradient(180deg, var(--ns-paper), var(--ns-paper-2));
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(10px);
+  transition:
+    opacity 900ms var(--ns-ease),
+    transform 900ms var(--ns-ease),
+    filter 900ms var(--ns-ease);
+}
+/* filter:none when done — blur(0) still creates a containing block that clips
+   hover translates (interactive-row Open link, etc.). */
+.reveal.is-visible { opacity: 1; transform: translateY(0); filter: none; }
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition: opacity 950ms var(--ns-ease), transform 950ms var(--ns-ease);
+}
+.reveal-left.is-visible { opacity: 1; transform: translateX(0); }
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 850ms var(--ns-ease), transform 850ms var(--ns-ease);
+}
+.reveal-scale.is-visible { opacity: 1; transform: scale(1); }
+.reveal-blur {
+  opacity: 0;
+  filter: blur(16px);
+  transform: translateY(24px);
+  transition: opacity 1000ms var(--ns-ease), filter 1000ms var(--ns-ease), transform 1000ms var(--ns-ease);
+}
+.reveal-blur.is-visible { opacity: 1; filter: none; transform: none; }
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(36px); filter: blur(12px); }
+  to { opacity: 1; transform: translateY(0); filter: none; }
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  70% { transform: scale(1.35); opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes dash {
+  to { stroke-dashoffset: 0; }
+}
+
+.hero-animate { animation: rise-in 1100ms var(--ns-ease) both; }
+.hero-animate-delay { animation: rise-in 1100ms var(--ns-ease) 140ms both; }
+.hero-animate-delay-2 { animation: rise-in 1100ms var(--ns-ease) 280ms both; }
+.hero-animate-delay-3 { animation: rise-in 1100ms var(--ns-ease) 420ms both; }
+
+.ns-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 42s linear infinite;
+}
+.ns-marquee:hover { animation-play-state: paused; }
+.ns-float { animation: float-y 6s ease-in-out infinite; }
+.ns-spin-slow { animation: spin-slow 28s linear infinite; }
+
+.interactive-row {
+  position: relative;
+  /* Horizontal padding keeps the accent rail clear of the index; bg still full-bleed */
+  padding-inline: 1rem;
+  transition: background-color 400ms ease;
+}
+.interactive-row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16%;
+  bottom: 16%;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--ns-red);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 450ms var(--ns-ease);
+  pointer-events: none;
+}
+/* No translateX — Reveal uses filter, which clips shifted children and
+   makes the hover look like a middle-only strip (index + Open cut off). */
+.interactive-row:hover,
+.interactive-row:focus-within {
+  background: color-mix(in srgb, var(--ns-ink) 6%, transparent);
+}
+.interactive-row:hover::before,
+.interactive-row:focus-within::before { transform: scaleY(1); }
+
+.bezel {
+  border-radius: 2rem;
+  border: 1px solid color-mix(in srgb, var(--ns-ink) 8%, transparent);
+  background: color-mix(in srgb, var(--ns-ink) 3%, transparent);
+  padding: 0.4rem;
+  transition: transform 600ms var(--ns-ease), border-color 400ms ease;
+}
+.bezel-inner {
+  border-radius: calc(2rem - 0.35rem);
+  background: var(--ns-white);
+  border: 1px solid color-mix(in srgb, var(--ns-ink) 6%, transparent);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.65);
+  overflow: hidden;
+}
+html.dark .bezel-inner {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+.bezel:hover {
+  transform: translateY(-8px);
+  border-color: color-mix(in srgb, var(--ns-red) 28%, transparent);
+}
+
+/* Subtle lift for marketing cards — same motion language as .bezel */
+.magnetic-card {
+  transition:
+    transform 600ms var(--ns-ease),
+    border-color 400ms ease,
+    box-shadow 500ms var(--ns-ease);
+  will-change: transform;
+}
+.magnetic-card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--ns-red) 28%, transparent);
+  box-shadow: 0 22px 44px -30px rgba(10, 10, 10, 0.38);
+}
+
+.glow-dot { position: relative; }
+.glow-dot::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--ns-red) 55%, transparent);
+  animation: pulse-ring 2.6s var(--ns-ease) infinite;
+}
+
+.island-nav {
+  transition:
+    width 600ms var(--ns-ease),
+    background-color 400ms ease,
+    box-shadow 500ms var(--ns-ease),
+    border-color 400ms ease,
+    transform 500ms var(--ns-ease);
+}
+
+.prose-ns h1, .prose-ns h2, .prose-ns h3 {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: -0.03em;
+  color: var(--ns-ink);
+}
+.prose-ns p, .prose-ns li { color: var(--ns-ink-soft); line-height: 1.7; }
+.prose-ns a { color: var(--ns-red); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Admin markdown editor — brand tokens over default @uiw chrome */
+.ns-md-editor {
+  --color-fg-default: var(--ns-ink);
+  --color-fg-muted: var(--ns-muted);
+  --color-fg-subtle: var(--ns-ink-soft);
+  --color-canvas-default: var(--ns-white);
+  --color-canvas-subtle: var(--ns-paper-2);
+  --color-border-default: var(--ns-line);
+  --color-border-muted: var(--ns-line);
+  --color-neutral-muted: color-mix(in srgb, var(--ns-ink) 6%, transparent);
+  --color-accent-fg: var(--ns-red);
+  --color-accent-emphasis: var(--ns-red);
+  --color-attention-subtle: color-mix(in srgb, var(--ns-red) 12%, transparent);
+  --color-danger-fg: var(--ns-red-deep);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--ns-line);
+  background: var(--ns-white);
+}
+.ns-md-editor .w-md-editor {
+  background: var(--ns-white);
+  box-shadow: none !important;
+  border: 0 !important;
+  border-radius: 0;
+  color: var(--ns-ink);
+}
+.ns-md-editor .w-md-editor-toolbar {
+  background: var(--ns-paper-2);
+  border-bottom: 1px solid var(--ns-line);
+  padding: 0.35rem 0.5rem;
+}
+.ns-md-editor .w-md-editor-toolbar ul > li > button {
+  color: var(--ns-ink-soft);
+  border-radius: 0.5rem;
+}
+.ns-md-editor .w-md-editor-toolbar ul > li > button:hover,
+.ns-md-editor .w-md-editor-toolbar ul > li > button:focus {
+  background: color-mix(in srgb, var(--ns-ink) 6%, transparent);
+  color: var(--ns-ink);
+}
+.ns-md-editor .w-md-editor-toolbar ul > li.active > button {
+  background: color-mix(in srgb, var(--ns-red) 12%, transparent);
+  color: var(--ns-red-deep);
+}
+.ns-md-editor .w-md-editor-content,
+.ns-md-editor .w-md-editor-text-pre > code,
+.ns-md-editor .w-md-editor-text-input,
+.ns-md-editor .w-md-editor-text {
+  color: var(--ns-ink);
+  background: var(--ns-white);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+.ns-md-editor .w-md-editor-preview {
+  background: var(--ns-paper);
+  box-shadow: inset 1px 0 0 var(--ns-line);
+}
+.ns-md-editor .wmde-markdown {
+  background: transparent;
+  color: var(--ns-ink-soft);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.ns-md-editor .wmde-markdown h1,
+.ns-md-editor .wmde-markdown h2,
+.ns-md-editor .wmde-markdown h3 {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: -0.03em;
+  color: var(--ns-ink);
+  border-bottom-color: var(--ns-line);
+}
+.ns-md-editor .wmde-markdown a {
+  color: var(--ns-red);
+}
+.ns-md-editor .wmde-markdown code,
+.ns-md-editor .wmde-markdown pre {
+  background: var(--ns-paper-2);
+  border-color: var(--ns-line);
+  color: var(--ns-ink);
+}
+.ns-md-editor .wmde-markdown blockquote {
+  border-left-color: var(--ns-red);
+  color: var(--ns-ink-soft);
+}
+.ns-md-editor .w-md-editor-bar {
+  display: none;
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .reveal.is-visible,
+  .reveal-left, .reveal-left.is-visible,
+  .reveal-scale, .reveal-scale.is-visible,
+  .reveal-blur, .reveal-blur.is-visible,
+  .hero-animate, .hero-animate-delay, .hero-animate-delay-2, .hero-animate-delay-3 {
+    opacity: 1; transform: none; animation: none; transition: none; filter: none;
+  }
+  .ns-marquee, .ns-float, .ns-spin-slow, .glow-dot::after { animation: none; }
+  .bezel:hover,
+  .interactive-row:hover,
+  .magnetic-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "stackRed": "#E31E24",
+  "ink": "#0A0A0A",
+  "charcoal": "#14121A",
+  "paper": "#F7F4EF",
+  "white": "#FFFFFF",
+  "void": "#0A0A0A",
+  "onVoid": "#F7F4EF",
+  "dark": {
+    "paper": "#121015",
+    "paper2": "#1A171F",
+    "ink": "#F4EFE8",
+    "inkSoft": "#C9C2B8",
+    "muted": "#908A96",
+    "line": "#2F2B36",
+    "note": "Warm charcoal paper + cream ink. Brand red unchanged. void/onVoid do not flip."
+  },
+  "tagline": "Engineering partners for teams who ship.",
+  "fonts": {
+    "display": "Syne",
+    "body": "Plus Jakarta Sans",
+    "mono": "IBM Plex Mono"
+  },
+  "mark": "Mark C NS Path",
+  "wordmark": "NEERSTACK in Syne ExtraBold: first E top+middle bars #E31E24; second E all ink/white; live in Logo.tsx"
+}
