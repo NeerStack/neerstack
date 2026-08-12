@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, i) => (
               <Reveal key={stat.label} delayMs={i * 70} variant="scale">
-                <div className="magnetic-card rounded-[1.5rem] border border-line bg-paper-2 p-6">
+                <div className="magnetic-card rounded-[1.5rem] border border-line bg-paper-2 px-6 pt-8 pb-7 md:px-7 md:pt-9 md:pb-8">
                   <p className="font-display text-4xl tracking-tight text-accent">{stat.value}</p>
                   <p className="mt-2 font-semibold text-ink">{stat.label}</p>
                   <p className="mt-1 text-sm text-muted">{stat.detail}</p>
@@ -79,7 +79,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-5 md:grid-cols-2">
             {principles.map((item, i) => (
               <Reveal key={item.title} delayMs={i * 60}>
-                <article className="magnetic-card rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-7">
+                <article className="magnetic-card rounded-[1.5rem] border border-white/10 bg-white/[0.04] px-7 pt-8 pb-7 md:px-8 md:pt-9 md:pb-8">
                   <h3 className="font-display text-2xl tracking-tight">{item.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-on-void/70 md:text-base">{item.body}</p>
                 </article>
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {engagementSteps.map((step, i) => (
               <Reveal key={step.step} delayMs={i * 70}>
-                <article className="magnetic-card h-full rounded-[1.5rem] border border-line bg-ns-white p-6">
+                <article className="magnetic-card h-full rounded-[1.5rem] border border-line bg-ns-white px-6 pt-8 pb-7 md:px-7 md:pt-9 md:pb-8">
                   <p className="font-mono text-xs text-accent">{step.step}</p>
                   <h3 className="font-display mt-4 text-2xl tracking-tight text-ink">{step.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">{step.body}</p>

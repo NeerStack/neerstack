@@ -70,7 +70,7 @@ export function QuoteProvider({ children }: { children: React.ReactNode }) {
             role="dialog"
             aria-modal="true"
             aria-labelledby="quote-title"
-            className="relative z-10 w-full max-w-lg rounded-3xl border border-line bg-paper p-6 shadow-[0_40px_100px_-40px_rgba(20,18,26,0.55)] sm:p-8"
+            className="relative z-10 w-full max-w-lg rounded-3xl border border-line bg-paper px-6 pt-8 pb-7 shadow-[0_40px_100px_-40px_rgba(20,18,26,0.55)] sm:px-8 sm:pt-9 sm:pb-8"
           >
             <div className="flex items-start justify-between gap-4">
               <div>

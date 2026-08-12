@@ -34,7 +34,7 @@ export default function ContactPage() {
                 className="h-64 w-full object-cover md:h-full md:min-h-[420px]"
               />
             </div>
-            <div className="mt-6 space-y-3 rounded-[1.25rem] border border-line bg-ns-white px-5 py-4 text-sm text-ink-soft">
+            <div className="mt-6 space-y-3 rounded-[1.25rem] border border-line bg-ns-white px-6 py-5 text-sm text-ink-soft">
               <p>
                 Email:{" "}
                 <a className="font-medium text-accent transition hover:text-accent-deep" href={`mailto:${site.email}`}>
@@ -55,7 +55,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
           <Reveal delayMs={80}>
-            <div className="magnetic-card rounded-[1.75rem] border border-line bg-ns-white p-6 md:p-8">
+            <div className="magnetic-card rounded-[1.75rem] border border-line bg-ns-white px-6 pt-8 pb-7 md:px-9 md:pt-10 md:pb-9">
               <ContactForm />
             </div>
           </Reveal>

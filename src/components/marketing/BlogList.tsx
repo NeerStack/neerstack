@@ -58,7 +58,7 @@ export function BlogList() {
               <img src="/brand/kit/mark.svg" alt="" className="h-10 w-auto opacity-40" />
             </div>
           )}
-          <div className="p-6">
+          <div className="px-6 pt-8 pb-7 md:px-7 md:pt-9 md:pb-8">
             <h2 className="font-display text-2xl tracking-tight text-ink transition group-hover:text-accent">
               {post.title}
             </h2>

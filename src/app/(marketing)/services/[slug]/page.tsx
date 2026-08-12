@@ -86,7 +86,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </ul>
           </Reveal>
           <Reveal variant="scale" delayMs={120}>
-            <div className="magnetic-card rounded-[1.75rem] border border-white/10 bg-void p-7 text-on-void md:p-9">
+            <div className="magnetic-card rounded-[1.75rem] border border-white/10 bg-void px-7 pt-8 pb-7 text-on-void md:px-9 md:pt-10 md:pb-9">
               <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-on-void/45">Outcomes</p>
               <ul className="mt-6 space-y-5">
                 {service.outcomes.map((item) => (
@@ -116,7 +116,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {service.process.map((step, i) => (
               <Reveal key={step.step} delayMs={i * 80}>
-                <article className="magnetic-card group h-full rounded-[1.5rem] border border-line bg-ns-white p-6">
+                <article className="magnetic-card group h-full rounded-[1.5rem] border border-line bg-ns-white px-6 pt-8 pb-7 md:px-7 md:pt-9 md:pb-8">
                   <p className="font-mono text-xs text-accent">{step.step}</p>
                   <h3 className="font-display mt-4 text-2xl tracking-tight text-ink transition group-hover:text-accent">
                     {step.title}

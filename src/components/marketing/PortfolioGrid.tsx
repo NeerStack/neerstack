@@ -24,7 +24,7 @@ export function PortfolioGrid() {
               className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]"
             />
           </div>
-          <div className="border-t border-line p-7 md:p-9">
+          <div className="border-t border-line px-7 pt-8 pb-7 md:px-9 md:pt-10 md:pb-9">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted">

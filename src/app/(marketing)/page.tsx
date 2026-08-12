@@ -90,7 +90,7 @@ export default function HomePage() {
             {stats.map((stat, i) => (
               <Reveal key={stat.label} delayMs={i * 90} variant="scale">
                 <div className="bezel h-full">
-                  <div className="bezel-inner p-6 md:p-7">
+                  <div className="bezel-inner px-6 pt-8 pb-7 md:px-7 md:pt-9 md:pb-8">
                     <p className="font-display text-5xl tracking-tight text-accent">{stat.value}</p>
                     <p className="mt-3 font-semibold text-ink">{stat.label}</p>
                     <p className="mt-1 text-sm text-muted">{stat.detail}</p>
@@ -180,7 +180,7 @@ export default function HomePage() {
                     className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.05]"
                   />
                 </div>
-                <div className="flex flex-col justify-between border-t border-white/10 p-8 lg:border-t-0 lg:border-l lg:p-10">
+                <div className="flex flex-col justify-between border-t border-white/10 px-8 pt-9 pb-8 lg:border-t-0 lg:border-l lg:px-10 lg:pt-11 lg:pb-10">
                   <div>
                     <p className="text-xs uppercase tracking-[0.16em] text-on-void/45">{project.category}</p>
                     <h3 className="font-display mt-3 text-3xl tracking-tight">{project.title}</h3>
@@ -217,7 +217,7 @@ export default function HomePage() {
             {engagementSteps.map((step, i) => (
               <Reveal key={step.step} delayMs={i * 80}>
                 <article className="bezel h-full">
-                  <div className="bezel-inner flex h-full flex-col p-6">
+                  <div className="bezel-inner flex h-full flex-col px-6 pt-8 pb-7 md:px-7 md:pt-9 md:pb-8">
                     <p className="font-mono text-xs text-accent">{step.step}</p>
                     <h3 className="font-display mt-5 text-2xl tracking-tight text-ink">{step.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-ink-soft">{step.body}</p>
@@ -234,7 +234,7 @@ export default function HomePage() {
           {principles.map((item, i) => (
             <Reveal key={item.title} delayMs={i * 70} variant={i % 2 ? "left" : "up"}>
               <article className="bezel h-full">
-                <div className="bezel-inner p-8">
+                <div className="bezel-inner px-8 pt-9 pb-8 md:px-9 md:pt-10 md:pb-9">
                   <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">{item.title}</h3>
                   <p className="mt-4 text-sm leading-relaxed text-ink-soft md:text-base">{item.body}</p>
                 </div>

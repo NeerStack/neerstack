@@ -66,7 +66,7 @@ export default function ServicesPage() {
         </div>
         <div className="container-ns mt-14">
           <Reveal>
-            <div className="flex flex-col items-start justify-between gap-6 rounded-[1.75rem] border border-white/10 bg-void px-7 py-9 text-on-void md:flex-row md:items-center md:px-10 md:py-10">
+            <div className="flex flex-col items-start justify-between gap-6 rounded-[1.75rem] border border-white/10 bg-void px-7 py-9 text-on-void md:flex-row md:items-center md:px-10 md:py-11">
               <div>
                 <h2 className="font-display text-3xl tracking-tight">Not sure where to start?</h2>
                 <p className="mt-2 max-w-lg text-sm leading-relaxed text-on-void/70">

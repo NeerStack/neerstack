@@ -26,7 +26,7 @@ export default function PortfolioPage() {
             <PortfolioGrid />
           </div>
           <Reveal>
-            <div className="mt-16 flex flex-col items-start justify-between gap-6 rounded-[2rem] border border-white/10 bg-void px-8 py-10 text-on-void md:flex-row md:items-center md:px-10">
+            <div className="mt-16 flex flex-col items-start justify-between gap-6 rounded-[2rem] border border-white/10 bg-void px-8 py-10 text-on-void md:flex-row md:items-center md:px-10 md:py-11">
               <div>
                 <h2 className="font-display text-3xl tracking-tight md:text-4xl">
                   Building in this space?
