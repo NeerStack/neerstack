@@ -227,8 +227,8 @@ export const portfolio: PortfolioItem[] = [
     category: "Platform",
     summary:
       "Escrow marketplace for brands and creators. NeerStack designed and built the product end to end: campaigns, deals, tracked links, wallets, and ops consoles.",
-    image: "/images/pactreach/lockup-primary.svg",
-    imageOnDark: "/images/pactreach/lockup-on-dark.svg",
+    image: "/images/pactreach/lockup-primary.png",
+    imageOnDark: "/images/pactreach/lockup-on-dark.png",
     tags: ["Web", "Marketplace", "Escrow", "Product"],
     href: "https://pactreach.com/",
     featured: true,
