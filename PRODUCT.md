@@ -16,7 +16,7 @@ Locked: **Mark C (NS Path)** + **Kit C**.
 
 ## Constraints
 - Static Next.js export (`out/`), deploy on Netlify
-- Public portfolio: ProduceMart only; excludes Enitars/MageHub
+- Public portfolio: PactReach + ProduceMart; excludes Enitars/MageHub
 - Site photography licensed/real only
 - Accent stack red `#E31E24`
 - Contact: `support@neerstack.com`

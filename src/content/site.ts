@@ -18,6 +18,8 @@ export type PortfolioItem = {
   category: "Website" | "Mobile" | "Platform";
   summary: string;
   image: string;
+  /** Optional lockup/preview for void/dark surfaces */
+  imageOnDark?: string;
   tags: string[];
   href?: string;
   featured?: boolean;
@@ -217,8 +219,20 @@ export const services: Service[] = [
   },
 ];
 
-/** Public portfolio: ProduceMart only (per product decision). */
+/** Public portfolio: ProduceMart + PactReach. Never Enitars/MageHub. */
 export const portfolio: PortfolioItem[] = [
+  {
+    slug: "pactreach",
+    title: "PactReach",
+    category: "Platform",
+    summary:
+      "Escrow marketplace for brands and creators. NeerStack designed and built the product end to end: campaigns, deals, tracked links, wallets, and ops consoles.",
+    image: "/images/pactreach/lockup-primary.svg",
+    imageOnDark: "/images/pactreach/lockup-on-dark.svg",
+    tags: ["Web", "Marketplace", "Escrow", "Product"],
+    href: "https://pactreach.com/",
+    featured: true,
+  },
   {
     slug: "producemart",
     title: "ProduceMart",
@@ -248,7 +262,7 @@ export const engagementSteps = [
 
 export const stats = [
   { value: "5", label: "Core disciplines", detail: "Design to delivery in one team" },
-  { value: "1", label: "Featured product", detail: "ProduceMart in the public portfolio" },
+  { value: "2", label: "Featured products", detail: "PactReach and ProduceMart" },
   { value: "100%", label: "Remote-ready", detail: "Timezone-flexible partnership" },
   { value: "1", label: "Accountable team", detail: "No agency telephone game" },
 ];

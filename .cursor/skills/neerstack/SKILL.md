@@ -26,7 +26,8 @@ Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs — thi
 - Theme: light / dark / system → `html.dark`. Semantic paper/ink flip; **`void` / `on-void` stay fixed** for always-dark bands. Not purple SaaS dark.
 
 ## Portfolio
-Public list: **ProduceMart only**. Never list Enitars/MageHub. Images: `public/images/{hero,contact,producemart}.*` only.
+Public list: **PactReach + ProduceMart**. Never list Enitars/MageHub.
+Images: `public/images/{hero,contact,producemart}.*` plus `public/images/pactreach/` (lockups from PactReach web kit).
 
 ## Layout / UI (hard-won)
 - Floating island header — page heroes need **`pt-[7.5rem] md:pt-[9rem]`** (or more). Never let titles sit under the nav.

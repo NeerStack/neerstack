@@ -13,9 +13,10 @@ import {
 } from "@/content/site";
 
 export default function HomePage() {
-  const project = portfolio[0];
+  const featured = portfolio.filter((item) => item.featured);
   const marquee = [
     ...services.map((s) => s.title),
+    "PactReach",
     "ProduceMart",
     "Ship faster",
     "Design systems",
@@ -160,48 +161,55 @@ export default function HomePage() {
               Featured work
             </p>
             <h2 className="font-display mt-3 max-w-2xl text-3xl tracking-tight sm:text-4xl md:text-5xl">
-              ProduceMart
+              Products we ship
             </h2>
-            <p className="mt-4 max-w-2xl text-on-void/70">{project.summary}</p>
+            <p className="mt-4 max-w-2xl text-on-void/70">
+              Public work includes PactReach and ProduceMart: marketplace and commerce systems built end to end.
+            </p>
           </Reveal>
-          <Reveal delayMs={120} variant="scale">
-            <a
-              href={project.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group mt-10 block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] sm:mt-12 sm:rounded-[2rem]"
-            >
-              <div className="grid lg:grid-cols-[1.2fr_0.8fr]">
-                <div className="aspect-[16/11] overflow-hidden bg-white/[0.03] p-6 sm:p-10 md:p-14">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={project.image}
-                    alt="ProduceMart preview"
-                    className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.05]"
-                  />
-                </div>
-                <div className="flex flex-col justify-between border-t border-white/10 px-8 pt-11 pb-9 lg:border-t-0 lg:border-l lg:px-11 lg:pt-14 lg:pb-11">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.16em] text-on-void/45">{project.category}</p>
-                    <h3 className="font-display mt-3 text-2xl tracking-tight sm:text-3xl">{project.title}</h3>
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full border border-white/15 px-3 py-1 text-xs text-on-void/70"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+          <div className="mt-10 flex flex-col gap-8 sm:mt-12 md:gap-10">
+            {featured.map((project, index) => (
+              <Reveal key={project.slug} delayMs={80 + index * 80} variant="scale">
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] sm:rounded-[2rem]"
+                >
+                  <div className="grid lg:grid-cols-[1.2fr_0.8fr]">
+                    <div className="aspect-[16/11] overflow-hidden bg-white/[0.03] p-6 sm:p-10 md:p-14">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={project.imageOnDark || project.image}
+                        alt={`${project.title} preview`}
+                        className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.05]"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-between border-t border-white/10 px-8 pt-11 pb-9 lg:border-t-0 lg:border-l lg:px-11 lg:pt-14 lg:pb-11">
+                      <div>
+                        <p className="text-xs uppercase tracking-[0.16em] text-on-void/45">{project.category}</p>
+                        <h3 className="font-display mt-3 text-2xl tracking-tight sm:text-3xl">{project.title}</h3>
+                        <p className="mt-3 text-sm leading-relaxed text-on-void/70">{project.summary}</p>
+                        <div className="mt-5 flex flex-wrap gap-2">
+                          {project.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="rounded-full border border-white/15 px-3 py-1 text-xs text-on-void/70"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                      <p className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-accent transition group-hover:translate-x-1">
+                        Visit live site ↗
+                      </p>
                     </div>
                   </div>
-                  <p className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-accent transition group-hover:translate-x-1">
-                    Visit live site ↗
-                  </p>
-                </div>
-              </div>
-            </a>
-          </Reveal>
+                </a>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

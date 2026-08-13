@@ -18,8 +18,8 @@ export default function PortfolioPage() {
               Selected work.
             </h1>
             <p className="mt-5 max-w-2xl text-ink-soft">
-              The public portfolio currently features ProduceMart: commerce infrastructure
-              for agricultural buyers and suppliers.
+              Public work includes PactReach, the brand–creator escrow marketplace, and
+              ProduceMart, commerce infrastructure for agricultural buyers and suppliers.
             </p>
           </Reveal>
           <div className="mt-14 md:mt-20">
@@ -32,7 +32,7 @@ export default function PortfolioPage() {
                   Building in this space?
                 </h2>
                 <p className="mt-2 max-w-lg text-sm leading-relaxed text-on-void/70">
-                  We can map a similar delivery path for your catalog, checkout, and ops stack.
+                  We can map a similar delivery path for your marketplace, catalog, or ops stack.
                 </p>
               </div>
               <Button href="/contact/">Discuss a project</Button>
