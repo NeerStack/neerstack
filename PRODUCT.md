@@ -10,12 +10,13 @@ Engineering partners for teams who ship.
 Locked: **Mark C (NS Path)** + **Kit C**.
 
 ## Surfaces
-- Persuade: marketing site
-- Read: blog
-- Operate: admin dashboard (client-only, Render API)
+- Persuade: marketing site (Netlify static export)
+- Read: blog (TanStack Query client cache)
+- Operate: admin dashboard (client-only, Render API, markdown → HTML)
 
 ## Constraints
-- Static Next.js export
-- Portfolio excludes Enitars/MageHub
+- Static Next.js export (`out/`), deploy on Netlify
+- Public portfolio: ProduceMart only; excludes Enitars/MageHub
 - Site photography licensed/real only
-- Accent red lineage (#D91F2A / #EE2528)
+- Accent stack red `#E31E24`
+- Contact: `support@neerstack.com`
