@@ -116,7 +116,7 @@ html.dark .ns-mesh {
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  /* No blur — filter creates a containing block that clips large display headlines */
+  /* No blur: filter creates a containing block that clips large display headlines */
   transition:
     opacity 900ms var(--ns-ease),
     transform 900ms var(--ns-ease);
@@ -135,7 +135,7 @@ html.dark .ns-mesh {
 }
 .reveal-scale.is-visible { opacity: 1; transform: scale(1); }
 .reveal-blur {
-  /* Same as .reveal — do not use filter blur (clips display type) */
+  /* Same as .reveal: do not use filter blur (clips display type) */
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 1000ms var(--ns-ease), transform 1000ms var(--ns-ease);
@@ -203,7 +203,7 @@ html.dark .ns-mesh {
   transition: transform 450ms var(--ns-ease);
   pointer-events: none;
 }
-/* No translateX — Reveal uses filter, which clips shifted children and
+/* No translateX. Reveal uses filter, which clips shifted children and
    makes the hover look like a middle-only strip (index + Open cut off). */
 .interactive-row:hover,
 .interactive-row:focus-within {
@@ -234,7 +234,7 @@ html.dark .bezel-inner {
   border-color: color-mix(in srgb, var(--ns-red) 28%, transparent);
 }
 
-/* Subtle lift for marketing cards — same motion language as .bezel */
+/* Subtle lift for marketing cards: same motion language as .bezel */
 .magnetic-card {
   position: relative;
   isolation: isolate;
@@ -276,7 +276,7 @@ html.dark .bezel-inner {
 .prose-ns p, .prose-ns li { color: var(--ns-ink-soft); line-height: 1.7; }
 .prose-ns a { color: var(--ns-red); text-decoration: underline; text-underline-offset: 3px; }
 
-/* Admin markdown editor — brand tokens over default @uiw chrome */
+/* Admin markdown editor: brand tokens over default @uiw chrome */
 .ns-md-editor {
   --color-fg-default: var(--ns-ink);
   --color-fg-muted: var(--ns-muted);

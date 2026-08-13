@@ -98,7 +98,7 @@ export default function BrandPage() {
             </div>
           </div>
           <p className="mt-4 text-sm text-muted">
-            PNG lockups in <code className="font-mono text-ink">/brand/kit/</code> — Mark C +
+            PNG lockups in <code className="font-mono text-ink">/brand/kit/</code>: Mark C +
             NEERSTACK (not live Syne glyphs).
           </p>
         </Reveal>

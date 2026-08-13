@@ -9,9 +9,9 @@ export function getPostStatus(post: BlogPost): PostStatus {
 }
 
 export function formatAdminDate(value?: string) {
-  if (!value) return "—";
+  if (!value) return "-";
   const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return "—";
+  if (Number.isNaN(date.getTime())) return "-";
   return date.toLocaleDateString(undefined, {
     year: "numeric",
     month: "short",

@@ -32,7 +32,7 @@ export default function AdminDraftsPage() {
         showStatusFilter={false}
         defaultFilter="all"
         emptyTitle="No drafts"
-        emptyDescription="Everything is published — or create a new draft."
+        emptyDescription="Everything is published, or create a new draft."
       />
     </AdminShell>
   );

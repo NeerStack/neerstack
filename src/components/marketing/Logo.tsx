@@ -70,7 +70,7 @@ function LockupImgs({
     );
   }
 
-  // auto: stacked grid — only one visible via opacity under html.dark
+  // auto: stacked grid. Only one visible via opacity under html.dark
   return (
     <span className="relative hidden sm:inline-grid" aria-hidden>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -114,7 +114,7 @@ export function Logo({ variant = "auto", className, mode = "full" }: Props) {
         <MarkImg />
       ) : (
         <>
-          {/* xs: mark only — full lockup text is illegible at phone widths */}
+          {/* xs: mark only. Full lockup text is illegible at phone widths */}
           <MarkImg className="sm:hidden" />
           <LockupImgs variant={variant} />
           <span className="sr-only">NeerStack</span>

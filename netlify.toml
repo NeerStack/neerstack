@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Next `output: "export"` + trailingSlash — serve pretty directories from /out
+# Next `output: "export"` + trailingSlash: serve pretty directories from /out
 [[headers]]
   for = "/_next/static/*"
   [headers.values]

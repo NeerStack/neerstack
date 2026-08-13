@@ -15,12 +15,12 @@ Tagline: **Engineering partners for teams who ship.**
 - Admin posts: markdown editor → `content` (md) + `htmlContent` (marked HTML)
 - Contact email: `support@neerstack.com` (`src/content/site.ts`)
 
-Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs — this Next may differ from training data.
+Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This Next may differ from training data.
 
 ## Brand (locked)
 - **Mark C (NS Path)** + Kit C. Stack red `#E31E24`. Paper `#F7F4EF`. Kit black `#14121A`.
 - Fonts: Syne (display), Plus Jakarta Sans (body), IBM Plex Mono (meta).
-- Logo chrome: PNG lockups only — `public/brand/kit/lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`. Cache-bust `?v=3` (or newer).
+- Logo chrome: PNG lockups only. `public/brand/kit/lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`. Cache-bust `?v=3` (or newer).
 - Spelling **NEERSTACK** (N + three-bar E + three-bar E + RSTACK). First E: top+middle red; second E: ink/white.
 - Do **not** redraw the mark. Do **not** reconstruct the wordmark in CSS/Syne. Prefer PNG if vector is wrong.
 - Theme: light / dark / system → `html.dark`. Semantic paper/ink flip; **`void` / `on-void` stay fixed** for always-dark bands. Not purple SaaS dark.
@@ -30,7 +30,7 @@ Public list: **PactReach + ProduceMart**. Never list Enitars/MageHub.
 Images: `public/images/{hero,contact,producemart}.*` plus `public/images/pactreach/` (lockups from PactReach web kit).
 
 ## Layout / UI (hard-won)
-- Floating island header — page heroes need **`pt-[7.5rem] md:pt-[9rem]`** (or more). Never let titles sit under the nav.
+- Floating island header: page heroes need **`pt-[7.5rem] md:pt-[9rem]`** (or more). Never let titles sit under the nav.
 - Prefer **one section** for hero + first content block with **`mt-14 md:mt-20`** before cards/forms. Split hero/`pb-only` content sections cause flush/stacked overlays.
 - Card lists: **`flex flex-col gap-8 md:gap-10`** (or grid `gap-8+`). Avoid tiny `space-y` that looks stacked.
 - Do **not** put `overflow-hidden` on page heroes (clips Syne display). Use `overflow-x-clip` only where needed (marquees).

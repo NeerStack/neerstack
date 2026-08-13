@@ -12,7 +12,7 @@ export default function NewPostPage() {
         </p>
         <h1 className="mt-2 font-display text-3xl tracking-tight text-ink">New post</h1>
         <p className="mt-2 text-sm text-ink-soft">
-          Write, tag, and publish — or save as a draft.
+          Write, tag, and publish, or save as a draft.
         </p>
       </div>
       <div className="mt-8">

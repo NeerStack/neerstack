@@ -22,7 +22,7 @@ Metaphor: N + S form a navigation path through the stack: direction and engineer
 - OG / favicon: `public/brand/brandkit.png`, `public/brand/favicon.png`
 - Archive only: `public/brand/options/`, `public/brand/kits/`
 
-Never redraw the mark. Do not reconstruct the wordmark in CSS — use kit PNGs. Spelling is **NEERSTACK**.
+Never redraw the mark. Do not reconstruct the wordmark in CSS: use kit PNGs. Spelling is **NEERSTACK**.
 
 ## Layout
 - Island header clearance: heroes `pt-[7.5rem] md:pt-[9rem]+`

@@ -44,7 +44,7 @@ export default function AdminHomePage() {
             Dashboard
           </h1>
           <p className="mt-2 max-w-xl text-sm text-ink-soft md:text-base">
-            Manage blog content — drafts, publishes, and archives in one place.
+            Manage blog content: drafts, publishes, and archives in one place.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -74,7 +74,7 @@ export default function AdminHomePage() {
           >
             <p className="text-xs tracking-wide text-muted uppercase">{stat.label}</p>
             <p className="mt-3 font-display text-3xl tracking-tight text-ink">
-              {loading ? "—" : stat.value}
+              {loading ? "-" : stat.value}
             </p>
           </div>
         ))}

@@ -18,7 +18,7 @@ export default function PortfolioPage() {
               Selected work.
             </h1>
             <p className="mt-5 max-w-2xl text-ink-soft">
-              Public work includes PactReach, the brand–creator escrow marketplace, and
+              Public work includes PactReach, the brand-creator escrow marketplace, and
               ProduceMart, commerce infrastructure for agricultural buyers and suppliers.
             </p>
           </Reveal>
