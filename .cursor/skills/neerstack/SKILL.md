@@ -22,6 +22,7 @@ Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This N
 - **Mark C (NS Path)** + Kit C. Stack red `#E31E24`. Paper `#F7F4EF`. Kit black `#14121A`.
 - Fonts: Syne (display), Plus Jakarta Sans (body), IBM Plex Mono (meta).
 - Logo chrome: PNG lockups only. `public/brand/kit/lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`. Cache-bust `?v=3` (or newer).
+- OG image: `public/brand/og.png` (mark + NEERSTACK lockup on void). Never use the brand-board as OG.
 - Spelling **NEERSTACK** (N + three-bar E + three-bar E + RSTACK). First E: top+middle red; second E: ink/white.
 - Do **not** redraw the mark. Do **not** reconstruct the wordmark in CSS/Syne. Prefer PNG if vector is wrong.
 - Theme: light / dark / system → `html.dark`. Semantic paper/ink flip; **`void` / `on-void` stay fixed** for always-dark bands. Not purple SaaS dark.

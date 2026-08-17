@@ -19,7 +19,7 @@ Metaphor: N + S form a navigation path through the stack: direction and engineer
 ## Assets
 - Kit folder: `public/brand/kit/` (active mark, PNG lockups, favicon, app icon, board)
 - Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`
-- OG / favicon: `public/brand/brandkit.png`, `public/brand/favicon.png`
+- OG / favicon: `public/brand/og.png` (mark + wordmark lockup on void), `public/brand/favicon.png`
 - Archive only: `public/brand/options/`, `public/brand/kits/`
 
 Never redraw the mark. Do not reconstruct the wordmark in CSS: use kit PNGs. Spelling is **NEERSTACK**.

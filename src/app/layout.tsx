@@ -34,7 +34,13 @@ export const metadata: Metadata = {
     url: site.url,
     siteName: site.name,
     type: "website",
-    images: [{ url: "/brand/brandkit.png", width: 1200, height: 900 }],
+    images: [{ url: "/brand/og.png", width: 1200, height: 630, alt: "NeerStack" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} | Software Development Company`,
+    description: site.description,
+    images: ["/brand/og.png"],
   },
   icons: {
     icon: [{ url: "/brand/favicon.png", type: "image/png" }],
