@@ -24,6 +24,7 @@ Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This N
 - Spelling **NEERSTACK** (N + three-bar E + three-bar E + RSTACK). First E: top+middle red; second E: ink/white.
 - Do **not** redraw the mark. Do **not** reconstruct the wordmark in CSS/Syne. Prefer PNG if vector is wrong.
 - Theme: light / dark / system → `html.dark`. Semantic paper/ink flip; **`void` / `on-void` stay fixed** for always-dark bands. Not purple SaaS dark.
+- No public `/brand/` page. Kit files live under `public/brand/` for chrome only.
 
 ## Portfolio
 Public list: **PactReach + ProduceMart**. Never list Enitars/MageHub.

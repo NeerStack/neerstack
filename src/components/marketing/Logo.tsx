@@ -12,8 +12,6 @@ const CACHE = "v=3";
 const MARK_SRC = `/brand/kit/mark.svg?${CACHE}`;
 const LOCKUP_ON_LIGHT = `/brand/kit/lockup-on-light.png?${CACHE}`;
 const LOCKUP_ON_DARK = `/brand/kit/lockup-on-dark.png?${CACHE}`;
-const WORDMARK_ON_LIGHT = `/brand/kit/wordmark-on-light.png?${CACHE}`;
-const WORDMARK_ON_DARK = `/brand/kit/wordmark-on-dark.png?${CACHE}`;
 
 function MarkImg({ className }: { className?: string }) {
   return (
@@ -121,29 +119,5 @@ export function Logo({ variant = "auto", className, mode = "full" }: Props) {
         </>
       )}
     </Link>
-  );
-}
-
-/** Standalone wordmark for brand kit pages (no mark, no link). */
-export function WordmarkLockup({
-  variant = "dark",
-  className,
-}: {
-  variant?: "dark" | "light";
-  className?: string;
-}) {
-  const src = variant === "light" ? WORDMARK_ON_DARK : WORDMARK_ON_LIGHT;
-  return (
-    <span className={cn("inline-flex items-center", className)} role="img" aria-label="NEERSTACK">
-      <span className="sr-only">NeerStack</span>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={src}
-        alt=""
-        width={459}
-        height={51}
-        className="h-8 w-auto sm:h-10"
-      />
-    </span>
   );
 }

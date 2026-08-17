@@ -56,11 +56,6 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/brand/" className="inline-flex min-h-11 items-center transition hover:text-on-void">
-                Brand
-              </Link>
-            </li>
-            <li>
               <a
                 href={site.linkedin}
                 target="_blank"
