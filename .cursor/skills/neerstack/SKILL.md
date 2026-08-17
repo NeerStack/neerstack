@@ -14,6 +14,7 @@ Tagline: **Engineering partners for teams who ship.**
 - Blog cache: TanStack Query (`src/lib/blog-queries.ts`), staleTime 5m
 - Admin posts: markdown editor → `content` (md) + `htmlContent` (marked HTML)
 - Contact email: `support@neerstack.com` (`src/content/site.ts`)
+- Legal entity: **Neerstack LTD**, RC8530959, registered office in Sango Ota, Ogun State. Public pages: `/legal/privacy/`, `/legal/terms/`, `/legal/cookies/`.
 
 Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This Next may differ from training data.
 

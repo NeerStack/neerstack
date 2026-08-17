@@ -20,3 +20,5 @@ Locked: **Mark C (NS Path)** + **Kit C**.
 - Site photography licensed/real only
 - Accent stack red `#E31E24`
 - Contact: `support@neerstack.com`
+- Legal entity: Neerstack LTD, RC8530959, 19 Church Street, Ilupeju Iloye, Adalemo, Sango Ota, Ogun State, Nigeria
+- Public legal: Privacy Policy, Terms and Conditions, Cookie Policy

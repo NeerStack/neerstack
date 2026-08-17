@@ -269,10 +269,26 @@ export const stats = [
 
 export const site = {
   name: "NeerStack",
+  legalName: "Neerstack LTD",
+  rcNumber: "RC8530959",
   tagline: "Engineering partners for teams who ship.",
   description:
     "Hire professional software engineers for outsourced web, mobile, design, testing, and product work.",
   url: "https://neerstack.com",
   linkedin: "https://www.linkedin.com/company/neerstack/",
   email: "support@neerstack.com",
+  address:
+    "19, Church Street, Ilupeju Iloye, Adalemo, Sango Ota, Ogun State, Nigeria",
+  addressLines: [
+    "19, Church Street",
+    "Ilupeju Iloye, Adalemo",
+    "Sango Ota, Ogun State",
+    "Nigeria",
+  ],
 };
+
+export const legalNav = [
+  { href: "/legal/privacy/", label: "Privacy Policy" },
+  { href: "/legal/terms/", label: "Terms and Conditions" },
+  { href: "/legal/cookies/", label: "Cookie Policy" },
+] as const;

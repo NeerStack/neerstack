@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { sendContact } from "@/lib/api";
 import { Button } from "@/components/ui/Button";
 
@@ -57,6 +58,13 @@ export function ContactForm() {
       </label>
       {status ? <p className="text-sm text-accent">{status}</p> : null}
       {error ? <p className="text-sm text-accent-deep">{error}</p> : null}
+      <p className="text-xs leading-relaxed text-muted">
+        By sending this form you agree to our{" "}
+        <Link href="/legal/privacy/" className="font-medium text-accent underline-offset-2 hover:underline">
+          Privacy Policy
+        </Link>
+        . We use your details only to respond to this enquiry.
+      </p>
       <Button type="submit" disabled={loading}>{loading ? "Sending…" : "Send message"}</Button>
     </form>
   );
