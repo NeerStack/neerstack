@@ -30,7 +30,7 @@ Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This N
 
 ## Portfolio
 Public list: **PactReach + ProduceMart**. Never list Enitars/MageHub.
-Images: `public/images/{hero,contact,producemart}.*` plus `public/images/pactreach/` PNG lockups (baked wordmark, never typed Satoshi/Syne).
+Images: `public/images/{hero,contact,producemart}.*` plus `public/images/pactreach/` (Letter P + L3 compact lockups and wordmarks from the Aug 2026 PactReach kit; baked artwork, never typed Satoshi).
 
 ## Layout / UI (hard-won)
 - Floating island header: page heroes need **`pt-[7.5rem] md:pt-[9rem]`** (or more). Never let titles sit under the nav.
