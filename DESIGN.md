@@ -19,7 +19,7 @@ Metaphor: N + S form a navigation path through the stack: direction and engineer
 ## Assets
 - Kit folder: `public/brand/kit/` (Mark C, traced wordmark, PNG lockups, favicon, app icon)
 - Wordmark source: `public/brand/kit/_wm-traced-preview.png`
-- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>` (`?v=4`)
+- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>` (`?v=5`; mark larger than wordmark, wide gap)
 - OG / favicon: `public/brand/og.png` (stacked mark above wordmark on void), `public/brand/favicon.png`
 - Wide exports: `wordmark-4096x2304.png`, `app-icon-4096x2304.png`
 

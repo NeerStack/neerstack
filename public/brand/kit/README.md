@@ -3,7 +3,8 @@
 ## Canonical artwork
 - Mark: `mark.svg` / `mark.png` (NS Path, stack red `#E31E24`): do not redraw
 - Wordmark source: `_wm-traced-preview.png` (traced NEERSTACK; first E top+middle red)
-- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` (`?v=4`)
+- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` (`?v=5`)
+  Mark is taller than the wordmark; keep a wide horizontal gap between them.
 - Wordmark-only: `wordmark-on-light.png` / `wordmark-on-dark.png` (transparent)
 - App icon / favicon: `app-icon.png`, `app-icon.svg`, `favicon.png`, `favicon.svg`
 - Wide exports: `wordmark-4096x2304.png`, `app-icon-4096x2304.png` (void `#14121A`)
