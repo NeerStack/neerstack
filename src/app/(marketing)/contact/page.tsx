@@ -51,11 +51,6 @@ export default function ContactPage() {
                   /company/neerstack
                 </a>
               </p>
-              <div>
-                <p className="font-medium text-ink">{site.legalName}</p>
-                <p className="mt-1">{site.rcNumber}</p>
-                <p className="mt-3 leading-relaxed">{site.address}</p>
-              </div>
             </div>
           </Reveal>
           <Reveal delayMs={80} className="block min-w-0">

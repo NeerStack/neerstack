@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { legalNav, site } from "@/content/site";
+import { legalNav } from "@/content/site";
 import type { LegalDoc as LegalDocContent } from "@/content/legal";
 import { Reveal } from "@/components/marketing/Reveal";
 
@@ -13,7 +13,7 @@ export function LegalDoc({ doc }: { doc: LegalDocContent }) {
             {doc.title}
           </h1>
           <p className="mt-5 max-w-2xl text-sm text-ink-soft md:text-base">
-            Last updated {doc.updated}. {site.legalName}, {site.rcNumber}.
+            Last updated {doc.updated}.
           </p>
         </Reveal>
 

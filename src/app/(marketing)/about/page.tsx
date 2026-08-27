@@ -42,10 +42,6 @@ export default function AboutPage() {
               who design and code are the people you talk to. That means clearer
               tradeoffs, faster iteration, and software that holds up after launch.
             </p>
-            <p className="mt-5 text-sm leading-relaxed text-muted">
-              {site.legalName} ({site.rcNumber}) is registered in Nigeria. Registered
-              office: {site.address}.
-            </p>
           </Reveal>
         </div>
       </section>

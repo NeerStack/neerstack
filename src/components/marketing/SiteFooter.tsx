@@ -12,18 +12,11 @@ export function SiteFooter() {
             {site.tagline} Design, build, test, and ship with a team that works like
             an extension of yours.
           </p>
-          <address className="mt-6 max-w-sm text-sm not-italic leading-relaxed text-on-void/55">
-            <p className="font-medium text-on-void/70">{site.legalName}</p>
-            <p className="mt-1">{site.rcNumber}</p>
-            {site.addressLines.map((line) => (
-              <p key={line}>{line}</p>
-            ))}
-            <p className="mt-3">
-              <a className="transition hover:text-on-void" href={`mailto:${site.email}`}>
-                {site.email}
-              </a>
-            </p>
-          </address>
+          <p className="mt-6 text-sm text-on-void/55">
+            <a className="transition hover:text-on-void" href={`mailto:${site.email}`}>
+              {site.email}
+            </a>
+          </p>
         </div>
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-on-void/40">
@@ -96,10 +89,10 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-ns flex flex-col gap-2 py-5 text-xs text-on-void/40 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} {site.legalName}. {site.rcNumber}. All rights reserved.
-          </p>
-          <p className="max-w-xl sm:text-right">{site.address}</p>
+          <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
+          <Link href="/legal/" className="transition hover:text-on-void/70">
+            Legal
+          </Link>
         </div>
       </div>
     </footer>

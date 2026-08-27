@@ -279,12 +279,6 @@ export const site = {
   email: "support@neerstack.com",
   address:
     "19, Church Street, Ilupeju Iloye, Adalemo, Sango Ota, Ogun State, Nigeria",
-  addressLines: [
-    "19, Church Street",
-    "Ilupeju Iloye, Adalemo",
-    "Sango Ota, Ogun State",
-    "Nigeria",
-  ],
 };
 
 export const legalNav = [

@@ -19,7 +19,8 @@ export default function LegalIndexPage() {
             Company documents
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-soft">
-            {site.legalName} ({site.rcNumber}), registered in Nigeria. Registered office: {site.address}.
+            Privacy, terms, and cookies for {site.name}. Company registration and
+            contact details are in each document.
           </p>
         </Reveal>
         <div className="mt-14 flex flex-col gap-8 md:mt-20 md:gap-10">
