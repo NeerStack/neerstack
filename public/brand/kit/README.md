@@ -1,19 +1,19 @@
 # NeerStack Brand Kit: Mark C (NS Path)
 
-## Logo lockup (site chrome)
-- Source of truth: **PNG lockups**, not live Syne CSS glyphs
-- `lockup-on-light.png`: red mark + ink NEERSTACK (transparent)
-- `lockup-on-dark.png`: red mark + white NEERSTACK (transparent)
-- `wordmark-on-light.png` / `wordmark-on-dark.png`: wordmark-only crops
-- Site component: `src/components/marketing/Logo.tsx` (`<img>`, cache `?v=3`)
-- Spelling locked: **NEERSTACK** (N + three-bar E + three-bar E + RSTACK)
+## Canonical artwork
+- Mark: `mark.svg` / `mark.png` (NS Path, stack red `#E31E24`) — do not redraw
+- Wordmark source: `_wm-traced-preview.png` (traced NEERSTACK; first E top+middle red)
+- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` (`?v=4`)
+- Wordmark-only: `wordmark-on-light.png` / `wordmark-on-dark.png` (transparent)
+- App icon / favicon: `app-icon.png`, `app-icon.svg`, `favicon.png`, `favicon.svg`
+- Wide exports: `wordmark-4096x2304.png`, `app-icon-4096x2304.png` (void `#14121A`)
+- OG: `../og.png` (mark + wordmark lockup on void, 1200×630)
+
+## Rules
+- Spelling locked: **NEERSTACK**
 - First E: top + middle bars `#E31E24`; second E: all ink/white
-
-## Mark
-`mark.svg` / `mark.png`: NS Path monogram, stack red `#E31E24` (do not redraw)
-
-## Type
-Syne (display UI), Plus Jakarta Sans (body), IBM Plex Mono (meta). Wordmark artwork is PNG, not typed Syne.
+- Prefer PNG lockups over CSS/Syne reconstruction
+- Mark color variants: `mark-white`, `mark-ink`, `mark-on-paper`, `mark-on-red`
 
 ## Palette
 See `colors.json`: kit black `#14121A`, paper `#F7F4EF`, red `#E31E24`, white `#FFFFFF`

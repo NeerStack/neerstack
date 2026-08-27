@@ -10,7 +10,7 @@ npm run dev
 
 ## Brand
 **Locked:** Mark C (NS Path) + Kit C.
-Active assets in `public/brand/kit/`. Archive (Mark/Kit options) in `public/brand/options/` and `public/brand/kits/`.
+Active assets in `public/brand/kit/` (Mark C + traced wordmark + PNG lockups). OG: `public/brand/og.png`.
 
 ## Build / deploy (Netlify)
 ```bash

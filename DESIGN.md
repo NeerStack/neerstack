@@ -17,10 +17,11 @@ Metaphor: N + S form a navigation path through the stack: direction and engineer
 - Mono: IBM Plex Mono
 
 ## Assets
-- Kit folder: `public/brand/kit/` (active mark, PNG lockups, favicon, app icon, board)
-- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`
-- OG / favicon: `public/brand/og.png` (mark + wordmark lockup on void), `public/brand/favicon.png`
-- Archive only: `public/brand/options/`, `public/brand/kits/`
+- Kit folder: `public/brand/kit/` (Mark C, traced wordmark, PNG lockups, favicon, app icon)
+- Wordmark source: `public/brand/kit/_wm-traced-preview.png`
+- Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>` (`?v=4`)
+- OG / favicon: `public/brand/og.png` (stacked mark above wordmark on void), `public/brand/favicon.png`
+- Wide exports: `wordmark-4096x2304.png`, `app-icon-4096x2304.png`
 
 Never redraw the mark. Do not reconstruct the wordmark in CSS: use kit PNGs. Spelling is **NEERSTACK**.
 

@@ -5,7 +5,7 @@ description: Product, brand, API, and UI rules for NeerStack. Use when changing 
 
 # NeerStack Project Skill
 
-Tagline: **Engineering partners for teams who ship.**
+Tagline: **We design, build, and ship — our products and yours.**
 
 ## Stack
 - Next.js App Router, TypeScript, Tailwind v4, `output: "export"`, `trailingSlash: true`
@@ -21,15 +21,16 @@ Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This N
 ## Brand (locked)
 - **Mark C (NS Path)** + Kit C. Stack red `#E31E24`. Paper `#F7F4EF`. Kit black `#14121A`.
 - Fonts: Syne (display), Plus Jakarta Sans (body), IBM Plex Mono (meta).
-- Logo chrome: PNG lockups only. `public/brand/kit/lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`. Cache-bust `?v=3` (or newer).
-- OG image: `public/brand/og.png` (mark + NEERSTACK lockup on void). Never use the brand-board as OG.
+- Logo chrome: PNG lockups only. `public/brand/kit/lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` `<img>`. Cache-bust `?v=4` (or newer). Wordmark source: `_wm-traced-preview.png`.
+- OG image: `public/brand/og.png` (stacked mark above traced NEERSTACK on void, 1200×630). Wide exports: `wordmark-4096x2304.png`, `app-icon-4096x2304.png`.
 - Spelling **NEERSTACK** (N + three-bar E + three-bar E + RSTACK). First E: top+middle red; second E: ink/white.
 - Do **not** redraw the mark. Do **not** reconstruct the wordmark in CSS/Syne. Prefer PNG if vector is wrong.
 - Theme: light / dark / system → `html.dark`. Semantic paper/ink flip; **`void` / `on-void` stay fixed** for always-dark bands. Not purple SaaS dark.
 - No public `/brand/` page. Kit files live under `public/brand/` for chrome only.
 
 ## Portfolio
-Public list: **PactReach + ProduceMart**. Never list Enitars/MageHub.
+Public list: **NeerStack + PactReach + ProduceMart**. Never list Enitars/MageHub.
+Voice: we build for ourselves (marketing site, own products) and with partners — not hire-only agency copy.
 Images: `public/images/{hero,contact,producemart}.*` plus `public/images/pactreach/` (Letter P + L3 compact lockups and wordmarks from the Aug 2026 PactReach kit; baked artwork, never typed Satoshi).
 
 ## Layout / UI (hard-won)

@@ -16,6 +16,7 @@ export default function HomePage() {
   const featured = portfolio.filter((item) => item.featured);
   const marquee = [
     ...services.map((s) => s.title),
+    "NeerStack",
     "PactReach",
     "ProduceMart",
     "Ship faster",
@@ -35,15 +36,16 @@ export default function HomePage() {
             <div className="hero-animate inline-flex max-w-full items-center gap-3 rounded-full border border-white/20 bg-white/5 px-3.5 py-1.5 backdrop-blur-md">
               <span className="glow-dot h-2 w-2 shrink-0 rounded-full bg-accent" />
               <p className="truncate text-[10px] font-semibold uppercase tracking-[0.18em] text-on-void/75 sm:text-[11px] sm:tracking-[0.22em]">
-                NeerStack · Engineering partners
+                NeerStack · Product builders
               </p>
             </div>
             <h1 className="hero-animate-delay font-display mt-6 text-[2.35rem] leading-[0.95] tracking-[-0.055em] text-balance sm:mt-7 sm:text-5xl md:text-7xl lg:text-[5.6rem]">
               {site.tagline}
             </h1>
             <p className="hero-animate-delay-2 mt-5 max-w-xl text-base leading-relaxed text-on-void/78 text-pretty sm:mt-7 md:text-lg">
-              Hire engineers who design, build, and ship production software as a
-              remote extension of your team. One accountable crew. No agency fog.
+              We ship our own products and partner with teams who need senior design
+              and engineering without the agency fog. One accountable crew from
+              brief to production.
             </p>
             <div className="hero-animate-delay-3 mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap">
               <HomeQuoteButton />
@@ -84,7 +86,7 @@ export default function HomePage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Signal</p>
             <h2 className="font-display mt-4 max-w-3xl text-3xl tracking-tight text-ink text-balance sm:text-4xl md:text-6xl">
-              Built like a product team. Scoped like partners who stay.
+              Built like a product team — because we are one.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
@@ -164,51 +166,70 @@ export default function HomePage() {
               Products we ship
             </h2>
             <p className="mt-4 max-w-2xl text-on-void/70">
-              Public work includes PactReach and ProduceMart: marketplace and commerce systems built end to end.
+              Our own site and brand, plus PactReach and ProduceMart: products we
+              design and ship end to end.
             </p>
           </Reveal>
           <div className="mt-10 flex flex-col gap-8 sm:mt-12 md:gap-10">
-            {featured.map((project, index) => (
-              <Reveal key={project.slug} delayMs={80 + index * 80} variant="scale">
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] sm:rounded-[2rem]"
-                >
-                  <div className="grid lg:grid-cols-[1.2fr_0.8fr]">
-                    <div className="aspect-[16/11] overflow-hidden bg-white/[0.03] p-6 sm:p-10 md:p-14">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={project.imageOnDark || project.image}
-                        alt={`${project.title} preview`}
-                        className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.05]"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-between border-t border-white/10 px-8 pt-11 pb-9 lg:border-t-0 lg:border-l lg:px-11 lg:pt-14 lg:pb-11">
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.16em] text-on-void/45">{project.category}</p>
-                        <h3 className="font-display mt-3 text-2xl tracking-tight sm:text-3xl">{project.title}</h3>
-                        <p className="mt-3 text-sm leading-relaxed text-on-void/70">{project.summary}</p>
-                        <div className="mt-5 flex flex-wrap gap-2">
-                          {project.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="rounded-full border border-white/15 px-3 py-1 text-xs text-on-void/70"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <p className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-accent transition group-hover:translate-x-1">
-                        Visit live site ↗
-                      </p>
-                    </div>
+            {featured.map((project, index) => {
+              const own =
+                !project.href ||
+                project.href === "/" ||
+                /neerstack\.com\/?$/i.test(project.href);
+              const cardClass =
+                "group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] sm:rounded-[2rem]";
+              const body = (
+                <div className="grid lg:grid-cols-[1.2fr_0.8fr]">
+                  <div className="aspect-[16/11] overflow-hidden bg-white/[0.03] p-6 sm:p-10 md:p-14">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={project.imageOnDark || project.image}
+                      alt={`${project.title} preview`}
+                      className="h-full w-full object-contain transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.05]"
+                    />
                   </div>
-                </a>
-              </Reveal>
-            ))}
+                  <div className="flex flex-col justify-between border-t border-white/10 px-8 pt-11 pb-9 lg:border-t-0 lg:border-l lg:px-11 lg:pt-14 lg:pb-11">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.16em] text-on-void/45">{project.category}</p>
+                      <h3 className="font-display mt-3 text-2xl tracking-tight sm:text-3xl">{project.title}</h3>
+                      <p className="mt-3 text-sm leading-relaxed text-on-void/70">{project.summary}</p>
+                      <div className="mt-5 flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-white/15 px-3 py-1 text-xs text-on-void/70"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <p className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-accent transition group-hover:translate-x-1">
+                      {own ? "View site" : "Visit live site ↗"}
+                    </p>
+                  </div>
+                </div>
+              );
+
+              return (
+                <Reveal key={project.slug} delayMs={80 + index * 80} variant="scale">
+                  {own ? (
+                    <Link href="/" className={cardClass}>
+                      {body}
+                    </Link>
+                  ) : (
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cardClass}
+                    >
+                      {body}
+                    </a>
+                  )}
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -257,10 +278,11 @@ export default function HomePage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-on-void/45">Next</p>
             <h2 className="font-display mt-3 max-w-xl text-3xl tracking-tight sm:text-4xl md:text-6xl">
-              Ready to extend your team?
+              Building something next?
             </h2>
             <p className="mt-5 max-w-md text-on-void/70">
-              Tell us about the product, timeline, and constraints. We reply with a clear next step.
+              Tell us about the product, timeline, and constraints. We reply with a
+              clear next step — whether you want a partner or a sounding board.
             </p>
           </Reveal>
           <Reveal delayMs={100}>

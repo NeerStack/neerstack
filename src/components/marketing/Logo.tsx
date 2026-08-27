@@ -8,7 +8,7 @@ type Props = {
   mode?: "full" | "mark";
 };
 
-const CACHE = "v=3";
+const CACHE = "v=4";
 const MARK_SRC = `/brand/kit/mark.svg?${CACHE}`;
 const LOCKUP_ON_LIGHT = `/brand/kit/lockup-on-light.png?${CACHE}`;
 const LOCKUP_ON_DARK = `/brand/kit/lockup-on-dark.png?${CACHE}`;

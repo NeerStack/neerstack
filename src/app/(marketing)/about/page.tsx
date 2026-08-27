@@ -6,7 +6,8 @@ import { engagementSteps, principles, services, site, stats } from "@/content/si
 
 export const metadata: Metadata = {
   title: "About",
-  description: "NeerStack is a software team that designs, builds, and ships with product partners.",
+  description:
+    "NeerStack designs and ships its own products, and partners with teams who need senior design and engineering.",
 };
 
 export default function AboutPage() {
@@ -17,12 +18,12 @@ export default function AboutPage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">About</p>
             <h1 className="font-display mt-4 max-w-4xl text-4xl leading-[1.08] tracking-tight text-ink text-balance sm:text-5xl md:text-7xl">
-              A focused team close to the craft.
+              A product team that ships its own work.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-soft text-pretty sm:text-lg">
-              NeerStack partners with product teams who need senior design and
-              engineering without the agency theater. We embed, ship, and leave
-              systems your people can own.
+              NeerStack builds products for ourselves — this site included — and
+              partners with teams who need senior design and engineering without
+              the agency theater. Same craft either way.
             </p>
           </Reveal>
         </div>
@@ -37,10 +38,10 @@ export default function AboutPage() {
           </Reveal>
           <Reveal>
             <p className="text-base leading-relaxed text-ink-soft md:text-lg">
-              Too many outsourcing models split design from engineering and bury
-              accountability in account layers. We keep the loop short: the people
-              who design and code are the people you talk to. That means clearer
-              tradeoffs, faster iteration, and software that holds up after launch.
+              We are not only a hire-us shop. We run our own product surfaces, brand,
+              and delivery loop — then bring that same short loop to shared builds.
+              The people who design and code are the people you talk to. Clearer
+              tradeoffs, faster iteration, software that holds up after launch.
             </p>
             <p className="mt-5 text-sm leading-relaxed text-muted">
               {site.legalName} ({site.rcNumber}) is registered in Nigeria. Registered
@@ -55,7 +56,7 @@ export default function AboutPage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">At a glance</p>
             <h2 className="font-display mt-3 text-3xl tracking-tight text-ink sm:text-4xl md:text-5xl">
-              Built for product teams who move
+              Products we move
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -120,7 +121,7 @@ export default function AboutPage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Capabilities</p>
             <h2 className="font-display mt-3 text-2xl tracking-tight text-ink sm:text-3xl md:text-4xl">
-              Everything we bring to a partnership
+              What we bring to every build
             </h2>
           </Reveal>
           <div className="mt-10 flex flex-wrap gap-3">
