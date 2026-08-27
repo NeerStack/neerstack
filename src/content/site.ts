@@ -219,20 +219,8 @@ export const services: Service[] = [
   },
 ];
 
-/** Public portfolio: NeerStack + PactReach + ProduceMart. Never Enitars/MageHub. */
+/** Public portfolio: PactReach + ProduceMart. Never Enitars/MageHub. */
 export const portfolio: PortfolioItem[] = [
-  {
-    slug: "neerstack",
-    title: "NeerStack",
-    category: "Website",
-    summary:
-      "Our own marketing site and brand system: Mark C lockups, services, portfolio, blog, and admin. Built the same way we ship everything else: clear surfaces, production craft.",
-    image: "/brand/kit/lockup-on-light.png",
-    imageOnDark: "/brand/kit/lockup-on-dark.png",
-    tags: ["Web", "Brand", "Marketing", "Product"],
-    href: "https://neerstack.com/",
-    featured: true,
-  },
   {
     slug: "pactreach",
     title: "PactReach",
@@ -262,7 +250,7 @@ export const principles = [
   { title: "Clarity first", body: "Every screen, endpoint, and decision should be explainable in one sentence." },
   { title: "Ship in slices", body: "Vertical slices beat big-bang launches. Users feel progress; risk stays contained." },
   { title: "Own the craft", body: "Design, code, and QA stay connected so quality is not a late-stage apology." },
-  { title: "Stay close to the work", body: "Whether it is our product or a shared build, progress stays visible and tradeoffs stay honest." },
+  { title: "Partner, do not vanish", body: "We work like an embedded team: visible progress, honest tradeoffs, clean handoff." },
 ];
 
 export const engagementSteps = [
@@ -274,8 +262,8 @@ export const engagementSteps = [
 
 export const stats = [
   { value: "5", label: "Core disciplines", detail: "Design to delivery in one team" },
-  { value: "3", label: "Featured products", detail: "NeerStack, PactReach, ProduceMart" },
-  { value: "100%", label: "Remote-ready", detail: "Timezone-flexible collaboration" },
+  { value: "2", label: "Featured products", detail: "PactReach and ProduceMart" },
+  { value: "100%", label: "Remote-ready", detail: "Timezone-flexible partnership" },
   { value: "1", label: "Accountable team", detail: "No agency telephone game" },
 ];
 
@@ -283,9 +271,9 @@ export const site = {
   name: "NeerStack",
   legalName: "Neerstack LTD",
   rcNumber: "RC8530959",
-  tagline: "We design, build, and ship: our products and yours.",
+  tagline: "Engineering partners for teams who ship.",
   description:
-    "NeerStack designs and ships its own products, and partners with teams on web, mobile, design, testing, and delivery.",
+    "Hire professional software engineers for web, mobile, design, testing, and product delivery.",
   url: "https://neerstack.com",
   linkedin: "https://www.linkedin.com/company/neerstack/",
   email: "support@neerstack.com",

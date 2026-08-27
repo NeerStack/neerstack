@@ -9,8 +9,8 @@ export function SiteFooter() {
         <div className="sm:col-span-2 lg:col-span-1">
           <Logo variant="light" />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-on-void/65">
-            {site.tagline} We ship our own products and partner on design, build,
-            test, and delivery when you want the same craft.
+            {site.tagline} Design, build, test, and ship with a team that works like
+            an extension of yours.
           </p>
           <address className="mt-6 max-w-sm text-sm not-italic leading-relaxed text-on-void/55">
             <p className="font-medium text-on-void/70">{site.legalName}</p>

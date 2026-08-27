@@ -16,7 +16,6 @@ export default function HomePage() {
   const featured = portfolio.filter((item) => item.featured);
   const marquee = [
     ...services.map((s) => s.title),
-    "NeerStack",
     "PactReach",
     "ProduceMart",
     "Ship faster",
@@ -36,16 +35,15 @@ export default function HomePage() {
             <div className="hero-animate inline-flex max-w-full items-center gap-3 rounded-full border border-white/20 bg-white/5 px-3.5 py-1.5 backdrop-blur-md">
               <span className="glow-dot h-2 w-2 shrink-0 rounded-full bg-accent" />
               <p className="truncate text-[10px] font-semibold uppercase tracking-[0.18em] text-on-void/75 sm:text-[11px] sm:tracking-[0.22em]">
-                NeerStack · Product builders
+                NeerStack · Engineering partners
               </p>
             </div>
             <h1 className="hero-animate-delay font-display mt-6 text-[2.35rem] leading-[0.95] tracking-[-0.055em] text-balance sm:mt-7 sm:text-5xl md:text-7xl lg:text-[5.6rem]">
               {site.tagline}
             </h1>
             <p className="hero-animate-delay-2 mt-5 max-w-xl text-base leading-relaxed text-on-void/78 text-pretty sm:mt-7 md:text-lg">
-              We ship our own products and partner with teams who need senior design
-              and engineering without the agency fog. One accountable crew from
-              brief to production.
+              Hire engineers who design, build, and ship production software as a
+              remote extension of your team. One accountable crew. No agency fog.
             </p>
             <div className="hero-animate-delay-3 mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap">
               <HomeQuoteButton />
@@ -86,7 +84,7 @@ export default function HomePage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Signal</p>
             <h2 className="font-display mt-4 max-w-3xl text-3xl tracking-tight text-ink text-balance sm:text-4xl md:text-6xl">
-              Built like a product team, because we are one.
+              Built like a product team. Scoped like partners who stay.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
@@ -166,8 +164,8 @@ export default function HomePage() {
               Products we ship
             </h2>
             <p className="mt-4 max-w-2xl text-on-void/70">
-              Our own site and brand, plus PactReach and ProduceMart: products we
-              design and ship end to end.
+              Public work includes PactReach and ProduceMart: marketplace and
+              commerce systems built end to end.
             </p>
           </Reveal>
           <div className="mt-10 flex flex-col gap-8 sm:mt-12 md:gap-10">
@@ -278,11 +276,10 @@ export default function HomePage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-on-void/45">Next</p>
             <h2 className="font-display mt-3 max-w-xl text-3xl tracking-tight sm:text-4xl md:text-6xl">
-              Building something next?
+              Ready to extend your team?
             </h2>
             <p className="mt-5 max-w-md text-on-void/70">
-              Tell us about the product, timeline, and constraints. We reply with a
-              clear next step, whether you want a partner or a sounding board.
+              Tell us about the product, timeline, and constraints. We reply with a clear next step.
             </p>
           </Reveal>
           <Reveal delayMs={100}>
