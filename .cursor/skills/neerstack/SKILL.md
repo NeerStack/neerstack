@@ -5,7 +5,7 @@ description: Product, brand, API, and UI rules for NeerStack. Use when changing 
 
 # NeerStack Project Skill
 
-Tagline: **We design, build, and ship — our products and yours.**
+Tagline: **We design, build, and ship: our products and yours.**
 
 ## Stack
 - Next.js App Router, TypeScript, Tailwind v4, `output: "export"`, `trailingSlash: true`
@@ -30,7 +30,7 @@ Read AGENTS.md / `node_modules/next/dist/docs/` before unusual Next APIs. This N
 
 ## Portfolio
 Public list: **NeerStack + PactReach + ProduceMart**. Never list Enitars/MageHub.
-Voice: we build for ourselves (marketing site, own products) and with partners — not hire-only agency copy.
+Voice: we build for ourselves (marketing site, own products) and with partners, not hire-only agency copy.
 Images: `public/images/{hero,contact,producemart}.*` plus `public/images/pactreach/` (Letter P + L3 compact lockups and wordmarks from the Aug 2026 PactReach kit; baked artwork, never typed Satoshi).
 
 ## Layout / UI (hard-won)

@@ -86,7 +86,7 @@ export default function HomePage() {
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Signal</p>
             <h2 className="font-display mt-4 max-w-3xl text-3xl tracking-tight text-ink text-balance sm:text-4xl md:text-6xl">
-              Built like a product team — because we are one.
+              Built like a product team, because we are one.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
@@ -282,7 +282,7 @@ export default function HomePage() {
             </h2>
             <p className="mt-5 max-w-md text-on-void/70">
               Tell us about the product, timeline, and constraints. We reply with a
-              clear next step — whether you want a partner or a sounding board.
+              clear next step, whether you want a partner or a sounding board.
             </p>
           </Reveal>
           <Reveal delayMs={100}>

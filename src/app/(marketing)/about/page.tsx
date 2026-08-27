@@ -21,7 +21,7 @@ export default function AboutPage() {
               A product team that ships its own work.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-soft text-pretty sm:text-lg">
-              NeerStack builds products for ourselves — this site included — and
+              NeerStack builds products for ourselves, this site included, and
               partners with teams who need senior design and engineering without
               the agency theater. Same craft either way.
             </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <Reveal>
             <p className="text-base leading-relaxed text-ink-soft md:text-lg">
               We are not only a hire-us shop. We run our own product surfaces, brand,
-              and delivery loop — then bring that same short loop to shared builds.
+              and delivery loop, then bring that same short loop to shared builds.
               The people who design and code are the people you talk to. Clearer
               tradeoffs, faster iteration, software that holds up after launch.
             </p>

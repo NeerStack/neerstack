@@ -1,7 +1,7 @@
 # NeerStack Brand Kit: Mark C (NS Path)
 
 ## Canonical artwork
-- Mark: `mark.svg` / `mark.png` (NS Path, stack red `#E31E24`) — do not redraw
+- Mark: `mark.svg` / `mark.png` (NS Path, stack red `#E31E24`): do not redraw
 - Wordmark source: `_wm-traced-preview.png` (traced NEERSTACK; first E top+middle red)
 - Site chrome: `lockup-on-light.png` / `lockup-on-dark.png` via `Logo.tsx` (`?v=4`)
 - Wordmark-only: `wordmark-on-light.png` / `wordmark-on-dark.png` (transparent)

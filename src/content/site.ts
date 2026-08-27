@@ -226,7 +226,7 @@ export const portfolio: PortfolioItem[] = [
     title: "NeerStack",
     category: "Website",
     summary:
-      "Our own marketing site and brand system: Mark C lockups, services, portfolio, blog, and admin. Built the same way we ship everything else — clear surfaces, production craft.",
+      "Our own marketing site and brand system: Mark C lockups, services, portfolio, blog, and admin. Built the same way we ship everything else: clear surfaces, production craft.",
     image: "/brand/kit/lockup-on-light.png",
     imageOnDark: "/brand/kit/lockup-on-dark.png",
     tags: ["Web", "Brand", "Marketing", "Product"],
@@ -283,7 +283,7 @@ export const site = {
   name: "NeerStack",
   legalName: "Neerstack LTD",
   rcNumber: "RC8530959",
-  tagline: "We design, build, and ship — our products and yours.",
+  tagline: "We design, build, and ship: our products and yours.",
   description:
     "NeerStack designs and ships its own products, and partners with teams on web, mobile, design, testing, and delivery.",
   url: "https://neerstack.com",

@@ -18,7 +18,7 @@ export default function PortfolioPage() {
               Selected work.
             </h1>
             <p className="mt-5 max-w-2xl text-ink-soft">
-              Our own marketing site and brand, plus PactReach and ProduceMart —
+              Our own marketing site and brand, plus PactReach and ProduceMart:
               products we design and ship, not only client case studies.
             </p>
           </Reveal>
