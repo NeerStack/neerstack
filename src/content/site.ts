@@ -277,8 +277,7 @@ export const site = {
   url: "https://neerstack.com",
   linkedin: "https://www.linkedin.com/company/neerstack/",
   email: "support@neerstack.com",
-  address:
-    "19, Church Street, Ilupeju Iloye, Adalemo, Sango Ota, Ogun State, Nigeria",
+  address: "Ogun State, Nigeria",
 };
 
 export const legalNav = [
